@@ -1,11 +1,12 @@
 cmake_minimum_required(VERSION 3.15)
-project(SpBench LANGUAGES CXX CUDA)
+#project(SpBench LANGUAGES CXX CUDA)
+project(SpBench LANGUAGES CXX)
 
 # Exposed options. Disable something, if do not want to build cuda or cl stuff.
-option(BENCH_WITH_CUBOOL      "Add cubool lib and related benchmarks" ON)
-option(BENCH_WITH_CUSP        "Add cusp lib and related benchmarks" ON)
-option(BENCH_WITH_CUSPARSE    "Add cuSPARSE lib and related benchmarks" ON)
-option(BENCH_WITH_CLSPARSE    "Add clSPARSE lib and related benchmarks" ON)
+#option(BENCH_WITH_CUBOOL      "Add cubool lib and related benchmarks" ON)
+#option(BENCH_WITH_CUSP        "Add cusp lib and related benchmarks" ON)
+#option(BENCH_WITH_CUSPARSE    "Add cuSPARSE lib and related benchmarks" ON)
+#option(BENCH_WITH_CLSPARSE    "Add clSPARSE lib and related benchmarks" ON)
 option(BENCH_WITH_CLBOOL      "Add clbool lib and related benchmarks" ON)
 option(BENCH_WITH_SUITESPARSE "Add GraphBLAS:SuiteSparse lib and related benchmarks" ON)
 
