@@ -175,7 +175,7 @@ if (BENCH_WITH_SUITESPARSE)
         target_link_libraries(${SUITESPARSE_TARGET} PUBLIC graphblas)
 
         # The graphblas is installed here, must explicitly add path to be sure, that link will be successful
-        target_link_directories(${SUITESPARSE_TARGET} PUBLIC /usr/include)
+        target_link_directories(${SUITESPARSE_TARGET} PUBLIC /usr/include/suitesparse)
         target_compile_features(${SUITESPARSE_TARGET} PUBLIC cxx_std_14)
         set_target_properties(${SUITESPARSE_TARGET} PROPERTIES CXX_STANDARD 17)
         set_target_properties(${SUITESPARSE_TARGET} PROPERTIES CXX_STANDARD_REQUIRED ON)
