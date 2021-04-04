@@ -149,7 +149,7 @@ public:
     program &set_queue(cl::CommandQueue queue) {
         if (DEBUG_ENABLE && DETAIL_DEBUG_ENABLE) Log() << "hay 4444!";
         _is_spec_queue = true;
-        _queue = queue;
+        _queue = std::move(queue);
         if (DEBUG_ENABLE && DETAIL_DEBUG_ENABLE) Log() << "hay 5555!";
     }
 
