@@ -210,6 +210,9 @@ if (BENCH_WITH_CLBOOL)
     endforeach ()
 endif ()
 
+
+target_link_libraries(clbool ${OpenCL_LIBRARY})
+
 if (BENCH_WITH_SUITESPARSE)
     set(SUITESPARSE_TARGETS)
 
