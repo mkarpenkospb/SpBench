@@ -112,6 +112,7 @@ int main(int argc, const char **argv) {
 
             GrB_CHECK(GrB_Matrix_extractTuples_UINT32(I.data(), J.data(), nullptr, &nvals, result));
 
+            std::cout << "Data successfully extracted " << std::endl;
             for (auto i = 0; i < nvals; i++) {
                 m2.rows[i] = I[i];
                 m2.cols[i] = J[i];
