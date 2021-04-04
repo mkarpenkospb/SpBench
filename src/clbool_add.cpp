@@ -51,7 +51,8 @@ namespace benchmark {
     protected:
 
         void setupBenchmark() override {
-            controls = new Controls(utils::create_controls());
+            controls = new Controls(utils::create_controls("addition_256.aoc"));
+            controls->FPGA_BINARIES = "src/cl/fpga/addition_kernels/";
         }
 
         void tearDownBenchmark() override {
