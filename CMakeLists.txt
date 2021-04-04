@@ -176,16 +176,16 @@ if (BENCH_WITH_CLBOOL)
     #
     #
     #    set(OpenCL_INCLUDE_DIR "libs/clew")
-    set(LIB_CLASSES "src/library_classes")
-    set(COMMON "src/common")
-    set(HEADERS "src/cl/headers")
-    set(TESTS "src/test")
-    set(COO "src/coo")
-    set(UTILS "libs/utils")
+#    set(LIB_CLASSES "src/library_classes")
+#    set(COMMON "src/common")
+#    set(HEADERS "src/cl/headers")
+#    set(TESTS "src/test")
+#    set(COO "src/coo")
+#    set(UTILS "libs/utils")
 
     # Handle OpenCL
-    find_package(OpenCL REQUIRED)
-    include_directories(${OpenCL_INCLUDE_DIR} ${LIB_CLASSES} ${COMMON} ${HEADERS} ${TESTS} ${COO} ${UTILS})
+#    find_package(OpenCL REQUIRED)
+#    include_directories(${OpenCL_INCLUDE_DIR} ${LIB_CLASSES} ${COMMON} ${HEADERS} ${TESTS} ${COO} ${UTILS})
 
     set(CLBOOL_TARGETS)
 
