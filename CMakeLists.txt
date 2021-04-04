@@ -176,12 +176,7 @@ if (BENCH_WITH_CLBOOL)
     #
     #
     #    set(OpenCL_INCLUDE_DIR "libs/clew")
-#    set(LIB_CLASSES "src/library_classes")
-#    set(COMMON "src/common")
-#    set(HEADERS "src/cl/headers")
-#    set(TESTS "src/test")
-#    set(COO "src/coo")
-#    set(UTILS "libs/utils")
+
 
     # Handle OpenCL
 #    find_package(OpenCL REQUIRED)
@@ -218,6 +213,7 @@ if (BENCH_WITH_SUITESPARSE)
     list(APPEND SUITESPARSE_TARGETS suitesparse_mult suitesparse_add)
 
     foreach (SUITESPARSE_TARGET ${SUITESPARSE_TARGETS})
+        target_link_libraries(${SUITESPARSE_TARGET} PUBLIC clbool)
         target_link_libraries(${SUITESPARSE_TARGET} PUBLIC sp_bench_base)
         target_link_libraries(${SUITESPARSE_TARGET} PUBLIC graphblas)
 
