@@ -96,7 +96,7 @@ int main(int argc, const char** argv) {
         m2.rows.resize(nvals);
         m2.cols.resize(nvals);
 
-        GrB_CHECK(GrB_Matrix_extractTuples(m2.rows.data(), m2.cols.data(), nullptr, &nvals, result));
+        GrB_CHECK(GrB_Matrix_extractTuples_UDT(m2.rows.data(), m2.cols.data(), nullptr, &nvals, result));
 
         m2.nvals = nvals;
 
