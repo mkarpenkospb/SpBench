@@ -33,6 +33,8 @@ extern "C"
 
 using namespace benchmark;
 
+#define GrB_CHECK(func) do { auto s = func; assert(s == GrB_SUCCESS); } while(0);
+
 int main(int argc, const char** argv) {
     ArgsProcessor argsProcessor;
     Matrix input;
