@@ -12,6 +12,7 @@ const uint32_t MAX_GROUP_ID = BINS_NUM - 1;
 namespace hash_details {
 
     auto &get_queue(const cl::Context& context, uint32_t bin_id) {
+        if (DEBUG_ENABLE && DETAIL_DEBUG_ENABLE) Log() << "hay 22222!";
         static cl::CommandQueue hash_tb_512(context);
         static cl::CommandQueue hash_tb_1024(context);
         static cl::CommandQueue hash_global_queue(context);
