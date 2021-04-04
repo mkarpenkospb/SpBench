@@ -136,7 +136,7 @@ void count_nnz(Controls &controls,
             ("hash_symbolic_global")
             .set_kernel_name("hash_symbolic_global")
             .set_queue(hash_details::get_queue(controls.context, MAX_GROUP_ID));
-    if (DEBUG_ENABLE && DETAIL_DEBUG_ENABLE) Log() << "hay there!"
+    if (DEBUG_ENABLE && DETAIL_DEBUG_ENABLE) Log() << "hay there!";
 
     std::vector<cl::Event> events;
     for (uint32_t bin_id = 0; bin_id < BINS_NUM; ++bin_id) {
