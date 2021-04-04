@@ -104,8 +104,8 @@ int main(int argc, const char** argv) {
         writer.save(file + "2", m2);
 
 
-        GrB_CHECK(GrB_Matrix_free(result));
-        GrB_CHECK(GrB_Matrix_free(matrix));
+        GrB_CHECK(GrB_Matrix_free(&result));
+        GrB_CHECK(GrB_Matrix_free(&matrix));
 
         result = nullptr;
         matrix = nullptr;
