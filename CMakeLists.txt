@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.15)
-#project(SpBench LANGUAGES CXX CUDA)
+project(SpBench LANGUAGES CXX CUDA)
 project(SpBench LANGUAGES CXX)
 
 
@@ -210,7 +210,8 @@ if (BENCH_WITH_SUITESPARSE)
 
     add_executable(suitesparse_mult src/suitesparse_multiply.cpp)
     add_executable(suitesparse_add src/suitesparse_add.cpp)
-    list(APPEND SUITESPARSE_TARGETS suitesparse_mult suitesparse_add)
+    add_executable(suitesparse_prepare_data src/suitesparse_prepare_data.cpp)
+    list(APPEND SUITESPARSE_TARGETS suitesparse_mult suitesparse_add suitesparse_prepare_data)
 
     foreach (SUITESPARSE_TARGET ${SUITESPARSE_TARGETS})
         target_link_libraries(${SUITESPARSE_TARGET} PUBLIC clbool)
