@@ -187,7 +187,6 @@ if (BENCH_WITH_CLBOOL)
     find_package(OpenCL REQUIRED)
     include_directories(${OpenCL_INCLUDE_DIR} ${LIB_CLASSES} ${COMMON} ${HEADERS} ${TESTS} ${COO} ${UTILS})
 
-
     set(CLBOOL_TARGETS)
 
     add_executable(clbool_mult_hash src/clbool_multiply_hash.cpp)
@@ -199,6 +198,8 @@ if (BENCH_WITH_CLBOOL)
         target_link_libraries(${CLBOOL_TARGET} PUBLIC sp_bench_base)
         target_link_libraries(${CLBOOL_TARGET} PUBLIC clbool)
         target_link_libraries(${CLBOOL_TARGET} PUBLIC -lOpenCL)
+        target_link_libraries(${CLBOOL_TARGET} PUBLIC OpenCL)
+        target_link_libraries(${CLBOOL_TARGET} PUBLIC ${OpenCL_LIBRARY})
         target_compile_features(${CLBOOL_TARGET} PUBLIC cxx_std_14)
 
         set_target_properties(${CLBOOL_TARGET} PROPERTIES CXX_STANDARD 17)
