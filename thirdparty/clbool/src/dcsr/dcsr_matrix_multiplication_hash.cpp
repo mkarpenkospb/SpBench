@@ -16,7 +16,7 @@ namespace hash_details {
         static cl::CommandQueue hash_tb_512(context);
         static cl::CommandQueue hash_tb_1024(context);
         static cl::CommandQueue hash_global_queue(context);
-
+        if (DEBUG_ENABLE && DETAIL_DEBUG_ENABLE) Log() << "hay 3333!";
         if (bin_id == 0) return hash_tb_512;
         if (bin_id == 1) return hash_tb_1024;
         if (bin_id == 2) return hash_global_queue;
