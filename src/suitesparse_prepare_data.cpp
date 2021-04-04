@@ -35,7 +35,7 @@ using namespace benchmark;
 
 #define GrB_CHECK(func) do { auto s = func; assert(s == GrB_SUCCESS); } while(0);
 
-int main(int argc, const char** argv) {
+int main(int argc, const char **argv) {
     ArgsProcessor argsProcessor;
     Matrix input;
 
@@ -44,9 +44,9 @@ int main(int argc, const char** argv) {
     GrB_Matrix matrix = nullptr;
     GrB_Matrix result = nullptr;
 
-    for (auto& entry: argsProcessor.getEntries()) {
-        const auto& file = entry.name;
-        const auto& type = entry.isUndirected;
+    for (auto &entry: argsProcessor.getEntries()) {
+        const auto &file = entry.name;
+        const auto &type = entry.isUndirected;
 
         MatrixLoader loader(file, type);
         loader.loadData();
@@ -61,7 +61,7 @@ int main(int argc, const char** argv) {
         std::vector<GrB_Index> I(input.nvals);
         std::vector<GrB_Index> J(input.nvals);
 
-        bool* X = (bool*) std::malloc(sizeof(bool) * input.nvals);
+        bool *X = (bool *) std::malloc(sizeof(bool) * input.nvals);
 
         for (auto i = 0; i < input.nvals; i++) {
             I[i] = input.rows[i];
@@ -89,7 +89,8 @@ int main(int argc, const char** argv) {
         GrB_CHECK(GrB_Matrix_ncols(&ncols, result));
         GrB_CHECK(GrB_Matrix_nvals(&nvals, result));
 
-        std::cout << "Result matrix " << file << "2 : size: " << nrows << " x " << ncols << " nvals: " << nvals << std::endl;
+        std::cout << "Result matrix " << file << "2 : size: " << nrows << " x " << ncols << " nvals: " << nvals
+                  << std::endl;
 
         Matrix m2;
         m2.nrows = nrows;
@@ -98,7 +99,14 @@ int main(int argc, const char** argv) {
         m2.rows.resize(nvals);
         m2.cols.resize(nvals);
 
-        GrB_CHECK(GrB_Matrix_extractTuples_UDT(m2.rows.data(), m2.cols.data(), nullptr, &nvals, &result));
+        GrB_CHECK(GrB_Matrix_extractTuples_UDT(I.data(), J.data(), nullptr, &nvals, result));
+
+        for (auto i = 0; i < input.nvals; i++) {
+            m2.rows[i] = I[i];
+            m2.cols[i] = J[i];
+            X[i] = true;
+        }
+
 
         m2.nvals = nvals;
 
