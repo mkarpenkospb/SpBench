@@ -16,10 +16,7 @@ if (UNIX)
     set(OpenCL_LIBRARY "/opt/intelFPGA_pro/20.4/hld/host/linux64/lib/libOpenCL.so.1")
     message("h2")
 endif (UNIX)
-
-
 set(OpenCL_INCLUDE_DIR "libs/clew")
-
 
 #################################
 
@@ -201,6 +198,7 @@ if (BENCH_WITH_CLBOOL)
         target_link_libraries(${CLBOOL_TARGET} PUBLIC sp_bench_base)
         target_link_libraries(${CLBOOL_TARGET} PUBLIC clbool)
         target_link_libraries(${CLBOOL_TARGET} PUBLIC ${OpenCL_LIBRARY})
+        target_link_libraries(${CLBOOL_TARGET} PUBLIC OpenCL)
         target_compile_features(${CLBOOL_TARGET} PUBLIC cxx_std_14)
 
         set_target_properties(${CLBOOL_TARGET} PROPERTIES CXX_STANDARD 17)
@@ -211,7 +209,6 @@ if (BENCH_WITH_CLBOOL)
 endif ()
 
 
-target_link_libraries(clbool ${OpenCL_LIBRARY})
 
 if (BENCH_WITH_SUITESPARSE)
     set(SUITESPARSE_TARGETS)
