@@ -26,13 +26,14 @@
 #define SPBENCH_MATRIX_HPP
 
 #include <vector>
+#include <library_classes/cpu_matrices.hpp>
 
 struct Matrix {
-    size_t nrows = 0;
-    size_t ncols = 0;
-    size_t nvals = 0;
-    std::vector<unsigned int> rows;
-    std::vector<unsigned int> cols;
+    uint32_t nrows = 0;
+    uint32_t ncols = 0;
+    uint32_t nvals = 0;
+    cpu_buffer rows;
+    cpu_buffer cols;
 
     Matrix() = default;
     Matrix(const Matrix& m) = default;
