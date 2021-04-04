@@ -149,7 +149,7 @@ void count_nnz(Controls &controls,
         if (DEBUG_ENABLE && DETAIL_DEBUG_ENABLE) Log() << " [count_nnz] group " << bin_id << ", size " << groups_length[bin_id];
 
         if (bin_id != MAX_GROUP_ID) {
-            auto &program = hash_details::get_program(controls.context, bin_id);
+            auto program = hash_details::get_program(controls.context, bin_id);
             program.set_block_size(block_size);
             program.set_needed_work_size(block_size * groups_length[bin_id]);
             events.push_back(program.run(controls, gpu_workload_groups, groups_pointers[bin_id],
@@ -213,7 +213,7 @@ void fill_nnz(Controls &controls,
         uint32_t block_size = hash_details::get_block_size(bin_id);
 
         if (bin_id != MAX_GROUP_ID) {
-            auto &program = hash_details::get_program(controls.context, bin_id);
+            auto program = hash_details::get_program(controls.context, bin_id);
             program.set_block_size(block_size);
             program.set_needed_work_size(block_size * groups_length[bin_id]);
             events.push_back(program.run(controls, gpu_workload_groups, groups_pointers[bin_id],
