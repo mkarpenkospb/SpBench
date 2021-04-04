@@ -55,7 +55,7 @@ int main(int argc, const char **argv) {
         size_t n = input.nrows;
         assert(input.nrows == input.ncols);
 
-        log << ">   Load matrix: \"" << file << "\" isUndirected: " << type << std::endl
+        std::cout << ">   Load matrix: \"" << file << "\" isUndirected: " << type << std::endl
             << "                 size: " << input.nrows << " x " << input.ncols << " nvals: " << input.nvals
             << std::endl;
 
@@ -106,8 +106,7 @@ int main(int argc, const char **argv) {
         I.resize(nvals);
         J.resize(nvals);
 
-        std::cout << "Memory successfully allocated "
-          << std::endl;
+        std::cout << "Memory successfully allocated " << std::endl;
 
         GrB_CHECK(GrB_Matrix_extractTuples_UINT32(I.data(), J.data(), nullptr, &nvals, result));
 
