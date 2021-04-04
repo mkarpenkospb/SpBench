@@ -2,9 +2,8 @@
 #include <utility>
 #include <cstdint>
 #include <vector>
+#include <malloc.h>
 
-void _aligned_free(void *_Memory);
-void *_aligned_malloc(size_t _Size, size_t _Alignment);
 // https://gist.github.com/donny-dont/1471329
 template <typename T, std::size_t Alignment>
 class aligned_allocator
@@ -104,7 +103,7 @@ public:
         }
 
         // Mallocator wraps malloc().
-        void * const pv = _aligned_malloc(n * sizeof(T), Alignment);
+        void * const pv = _mm_malloc(n * sizeof(T), Alignment);
 
         // Allocators should throw std::bad_alloc in the case of memory allocation failure.
         if (pv == NULL)
@@ -117,7 +116,7 @@ public:
 
     void deallocate(T * const p, const std::size_t n) const
     {
-        _aligned_free(p);
+        _mm_free(p);
     }
 
 
