@@ -25,7 +25,6 @@
 #include <args_processor.hpp>
 #include <matrix_loader.hpp>
 #include <matrix_writer.hpp>
-#include <cubool/cubool.h>
 
 extern "C"
 {
