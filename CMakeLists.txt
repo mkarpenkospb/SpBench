@@ -2,12 +2,34 @@ cmake_minimum_required(VERSION 3.15)
 #project(SpBench LANGUAGES CXX CUDA)
 project(SpBench LANGUAGES CXX)
 
+
+# opencl first
+
+
+add_subdirectory(thirdparty/clbool)
+
+if (WIN32)
+    set(OpenCL_LIBRARY "C:/Windows/System32/OpenCL.dll")
+    message("h1")
+endif (WIN32)
+if (UNIX)
+    set(OpenCL_LIBRARY "/opt/intelFPGA_pro/20.4/hld/host/linux64/lib/libOpenCL.so.1")
+    message("h2")
+endif (UNIX)
+
+
+set(OpenCL_INCLUDE_DIR "libs/clew")
+
+
+#################################
+
+
 # Exposed options. Disable something, if do not want to build cuda or cl stuff.
 #option(BENCH_WITH_CUBOOL      "Add cubool lib and related benchmarks" ON)
 #option(BENCH_WITH_CUSP        "Add cusp lib and related benchmarks" ON)
 #option(BENCH_WITH_CUSPARSE    "Add cuSPARSE lib and related benchmarks" ON)
 #option(BENCH_WITH_CLSPARSE    "Add clSPARSE lib and related benchmarks" ON)
-option(BENCH_WITH_CLBOOL      "Add clbool lib and related benchmarks" ON)
+option(BENCH_WITH_CLBOOL "Add clbool lib and related benchmarks" ON)
 option(BENCH_WITH_SUITESPARSE "Add GraphBLAS:SuiteSparse lib and related benchmarks" ON)
 
 add_library(sp_bench_base INTERFACE)
@@ -33,13 +55,13 @@ if (BENCH_WITH_CUBOOL)
     add_executable(cubool_add src/cubool_add.cpp)
     list(APPEND CUBOOl_TARGETS cubool_mult cubool_add)
 
-    foreach(CUBOOL_TARGET ${CUBOOl_TARGETS})
+    foreach (CUBOOL_TARGET ${CUBOOl_TARGETS})
         target_link_libraries(${CUBOOL_TARGET} PUBLIC cubool)
         target_link_libraries(${CUBOOL_TARGET} PUBLIC sp_bench_base)
 
         list(APPEND TARGETS ${CUBOOL_TARGET})
-    endforeach()
-endif()
+    endforeach ()
+endif ()
 
 # CUSP specifics
 if (BENCH_WITH_CUSP)
@@ -54,7 +76,7 @@ if (BENCH_WITH_CUSP)
     add_executable(cusp_mult_add src/cusp_multiply_add.cu)
     list(APPEND CUSP_TARGETS cusp_basic cusp_mult cusp_add cusp_mult_add)
 
-    foreach(CUSP_TARGET ${CUSP_TARGETS})
+    foreach (CUSP_TARGET ${CUSP_TARGETS})
         target_link_libraries(${CUSP_TARGET} PUBLIC cusp)
         target_link_libraries(${CUSP_TARGET} PUBLIC sp_bench_base)
 
@@ -67,8 +89,8 @@ if (BENCH_WITH_CUSP)
         set_target_properties(${CUSP_TARGET} PROPERTIES CUDA_SEPARABLE_COMPILATION ON)
 
         list(APPEND TARGETS ${CUSP_TARGET})
-    endforeach()
-endif()
+    endforeach ()
+endif ()
 
 if (BENCH_WITH_CUSPARSE)
     set(CUSPARSE_TARGETS)
@@ -79,7 +101,7 @@ if (BENCH_WITH_CUSPARSE)
     add_executable(cusparse_add src/cusparse_add.cu)
     list(APPEND CUSPARSE_TARGETS cusparse_add cusparse_mult)
 
-    foreach(CUSPARSE_TARGET ${CUSPARSE_TARGETS})
+    foreach (CUSPARSE_TARGET ${CUSPARSE_TARGETS})
         target_link_libraries(${CUSPARSE_TARGET} PUBLIC sp_bench_base)
         target_link_libraries(${CUSPARSE_TARGET} PUBLIC cusparse)
 
@@ -91,8 +113,8 @@ if (BENCH_WITH_CUSPARSE)
         set_target_properties(${CUSPARSE_TARGET} PROPERTIES CUDA_SEPARABLE_COMPILATION ON)
 
         list(APPEND TARGETS ${CUSP_TARGET})
-    endforeach()
-endif()
+    endforeach ()
+endif ()
 
 if (BENCH_WITH_CLSPARSE)
     set(BUILD_clSPARSE ON CACHE BOOL "" FORCE)
@@ -116,13 +138,13 @@ if (BENCH_WITH_CLSPARSE)
 
     if (CMAKE_BUILD_TYPE STREQUAL "Debug")
         set(clSPARSE_LIB_NAME clSPARSEd)
-    elseif(CMAKE_BUILD_TYPE STREQUAL "Release")
+    elseif (CMAKE_BUILD_TYPE STREQUAL "Release")
         set(clSPARSE_LIB_NAME clSPARSE)
-    else()
+    else ()
         message(SEND_ERROR "Unknown build type")
-    endif()
+    endif ()
 
-    foreach(CLSPARSE_TARGET ${CLSPARSE_TARGETS})
+    foreach (CLSPARSE_TARGET ${CLSPARSE_TARGETS})
         add_dependencies(${CLSPARSE_TARGET} clSPARSE)
         target_link_libraries(${CLSPARSE_TARGET} PUBLIC sp_bench_base)
         target_link_libraries(${CLSPARSE_TARGET} PUBLIC OpenCL)
@@ -138,11 +160,35 @@ if (BENCH_WITH_CLSPARSE)
         set_target_properties(${CLSPARSE_TARGET} PROPERTIES CXX_STANDARD_REQUIRED ON)
 
         list(APPEND TARGETS ${CLSPARSE_TARGET})
-    endforeach()
-endif()
+    endforeach ()
+endif ()
+
 
 if (BENCH_WITH_CLBOOL)
-    add_subdirectory(thirdparty/clbool)
+    #    add_subdirectory(thirdparty/clbool)
+    #
+    #    if (WIN32)
+    #        set(OpenCL_LIBRARY "C:/Windows/System32/OpenCL.dll")
+    #        message("h1")
+    #    endif(WIN32)
+    #    if(UNIX)
+    #        set(OpenCL_LIBRARY "/opt/intelFPGA_pro/20.4/hld/host/linux64/lib/libOpenCL.so.1")
+    #        message("h2")
+    #    endif(UNIX)
+    #
+    #
+    #    set(OpenCL_INCLUDE_DIR "libs/clew")
+    set(LIB_CLASSES "src/library_classes")
+    set(COMMON "src/common")
+    set(HEADERS "src/cl/headers")
+    set(TESTS "src/test")
+    set(COO "src/coo")
+    set(UTILS "libs/utils")
+
+    # Handle OpenCL
+    find_package(OpenCL REQUIRED)
+    include_directories(${OpenCL_INCLUDE_DIR} ${LIB_CLASSES} ${COMMON} ${HEADERS} ${TESTS} ${COO} ${UTILS})
+
 
     set(CLBOOL_TARGETS)
 
@@ -151,7 +197,7 @@ if (BENCH_WITH_CLBOOL)
     add_executable(clbool_add src/clbool_add.cpp)
     list(APPEND CLBOOL_TARGETS clbool_mult_hash clbool_mult clbool_add)
 
-    foreach(CLBOOL_TARGET ${CLBOOL_TARGETS})
+    foreach (CLBOOL_TARGET ${CLBOOL_TARGETS})
         target_link_libraries(${CLBOOL_TARGET} PUBLIC sp_bench_base)
         target_link_libraries(${CLBOOL_TARGET} PUBLIC clbool)
         target_compile_features(${CLBOOL_TARGET} PUBLIC cxx_std_14)
@@ -160,8 +206,8 @@ if (BENCH_WITH_CLBOOL)
         set_target_properties(${CLBOOL_TARGET} PROPERTIES CXX_STANDARD_REQUIRED ON)
 
         list(APPEND TARGETS ${CLBOOL_TARGET})
-    endforeach()
-endif()
+    endforeach ()
+endif ()
 
 if (BENCH_WITH_SUITESPARSE)
     set(SUITESPARSE_TARGETS)
@@ -170,7 +216,7 @@ if (BENCH_WITH_SUITESPARSE)
     add_executable(suitesparse_add src/suitesparse_add.cpp)
     list(APPEND SUITESPARSE_TARGETS suitesparse_mult suitesparse_add)
 
-    foreach(SUITESPARSE_TARGET ${SUITESPARSE_TARGETS})
+    foreach (SUITESPARSE_TARGET ${SUITESPARSE_TARGETS})
         target_link_libraries(${SUITESPARSE_TARGET} PUBLIC sp_bench_base)
         target_link_libraries(${SUITESPARSE_TARGET} PUBLIC graphblas)
 
@@ -181,13 +227,13 @@ if (BENCH_WITH_SUITESPARSE)
         set_target_properties(${SUITESPARSE_TARGET} PROPERTIES CXX_STANDARD_REQUIRED ON)
 
         list(APPEND TARGETS ${SUITESPARSE_TARGET})
-    endforeach()
-endif()
+    endforeach ()
+endif ()
 
 # Some fancy stuff here
-foreach(TARGET ${TARGETS})
+foreach (TARGET ${TARGETS})
     message(STATUS "Build target benchmark ${TARGET}")
-endforeach()
+endforeach ()
 
 # Copy data into build directory
 file(COPY ${CMAKE_CURRENT_LIST_DIR}/data/ DESTINATION ${CMAKE_BINARY_DIR}/data/)
@@ -200,11 +246,11 @@ file(COPY ${SCRIPTS} DESTINATION ${CMAKE_BINARY_DIR})
 add_custom_target(unzip_dataset ALL)
 set(DATASET_ARCHIVES dataset0.zip dataset1.zip)
 
-foreach(ARCHIVE_NAME ${DATASET_ARCHIVES})
+foreach (ARCHIVE_NAME ${DATASET_ARCHIVES})
     add_custom_command(TARGET unzip_dataset PRE_BUILD
             COMMAND ${CMAKE_COMMAND} -E tar xzf ${CMAKE_CURRENT_LIST_DIR}/dataset/${ARCHIVE_NAME}
             WORKING_DIRECTORY ${CMAKE_BINARY_DIR}/data
             DEPENDS ${CMAKE_SOURCE_DIR}/dataset/${ARCHIVE_NAME}
             COMMENT "Unpacking benchmark dataset from ${ARCHIVE_NAME}"
             VERBATIM)
-endforeach()
+endforeach ()

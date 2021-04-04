@@ -1,16 +1,13 @@
 #pragma once
 
 
-#include "../library_classes/controls.hpp"
-#include "../library_classes/matrix_coo.hpp"
-#include "../library_classes/matrix_dcsr.hpp"
-#include "../common/matrices_conversions.hpp"
+#include "controls.hpp"
+#include "matrix_coo.hpp"
+#include "matrix_dcsr.hpp"
+#include "matrices_conversions.hpp"
 
 #define MERGE_ALGORITHM 1
 #define HASH_ALGORITHM 2
-
-
-typedef std::vector<uint32_t> cpu_buffer;
 
 
 void prepare_positions(Controls &controls,

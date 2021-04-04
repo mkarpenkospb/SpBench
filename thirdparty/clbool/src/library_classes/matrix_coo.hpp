@@ -3,8 +3,8 @@
 
 #include "matrix_base.hpp"
 #include "controls.hpp"
-#include "../coo/coo_initialization.hpp"
-#include "../common/utils.hpp"
+#include "coo_initialization.hpp"
+#include "utils.hpp"
 #include <vector>
 
 class matrix_coo : public details::matrix_base<COO> {
@@ -35,8 +35,8 @@ public:
                index_type nRows,
                index_type nCols,
                index_type nEntities,
-               std::vector<index_type> &rows_indices,
-               std::vector<index_type> &cols_indices,
+               cpu_buffer &rows_indices,
+               cpu_buffer &cols_indices,
                bool sorted = false);
 
     /* we assume, that all input data are sorted */

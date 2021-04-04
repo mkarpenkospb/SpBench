@@ -1,20 +1,19 @@
 #include <numeric>
+#include <program.hpp>
 #include "dcsr_matrix_multiplication.hpp"
-#include "../coo/coo_matrix_addition.hpp"
-#include "../coo/coo_utils.hpp"
-#include "../cl/headers/to_result_matrix_single_thread.h"
-#include "../cl/headers/to_result_matrix_work_group.h"
-#include "../cl/headers/heap_merge.h"
-#include "../cl/headers/copy_one_value.h"
-#include "../cl/headers/merge_large_rows.h"
-#include "../cl/headers/bitonic_esc.h"
-#include "../cl/headers/count_workload.h"
-#include "../cl/headers/prepare_positions.h"
-#include "../cl/headers/set_positions.h"
+#include "coo_matrix_addition.hpp"
+#include "to_result_matrix_single_thread.h"
+#include "to_result_matrix_work_group.h"
+#include "heap_merge.h"
+#include "copy_one_value.h"
+#include "merge_large_rows.h"
+#include "bitonic_esc.h"
+#include "count_workload.h"
+#include "prepare_positions.h"
+#include "set_positions.h"
 
 const uint32_t BINS_NUM = 38;
 const uint32_t HEAP_MERGE_BLOCK_SIZE = 32;
-typedef std::vector<uint32_t> cpu_buffer;
 
 uint32_t esc_estimation(uint32_t group) {
     switch (group) {
@@ -35,12 +34,16 @@ void matrix_multiplication(Controls &controls,
                            matrix_dcsr &matrix_out,
                            const matrix_dcsr &a,
                            const matrix_dcsr &b) {
+    timer t;
     if (a.nnz() == 0 || b.nnz() == 0) {
         std::cout << "empty result\n";
         return;
     }
     cl::Buffer nnz_estimation;
+    t.restart();
     count_workload(controls, nnz_estimation, a, b);
+    double time = t.elapsed();
+    if (DEBUG_ENABLE) Log() << "Workload counted in " << time << "\n";
 
     std::vector<cpu_buffer> cpu_workload_groups(BINS_NUM, cpu_buffer());
     cpu_buffer groups_pointers(BINS_NUM + 1);
@@ -56,8 +59,10 @@ void matrix_multiplication(Controls &controls,
 
     cl::Buffer gpu_workload_groups(controls.context, CL_MEM_READ_WRITE, sizeof(uint32_t) * a.nzr());
 
+    t.restart();
     write_bins_info(controls, gpu_workload_groups, cpu_workload_groups, groups_pointers, groups_length);
-
+    time = t.elapsed();
+    if (DEBUG_ENABLE) Log() << "Bins written in " << time << "\n";
 
 
     run_kernels(controls, groups_length, groups_pointers,
@@ -102,7 +107,11 @@ void create_final_matrix(Controls &controls,
     if (groups_length[1] != 0) {
         auto single_value_rows = program<cl::Buffer, uint32_t, uint32_t,
                 cl::Buffer, cl::Buffer, cl::Buffer, cl::Buffer>
+#ifndef FPGA
                 (to_result_matrix_single_thread_kernel, to_result_matrix_single_thread_kernel_length)
+#else
+                ("to_result_matrix_single_thread")
+#endif
                 .set_block_size(std::min(controls.block_size, std::max(32u, utils::ceil_to_power2(groups_length[1]))))
                 .set_needed_work_size(groups_length[1])
                 .set_async(true)
@@ -117,7 +126,11 @@ void create_final_matrix(Controls &controls,
     if (second_group_length != 0) {
         auto ordinary_rows = program<cl::Buffer, uint32_t,
                 cl::Buffer, cl::Buffer, cl::Buffer, cl::Buffer>
+#ifndef FPGA
                 (to_result_matrix_work_group_kernel, to_result_matrix_work_group_kernel_length)
+#else
+                ("to_result_matrix_work_group")
+#endif
                 .set_needed_work_size(controls.block_size * second_group_length)
                 .set_async(true)
                 .set_kernel_name("to_result");
@@ -161,17 +174,27 @@ void write_bins_info(Controls &controls,
 
     uint32_t offset = 0;
     uint32_t bins = cpu_workload_groups.size();
+    cpu_buffer cpu_workload_groups_for_copy;
 //    cl::Event end_write_buffer;
     for (uint32_t workload_group_id = 0; workload_group_id < bins; ++workload_group_id) {
         const cpu_buffer& group = cpu_workload_groups[workload_group_id];
         if (group.empty()) continue;
         groups_pointers[workload_group_id] = offset;
         groups_length[workload_group_id] = group.size();
-        controls.queue.enqueueWriteBuffer(gpu_workload_groups, CL_TRUE, sizeof(uint32_t) * offset,
-                                          sizeof(uint32_t) * group.size(), group.data()
-                                         /* , nullptr, &end_write_buffer*/);
+        cpu_workload_groups_for_copy.insert(
+                cpu_workload_groups_for_copy.end(),
+                group.begin(),
+                group.end()
+                );
+//        controls.queue.enqueueWriteBuffer(gpu_workload_groups, CL_TRUE, sizeof(uint32_t) * offset,
+//                                          sizeof(uint32_t) * group.size(), group.data()
+//                                         /* , nullptr, &end_write_buffer*/);
         offset += group.size();
     }
+    controls.queue.enqueueWriteBuffer(gpu_workload_groups, CL_TRUE, 0,
+                                      sizeof(uint32_t) * cpu_workload_groups_for_copy.size(),
+                                      cpu_workload_groups_for_copy.data());
+
 
     groups_pointers[bins] = offset;
 //    end_write_buffer.wait();
@@ -192,25 +215,54 @@ void run_kernels(Controls &controls,
                  cl::Buffer &aux_mem
 
 ) {
+    timer t;
+    t.restart();
+
+#ifdef FPGA
+    static int heap_kernels[33] = {-1,-1,
+                                   4,4,4, // 2,3,4
+                                   8,8,8,8, // 5,6,7,8
+                                   16,16,16,16,16,16,16,16, // 9,10,11,12,13,14,15,16
+                                   20,20,20,20, // 17,18,19,20
+                                   24,24,24,24, // 21,22,23,24
+                                   28,28,28,28, // 25,26,27,28
+                                   32,32,32,32  // 29,30,31,32
+                                   };
+#endif
     auto heap_merge = program<cl::Buffer, uint32_t, uint32_t,
         cl::Buffer, cl::Buffer, cl::Buffer, cl::Buffer,
         cl::Buffer, cl::Buffer, cl::Buffer, cl::Buffer,
-        uint32_t>(heap_merge_kernel, heap_merge_kernel_length)
+        uint32_t>
+#ifndef  FPGA
+        (heap_merge_kernel, heap_merge_kernel_length)
         .set_kernel_name("heap_merge")
+#else
+        ("heap_merge")
+#endif
         .set_block_size(HEAP_MERGE_BLOCK_SIZE)
         .set_async(true);
 
     auto copy_one_value = program<cl::Buffer, uint32_t, uint32_t,
         cl::Buffer, cl::Buffer, cl::Buffer, cl::Buffer,
         cl::Buffer, cl::Buffer, cl::Buffer,
-        uint32_t>(copy_one_value_kernel, copy_one_value_kernel_length)
+        uint32_t>
+#ifndef  FPGA
+            (copy_one_value_kernel, copy_one_value_kernel_length)
+#else
+            ("copy_one_value")
+#endif
         .set_kernel_name("copy_one_value")
         .set_async(true);
 
     auto merge_large_rows = program<cl::Buffer, uint32_t, cl::Buffer,
         cl::Buffer, cl::Buffer, cl::Buffer, cl::Buffer,
         cl::Buffer, cl::Buffer, cl::Buffer, cl::Buffer, cl::Buffer,
-        uint32_t>(merge_large_rows_kernel, merge_large_rows_kernel_length)
+        uint32_t>
+#ifndef  FPGA
+            (merge_large_rows_kernel, merge_large_rows_kernel_length)
+#else
+            ("merge_large_rows")
+#endif
         .set_kernel_name("merge_large_rows")
         .set_block_size(controls.block_size)
         .set_async(true);
@@ -218,7 +270,12 @@ void run_kernels(Controls &controls,
     auto esc_kernel = program<cl::Buffer, uint32_t, uint32_t,
             cl::Buffer, cl::Buffer, cl::Buffer, cl::Buffer,
             cl::Buffer, cl::Buffer, cl::Buffer, cl::Buffer,
-            uint32_t>(bitonic_esc_kernel, bitonic_esc_kernel_length)
+            uint32_t>
+#ifndef  FPGA
+            (bitonic_esc_kernel, bitonic_esc_kernel_length)
+#else
+            ("bitonic_esc")
+#endif
             .set_kernel_name("bitonic_esc")
             .set_block_size(controls.block_size)
             .set_async(true);
@@ -229,7 +286,7 @@ void run_kernels(Controls &controls,
         if (groups_length[workload_group_id] == 0) continue;
 
         if (workload_group_id == 1) {
-            //std::cout << "first group!\n";
+            std::cout << "first group!\n";
             copy_one_value.set_needed_work_size(groups_length[workload_group_id])
             .set_block_size(std::min(controls.block_size,
                                      std::max(32u, utils::ceil_to_power2(groups_length[workload_group_id]))));
@@ -248,9 +305,13 @@ void run_kernels(Controls &controls,
 
 
         if (workload_group_id < 33 ) {
-            //std::cout << "2 - 32!: " << workload_group_id << "\n";
+            std::cout << "2 - 32!: " << workload_group_id << "\n";
             heap_merge.set_needed_work_size(groups_length[workload_group_id])
+#ifdef FPGA
+                        .set_kernel_name("heap_merge_" + std::to_string(heap_kernels[workload_group_id]))
+#endif
                         .add_option("NNZ_ESTIMATION", workload_group_id);
+
             events.push_back(heap_merge.run(controls, gpu_workload_groups, groups_pointers[workload_group_id], groups_length[workload_group_id],
                                             pre.rows_pointers_gpu(), pre.cols_indices_gpu(),
                                             nnz_estimation,
@@ -262,7 +323,7 @@ void run_kernels(Controls &controls,
         }
 
         if (workload_group_id < 37 ) {
-            //std::cout << "33 - 36!\n";
+            std::cout << "33 - 36!\n";
             uint32_t block_size = std::max(32u, esc_estimation(workload_group_id) / 2);
             esc_kernel.add_option("NNZ_ESTIMATION", esc_estimation(workload_group_id))
             .set_block_size(block_size)
@@ -280,7 +341,7 @@ void run_kernels(Controls &controls,
         }
 
 
-        //std::cout << "37!\n";
+        std::cout << "37!\n";
         merge_large_rows.set_needed_work_size(groups_length[workload_group_id] * controls.block_size);
         events.push_back(merge_large_rows.run(controls,
                                               gpu_workload_groups, groups_pointers[workload_group_id],
@@ -294,6 +355,8 @@ void run_kernels(Controls &controls,
     }
     try {
         cl::Event::waitForEvents(events);
+        double time = t.elapsed();
+        if (DEBUG_ENABLE) Log() << "kernels run in " << time << "\n";
     } catch (const cl::Error &e) {
         std::stringstream exception;
         exception << "\n" << e.what() << " : " << utils::error_name(e.err()) << " in " << "run_kernels" << " \n";
@@ -320,7 +383,8 @@ void build_groups_and_allocate_new_matrix(Controls& controls,
     controls.queue.enqueueReadBuffer(nnz_estimation, CL_TRUE, 0, sizeof(uint32_t) * a.nzr(), cpu_workload.data()
                                      /*, nullptr, &event*/);
  //   event.wait();
-
+    timer t;
+    t.restart();
     uint32_t pre_nnz = 0;
     cpu_buffer rows_pointers_cpu(a.nzr() + 1);
 
@@ -343,9 +407,14 @@ void build_groups_and_allocate_new_matrix(Controls& controls,
         std::cout << "empty result\n";
         return;
     }
+
     aux_pointers_cpu.push_back(aux);
     rows_pointers_cpu[a.nzr()] = pre_nnz;
 
+    double time = t.elapsed();
+    if (DEBUG_ENABLE) Log() << "Groups formed in " << time << "\n";
+
+    t.restart();
     cl::Buffer pre_rows_pointers = cl::Buffer(controls.queue, rows_pointers_cpu.begin(), rows_pointers_cpu.end(), false);
     cl::Buffer pre_cols_indices_gpu = cl::Buffer(controls.context, CL_MEM_READ_WRITE, sizeof(uint32_t) * pre_nnz);
 
@@ -358,6 +427,8 @@ void build_groups_and_allocate_new_matrix(Controls& controls,
 
     pre = matrix_dcsr(pre_rows_pointers, a.rows_compressed_gpu(), pre_cols_indices_gpu,
                       a.nRows(), b_cols, pre_nnz, a.nzr());
+    time = t.elapsed();
+    if (DEBUG_ENABLE) Log() << "Temporary matrix formed in " << time << "\n";
 }
 
 
@@ -377,15 +448,20 @@ void count_workload(Controls &controls,
                     const matrix_dcsr &b) {
 
     auto count_workload = program<cl::Buffer, cl::Buffer, cl::Buffer, cl::Buffer, cl::Buffer,
-        uint32_t, uint32_t>(count_workload_kernel, count_workload_kernel_length)
+        uint32_t, uint32_t>
+        ("count_workload")
         .set_needed_work_size(a.nzr())
-        .set_kernel_name("count_workload");
+        .set_kernel_name("count_workload")
+//#ifndef WIN
+//        .set_task(true)
+//#endif
+        ;
 
     cl::Buffer nnz_estimation(controls.context, CL_MEM_READ_WRITE, sizeof(uint32_t) * (a.nzr() + 1));
 
     count_workload.run(controls, nnz_estimation, a.rows_pointers_gpu(), a.cols_indices_gpu(),
-                       b.rows_compressed_gpu(), b.rows_pointers_gpu(), a.nzr(), b.nzr());
-//                       .wait();
+                       b.rows_compressed_gpu(), b.rows_pointers_gpu(), a.nzr(), b.nzr())
+                       .wait();
     nnz_estimation_out = std::move(nnz_estimation);
 }
 
@@ -396,13 +472,19 @@ void prepare_positions(Controls &controls,
                        uint32_t size,
                        const std::string &program_name
 ) {
+    timer t;
     auto prepare_positions = program<cl::Buffer, cl::Buffer, uint32_t>
-            (prepare_positions_kernel, prepare_positions_kernel_length)
+            ("prepare_positions")
             .set_kernel_name(program_name)
-            .set_needed_work_size(size);
-
-    prepare_positions.run(controls, positions, array, size);//.wait();
-//    event.wait();
+            .set_needed_work_size(size)
+//#ifndef WIN
+//            .set_task(true)
+//#endif
+            ;
+    t.restart();
+    prepare_positions.run(controls, positions, array, size).wait();
+    t.elapsed();
+    if (DEBUG_ENABLE && DETAIL_DEBUG_ENABLE) Log() << "Set positions routine finished in " << t.last_elapsed();
 }
 
 
@@ -416,14 +498,21 @@ void set_positions(Controls &controls,
                    uint32_t old_nzr,
                    uint32_t c_nzr
 ) {
+    timer t;
     auto set_positions = program<cl::Buffer, cl::Buffer, cl::Buffer, cl::Buffer, cl::Buffer,
             uint32_t, uint32_t, uint32_t>
-            (set_positions_kernel, set_positions_kernel_length)
+            ("set_positions")
             .set_kernel_name("set_positions_pointers_and_rows")
-            .set_needed_work_size(old_nzr);
-
+            .set_needed_work_size(old_nzr)
+//#ifndef WIN
+//            .set_task(true)
+//#endif
+            ;
+    t.restart();
     set_positions.run(controls, c_rows_pointers, c_rows_compressed,
                   nnz_estimation, a_rows_compressed, positions,
-                  c_nnz, old_nzr, c_nzr);//.wait();
+                  c_nnz, old_nzr, c_nzr).wait();
+    t.elapsed();
+    if (DEBUG_ENABLE && DETAIL_DEBUG_ENABLE) Log() << "Set positions routine finished in " << t.last_elapsed();
 //    event.wait();
 }

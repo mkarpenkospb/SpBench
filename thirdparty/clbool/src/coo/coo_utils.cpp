@@ -1,16 +1,13 @@
-#include <cstdint>
 #include "coo_utils.hpp"
-#include "../library_classes/matrix_coo.hpp"
-#include "libutils/fast_random.h"
-#include "../library_classes/matrix_dcsr.hpp"
+
+#include <cstdint>
 #include <vector>
 #include <iostream>
 #include <algorithm>
+#include <libutils/fast_random.h>
 
 
 namespace coo_utils {
-
-    using cpu_buffer = std::vector<uint32_t>;
 
     std::pair<matrix_dcsr_cpu, matrix_dcsr_cpu> generate_random_matrices_large(uint32_t max_size, uint32_t seed) {
         // попытаемся нагенерить штук 50 рядов по 32 - 63 элемента
