@@ -3,7 +3,8 @@
 #include <cstdint>
 #include <vector>
 
-
+void _aligned_free(void *_Memory);
+void *_aligned_malloc(size_t _Size, size_t _Alignment);
 // https://gist.github.com/donny-dont/1471329
 template <typename T, std::size_t Alignment>
 class aligned_allocator
