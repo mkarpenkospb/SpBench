@@ -145,7 +145,7 @@ set(CLBOOL_SOURCES
         )
 
 add_library(clbool SHARED ${CLBOOL_SOURCES})
-target_link_libraries(clbool PUBLIC OpenCL)
+target_link_libraries(clbool PUBLIC ${OpenCL_LIBRARY})
 target_include_directories(clbool PUBLIC ${CMAKE_CURRENT_LIST_DIR}/src/)
 target_include_directories(clbool PUBLIC ${OpenCL_INCLUDE_DIR} ${LIB_CLASSES} ${COMMON} ${HEADERS} ${TESTS} ${COO} ${UTILS})
 target_compile_definitions(clbool PUBLIC CL_HPP_ENABLE_EXCEPTIONS)
