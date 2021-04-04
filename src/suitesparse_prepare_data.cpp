@@ -42,8 +42,6 @@ int main(int argc, const char** argv) {
     GrB_Matrix matrix = nullptr;
     GrB_Matrix result = nullptr;
 
-    CUBOOL_CHECK(cuBool_Initialize(CUBOOL_HINT_NO));
-
     for (auto& entry: argsProcessor.getEntries()) {
         const auto& file = entry.name;
         const auto& type = entry.isUndirected;
@@ -112,8 +110,6 @@ int main(int argc, const char** argv) {
         result = nullptr;
         matrix = nullptr;
     }
-
-    CUBOOL_CHECK(cuBool_Finalize());
 
     return 0;
 }
