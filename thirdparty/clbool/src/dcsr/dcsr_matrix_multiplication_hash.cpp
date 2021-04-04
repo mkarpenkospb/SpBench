@@ -130,6 +130,7 @@ void count_nnz(Controls &controls,
                const cl::Buffer &global_hash_tables_offset
 
 ) {
+    if (DEBUG_ENABLE && DETAIL_DEBUG_ENABLE) Log() << "hay 11111!";
     static auto hash_global = program<cl::Buffer, uint32_t,
             cl::Buffer, cl::Buffer, cl::Buffer, cl::Buffer, cl::Buffer, cl::Buffer,
             uint32_t, cl::Buffer, cl::Buffer>
