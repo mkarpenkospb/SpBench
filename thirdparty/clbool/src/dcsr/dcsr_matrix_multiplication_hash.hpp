@@ -76,19 +76,19 @@ struct BinsQueuesAndPrograms {
         hash_tb_1024_queue = cl::CommandQueue(controls.context);
         hash_global_queue = cl::CommandQueue(controls.context);
 
-        hash_tb_512 = program_tb_t("hash_tb_512")
-                .set_kernel_name("hash_tb_512")
+        hash_tb_512 = program_tb_t("hash_tb_512");
+                hash_tb_512.set_kernel_name("hash_tb_512")
                 .set_queue(hash_tb_512_queue);
-        hash_tb_1024 = program_tb_t("hash_tb_1024")
-                .set_kernel_name("hash_tb_1024")
+        hash_tb_1024 = program_tb_t("hash_tb_1024");
+                hash_tb_1024.set_kernel_name("hash_tb_1024")
                 .set_queue(hash_tb_1024_queue);
         hash_global_symbolic = program_gl_symb_t
-                ("hash_symbolic_global")
-                .set_kernel_name("hash_symbolic_global")
+                ("hash_symbolic_global");
+                hash_global_symbolic.set_kernel_name("hash_symbolic_global")
                 .set_queue(hash_global_queue);
         hash_global_numeric = program_gl_num_t
-                ("hash_numeric_global")
-                .set_kernel_name("hash_numeric_global")
+                ("hash_numeric_global");
+                hash_global_numeric.set_kernel_name("hash_numeric_global")
                 .set_queue(hash_global_queue);
     }
 
