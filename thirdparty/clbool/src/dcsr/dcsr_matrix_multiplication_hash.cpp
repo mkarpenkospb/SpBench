@@ -11,7 +11,7 @@ const uint32_t MAX_GROUP_ID = BINS_NUM - 1;
 
 namespace hash_details {
 
-    auto &get_queue(const cl::Context& context, uint32_t bin_id) {
+    auto get_queue(const cl::Context& context, uint32_t bin_id) {
         if (DEBUG_ENABLE && DETAIL_DEBUG_ENABLE) Log() << "hay 22222!";
         static cl::CommandQueue hash_tb_512(context);
         static cl::CommandQueue hash_tb_1024(context);
@@ -24,7 +24,7 @@ namespace hash_details {
         throw std::runtime_error("Unknown bin id. error 22231");
     }
 
-    auto &get_program(const cl::Context& context, uint32_t bin_id) {
+    auto get_program(const cl::Context& context, uint32_t bin_id) {
         using program_t = program<cl::Buffer, uint32_t, cl::Buffer,
                 cl::Buffer, cl::Buffer, cl::Buffer, cl::Buffer, cl::Buffer, cl::Buffer,
                 uint32_t, uint32_t>;

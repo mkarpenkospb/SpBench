@@ -79,7 +79,7 @@ private:
     bool _async = false;
     bool _is_spec_queue = false;
     bool _task = false;
-    cl::CommandQueue* _queue;
+    cl::CommandQueue _queue;
 
     #ifdef WIN
     std::string options_str = "-D GPU=1";
@@ -146,9 +146,9 @@ public:
         return *this;
     }
 
-    program &set_queue(cl::CommandQueue& queue) {
+    program &set_queue(cl::CommandQueue queue) {
         _is_spec_queue = true;
-        _queue = &queue;
+        _queue = queue;
     }
 
     program &set_task(bool flag) {
@@ -177,7 +177,7 @@ public:
                                           utils::calculate_global_size(_block_size, _needed_work_size)),
                                   cl::NDRange(_block_size));
 #else
-            cl::EnqueueArgs eargs(_is_spec_queue ? *_queue : controls.queue,
+            cl::EnqueueArgs eargs(_is_spec_queue ? _queue : controls.queue,
                                   cl::NDRange(utils::calculate_global_size(_block_size, _needed_work_size)),
                                   cl::NDRange(_block_size));
 #endif
