@@ -98,6 +98,8 @@ int main(int argc, const char **argv) {
         m2.nvals = nvals;
         m2.rows.resize(nvals);
         m2.cols.resize(nvals);
+        I.resize(nvals);
+        J.resize(nvals);
 
         GrB_CHECK(GrB_Matrix_extractTuples_UDT(I.data(), J.data(), nullptr, &nvals, result));
 
