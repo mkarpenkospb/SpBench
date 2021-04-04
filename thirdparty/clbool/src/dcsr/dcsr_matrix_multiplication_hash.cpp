@@ -1,5 +1,4 @@
 #include <numeric>
-#include <program.hpp>
 #include "dcsr_matrix_multiplication.hpp"
 #include "dcsr_matrix_multiplication_hash.hpp"
 #include "../coo/coo_matrix_addition.hpp"
@@ -10,38 +9,6 @@ const uint32_t MAX_GROUP_ID = BINS_NUM - 1;
 #define PWARP 4
 
 namespace hash_details {
-
-    auto get_queue(const cl::Context& context, uint32_t bin_id) {
-        if (DEBUG_ENABLE && DETAIL_DEBUG_ENABLE) Log() << "hay 22222!";
-        static cl::CommandQueue hash_tb_512(context);
-        static cl::CommandQueue hash_tb_1024(context);
-        static cl::CommandQueue hash_global_queue(context);
-        if (DEBUG_ENABLE && DETAIL_DEBUG_ENABLE) Log() << "hay 3333!";
-        if (bin_id == 0) return hash_tb_512;
-        if (bin_id == 1) return hash_tb_1024;
-        if (bin_id == 2) return hash_global_queue;
-
-        throw std::runtime_error("Unknown bin id. error 22231");
-    }
-
-    auto get_program(const cl::Context& context, uint32_t bin_id) {
-        using program_t = program<cl::Buffer, uint32_t, cl::Buffer,
-                cl::Buffer, cl::Buffer, cl::Buffer, cl::Buffer, cl::Buffer, cl::Buffer,
-                uint32_t, uint32_t>;
-        static auto hash_tb_512 = program_t("hash_tb_512")
-                .set_kernel_name("hash_tb_512")
-                .set_queue(get_queue(context, 1));
-        static auto hash_tb_1024 = program_t("hash_tb_1024")
-                .set_kernel_name("hash_tb_1024")
-                .set_queue(get_queue(context, 2));
-
-        if (bin_id == 0) return hash_tb_512;
-        if (bin_id == 1) return hash_tb_1024;
-
-        throw std::runtime_error("Unknown bin id. error 212421");
-    }
-
-
     uint32_t get_block_size(uint32_t bin_id) {
 
 
@@ -73,6 +40,9 @@ void matrix_multiplication_hash(Controls &controls,
         std::cout << "empty result\n";
         return;
     }
+
+    BinsQueuesAndPrograms queuesAndPrograms(controls);
+
     // TODO добавтиь rassert на размеры
     cl::Buffer nnz_estimation;
     timer t;
@@ -104,13 +74,13 @@ void matrix_multiplication_hash(Controls &controls,
     if (DEBUG_ENABLE && DETAIL_DEBUG_ENABLE) Log() << "write_bins_info in " << t.last_elapsed();
 
     t.restart();
-    count_nnz(controls, groups_length, groups_pointers, gpu_workload_groups, nnz_estimation,
+    count_nnz(controls, queuesAndPrograms, groups_length, groups_pointers, gpu_workload_groups, nnz_estimation,
               a, b, global_hash_tables, global_hash_tables_offset);
     t.elapsed();
     if (DEBUG_ENABLE && DETAIL_DEBUG_ENABLE) Log() << "count_nnz in " << t.last_elapsed();
 
     t.restart();
-    fill_nnz(controls, groups_length, groups_pointers, gpu_workload_groups, nnz_estimation,
+    fill_nnz(controls, queuesAndPrograms, groups_length, groups_pointers, gpu_workload_groups, nnz_estimation,
              matrix_out, a, b, global_hash_tables, global_hash_tables_offset);
     t.elapsed();
     if (DEBUG_ENABLE && DETAIL_DEBUG_ENABLE) Log() << "fill_nnz in " << t.last_elapsed();
@@ -118,6 +88,7 @@ void matrix_multiplication_hash(Controls &controls,
 
 
 void count_nnz(Controls &controls,
+               BinsQueuesAndPrograms &queuesAndPrograms,
                const cpu_buffer &groups_length,
                const cpu_buffer &groups_pointers,
 
@@ -132,13 +103,6 @@ void count_nnz(Controls &controls,
 
 ) {
     if (DEBUG_ENABLE && DETAIL_DEBUG_ENABLE) Log() << "hay 11111!";
-    static auto hash_global = program<cl::Buffer, uint32_t,
-            cl::Buffer, cl::Buffer, cl::Buffer, cl::Buffer, cl::Buffer, cl::Buffer,
-            uint32_t, cl::Buffer, cl::Buffer>
-            ("hash_symbolic_global")
-            .set_kernel_name("hash_symbolic_global")
-            .set_queue(hash_details::get_queue(controls.context, MAX_GROUP_ID));
-    if (DEBUG_ENABLE && DETAIL_DEBUG_ENABLE) Log() << "hay there!";
 
     std::vector<cl::Event> events;
     for (uint32_t bin_id = 0; bin_id < BINS_NUM; ++bin_id) {
@@ -149,7 +113,7 @@ void count_nnz(Controls &controls,
         if (DEBUG_ENABLE && DETAIL_DEBUG_ENABLE) Log() << " [count_nnz] group " << bin_id << ", size " << groups_length[bin_id];
 
         if (bin_id != MAX_GROUP_ID) {
-            auto program = hash_details::get_program(controls.context, bin_id);
+            auto program = queuesAndPrograms.get_program(bin_id);
             program.set_block_size(block_size);
             program.set_needed_work_size(block_size * groups_length[bin_id]);
             events.push_back(program.run(controls, gpu_workload_groups, groups_pointers[bin_id],
@@ -161,9 +125,9 @@ void count_nnz(Controls &controls,
             continue;
         }
 
-        hash_global.set_block_size(block_size);
-        hash_global.set_needed_work_size(block_size * groups_length[bin_id]);
-        events.push_back(hash_global.run(controls, gpu_workload_groups, groups_pointers[bin_id],
+        queuesAndPrograms.hash_global_symbolic.set_block_size(block_size);
+        queuesAndPrograms.hash_global_symbolic.set_needed_work_size(block_size * groups_length[bin_id]);
+        events.push_back(queuesAndPrograms.hash_global_symbolic.run(controls, gpu_workload_groups, groups_pointers[bin_id],
                                          nnz_estimation, a.rows_pointers_gpu(), a.cols_indices_gpu(),
                                          b.rows_pointers_gpu(), b.rows_compressed_gpu(), b.cols_indices_gpu(),
                                          b.nzr(),
@@ -183,6 +147,8 @@ void count_nnz(Controls &controls,
 }
 
 void fill_nnz(Controls &controls,
+
+               BinsQueuesAndPrograms &queuesAndPrograms,
               const cpu_buffer &groups_length,
               const cpu_buffer &groups_pointers,
 
@@ -200,11 +166,6 @@ void fill_nnz(Controls &controls,
     prefix_sum(controls, pre_matrix_rows_pointers, c_nnz, a.nzr() + 1);
     cl::Buffer c_cols(controls.context, CL_MEM_READ_WRITE, sizeof(uint32_t) * c_nnz);
 
-    static auto hash_global = program<cl::Buffer, uint32_t,
-            cl::Buffer, cl::Buffer, cl::Buffer, cl::Buffer>
-            ("hash_numeric_global")
-            .set_kernel_name("hash_numeric_global")
-            .set_queue(hash_details::get_queue(controls.context, MAX_GROUP_ID));
 
     std::vector<cl::Event> events;
     for (uint32_t bin_id = 0; bin_id < BINS_NUM; ++bin_id) {
@@ -213,7 +174,7 @@ void fill_nnz(Controls &controls,
         uint32_t block_size = hash_details::get_block_size(bin_id);
 
         if (bin_id != MAX_GROUP_ID) {
-            auto program = hash_details::get_program(controls.context, bin_id);
+            auto program = queuesAndPrograms.get_program(bin_id);
             program.set_block_size(block_size);
             program.set_needed_work_size(block_size * groups_length[bin_id]);
             events.push_back(program.run(controls, gpu_workload_groups, groups_pointers[bin_id],
@@ -225,9 +186,9 @@ void fill_nnz(Controls &controls,
             continue;
         }
 
-        hash_global.set_block_size(block_size);
-        hash_global.set_needed_work_size(block_size * groups_length[bin_id]);
-        events.push_back(hash_global.run(controls, gpu_workload_groups, groups_pointers[bin_id],
+        queuesAndPrograms.hash_global_numeric.set_block_size(block_size);
+        queuesAndPrograms.hash_global_numeric.set_needed_work_size(block_size * groups_length[bin_id]);
+        events.push_back(queuesAndPrograms.hash_global_numeric.run(controls, gpu_workload_groups, groups_pointers[bin_id],
                                          pre_matrix_rows_pointers, c_cols,
                                          global_hash_tables, global_hash_tables_offset
         ));
