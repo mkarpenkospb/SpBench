@@ -52,7 +52,7 @@ namespace benchmark {
 
         void setupBenchmark() override {
             controls = new Controls(utils::create_controls("mult_256.aocx"));
-            controls->FPGA_BINARIES = "src/cl/fpga/multiplication_hash_kernels/";
+            controls->FPGA_BINARIES = "/root/Desktop/GitReps/SpBench/thirdparty/clbool/src/cl/fpga/multiplication_hash_kernels/";
         }
 
         void tearDownBenchmark() override {

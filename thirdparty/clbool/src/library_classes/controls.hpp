@@ -34,7 +34,7 @@ struct Controls {
     , async_queue(queue)
 #endif
     {
-        chdir(WORKING_DIR.c_str());
+//        chdir(WORKING_DIR.c_str());
     }
 
     cl::Program create_program_from_source(const char * kernel, uint32_t length) const {
