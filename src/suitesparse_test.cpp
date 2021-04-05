@@ -42,6 +42,7 @@ int main() {
     GrB_Matrix result = nullptr;
     bool *X = nullptr;
     size_t n = 4;
+    GrB_CHECK(GrB_init(GrB_BLOCKING));
 
     { // -------------------------- init input matrix -------------------------------------------
         // https://docs.scipy.org/doc/scipy/reference/generated/scipy.sparse.coo_matrix.html
@@ -140,7 +141,7 @@ int main() {
 
     result = nullptr;
     matrix = nullptr;
-
+    GrB_CHECK(GrB_finalize());
 
     return 0;
 }
