@@ -62,7 +62,7 @@ int main(int argc, const char **argv) {
     std::vector<GrB_Index> I(input.nvals);
     std::vector<GrB_Index> J(input.nvals);
 
-    std::cout << ">   Load matrix: \"" << file << "\" isUndirected: " << type << std::endl
+    std::cout << ">   Load matrix: \""
               << "                 size: " << input.nrows << " x " << input.ncols << " nvals: " << input.nvals
               << std::endl;
 
@@ -103,7 +103,7 @@ int main(int argc, const char **argv) {
     GrB_CHECK(GrB_Matrix_ncols(&ncols, result));
     GrB_CHECK(GrB_Matrix_nvals(&nvals, result));
 
-    std::cout << "Result matrix " << file << "2 : size: " << nrows << " x " << ncols << " nvals: " << nvals
+    std::cout << "Result matrix : size: " << nrows << " x " << ncols << " nvals: " << nvals
               << std::endl;
 
     Matrix m2;
