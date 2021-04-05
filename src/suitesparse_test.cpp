@@ -44,14 +44,14 @@ int main(int argc, const char **argv) {
     GrB_Matrix matrix = nullptr;
     GrB_Matrix result = nullptr;
     bool *X = nullptr;
-
+    size_t n = 4;
 
     { // -------------------------- init input matrix -------------------------------------------
         // https://docs.scipy.org/doc/scipy/reference/generated/scipy.sparse.coo_matrix.html
         cpu_buffer is{0, 0, 1, 3};
         cpu_buffer js{0, 2, 1, 3};
 
-        size_t n = 4;
+
         // так совпало, что везде 4
         input.ncols = 4;
         input.nrows = 4;
