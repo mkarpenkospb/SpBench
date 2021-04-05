@@ -59,7 +59,8 @@ int main(int argc, const char **argv) {
         input.rows = is;
         input.cols = js;
     }
-
+    std::vector<GrB_Index> I(input.nvals);
+    std::vector<GrB_Index> J(input.nvals);
 
     std::cout << ">   Load matrix: \"" << file << "\" isUndirected: " << type << std::endl
               << "                 size: " << input.nrows << " x " << input.ncols << " nvals: " << input.nvals
@@ -69,9 +70,6 @@ int main(int argc, const char **argv) {
     {// --------------------------- init GrB matrix from input -----------------------------------------
 
         GrB_CHECK(GrB_Matrix_new(&matrix, GrB_BOOL, n, n));
-
-        std::vector<GrB_Index> I(input.nvals);
-        std::vector<GrB_Index> J(input.nvals);
 
         X = (bool *) std::malloc(sizeof(bool) * input.nvals);
 
