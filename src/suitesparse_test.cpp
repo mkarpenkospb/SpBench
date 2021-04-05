@@ -35,11 +35,8 @@ using namespace benchmark;
 
 #define GrB_CHECK(func) do { auto s = func; assert(s == GrB_SUCCESS); } while(0);
 
-int main(int argc, const char **argv) {
-    ArgsProcessor argsProcessor;
+int main() {
     Matrix input;
-
-    argsProcessor.parse(argc, argv);
 
     GrB_Matrix matrix = nullptr;
     GrB_Matrix result = nullptr;
