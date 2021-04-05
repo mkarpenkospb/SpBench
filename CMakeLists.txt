@@ -212,7 +212,7 @@ if (BENCH_WITH_SUITESPARSE)
     add_executable(suitesparse_add src/suitesparse_add.cpp)
     add_executable(suitesparse_prepare_data src/suitesparse_prepare_data.cpp)
     add_executable(suitesparse_test src/suitesparse_test.cpp)
-    list(APPEND SUITESPARSE_TARGETS suitesparse_mult suitesparse_add suitesparse_prepare_data)
+    list(APPEND SUITESPARSE_TARGETS suitesparse_mult suitesparse_add suitesparse_prepare_data suitesparse_test)
 
     foreach (SUITESPARSE_TARGET ${SUITESPARSE_TARGETS})
         target_link_libraries(${SUITESPARSE_TARGET} PUBLIC clbool)
