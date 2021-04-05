@@ -140,11 +140,6 @@ int main(int argc, const char **argv) {
         std::cout << m2.cols[i] << ", ";
     }
 
-    std::cout << std::endl << "result vals: " << std::endl;
-    for (size_t i = 0; i < m2.nvals; ++i) {
-        std::cout << m2.vals[i] << ", ";
-    }
-
     GrB_CHECK(GrB_Matrix_free(&result));
     GrB_CHECK(GrB_Matrix_free(&matrix));
 
