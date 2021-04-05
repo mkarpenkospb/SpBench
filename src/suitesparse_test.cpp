@@ -135,7 +135,7 @@ int main() {
     for (size_t i = 0; i < m2.ncols; ++i) {
         std::cout << m2.cols[i] << ", ";
     }
-    std::cout << std::endl
+    std::cout << std::endl;
     GrB_CHECK(GrB_Matrix_free(&result));
     GrB_CHECK(GrB_Matrix_free(&matrix));
 
