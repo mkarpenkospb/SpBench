@@ -38,7 +38,6 @@ using namespace benchmark;
 int main(int argc, const char **argv) {
     ArgsProcessor argsProcessor;
     Matrix input;
-    Matrix result;
 
     argsProcessor.parse(argc, argv);
 
