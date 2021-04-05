@@ -144,6 +144,7 @@ private:
 using coordinates = std::pair<uint32_t, uint32_t>;
 using matrix_coo_cpu_pairs = std::vector<coordinates>;
 using cpu_buffer = std::vector<uint32_t, aligned_allocator<uint32_t, 64>>;
+using cpu_buffer_not_aligned = std::vector<uint32_t>;
 using cpu_buffer_f = std::vector<float, aligned_allocator<float, 64>>;
 
 class matrix_dcsr_cpu {
