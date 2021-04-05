@@ -1,0 +1,23 @@
+Benchmarking: Clbool-Add
+
+                                     Friendly name|      iterations|  expectation ms|           sd ms| 
+                                data/wing/wing.mtx:              10          86.3613          1853.13
+            data/luxembourg_osm/luxembourg_osm.mtx:              10          58.5937          588.019
+                    data/amazon0312/amazon0312.mtx:              10          1572.78          456.712
+                  data/amazon-2008/amazon-2008.mtx:              10          2714.16          519.916
+                    data/web-Google/web-Google.mtx:              10          3079.24          520.911
+                    data/roadNet-PA/roadNet-PA.mtx:              10          944.552          453.938
+                    data/roadNet-TX/roadNet-TX.mtx:              10           1166.8          655.913
+                  data/belgium_osm/belgium_osm.mtx:              10          771.263          481.303
+                    data/roadNet-CA/roadNet-CA.mtx:              10          1686.68           476.36
+          data/netherlands_osm/netherlands_osm.mtx:              10          1247.86          600.409
+                                data/wing/wing.mtx:              10          86.5104          1339.11
+            data/luxembourg_osm/luxembourg_osm.mtx:              10          58.5387          555.423
+                    data/amazon0312/amazon0312.mtx:              10          1572.83          567.562
+                  data/amazon-2008/amazon-2008.mtx:              10          2714.14          491.541
+                    data/web-Google/web-Google.mtx:              10          3077.81          439.392
+                    data/roadNet-PA/roadNet-PA.mtx:              10          944.677           581.36
+                    data/roadNet-TX/roadNet-TX.mtx:              10          1167.12          574.056
+                  data/belgium_osm/belgium_osm.mtx:              10          771.219          468.602
+                    data/roadNet-CA/roadNet-CA.mtx:              10          1686.66           415.06
+          data/netherlands_osm/netherlands_osm.mtx:              10          1248.45          522.847
