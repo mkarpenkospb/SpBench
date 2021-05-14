@@ -1,32 +1,63 @@
 #include "utils.hpp"
 #include "libutils/fast_random.h"
 
-namespace utils {
-    void compare_buffers(Controls &controls, const cl::Buffer &buffer_g, const cpu_buffer &buffer_c, uint32_t size, std::string name) {
+namespace clbool::utils {
+#define RET_FALSE(flag) do {if (!flag) {return false;}} while(0);
+
+    bool compare_buffers(Controls &controls, const cl::Buffer &buffer_gpu, const cpu_buffer &buffer_cpu, uint32_t size,
+                         std::string name) {
+        if (size != buffer_cpu.size()) {
+            std::cerr << "size of buffers for " << name << " are different " << std::endl
+                      << size << " on GPU vs " << buffer_cpu.size() << " on CPU " << std::endl;
+            return false;
+        }
+
         cpu_buffer cpu_copy(size);
-        controls.queue.enqueueReadBuffer(buffer_g, CL_TRUE, 0, sizeof(uint32_t) * cpu_copy.size(), cpu_copy.data());
+        try {
+            if (size >= 0) {
+                controls.queue.enqueueReadBuffer(buffer_gpu, CL_TRUE, 0, sizeof(uint32_t) * cpu_copy.size(),
+                                                 cpu_copy.data());
+            }
+        } catch (const cl::Error &error) {
+            std::cerr << error_name(error.err()) << std::endl;
+            throw error;
+        }
         for (uint32_t i = 0; i < size; ++i) {
-            if (cpu_copy[i] != buffer_c[i]) {
+            if (cpu_copy[i] != buffer_cpu[i]) {
                 uint32_t start = std::max(0, (int) i - 10);
                 uint32_t stop = std::min(size, i + 10);
-                std::cerr << "{ i: (gpu[i], cpu[i]) }" << std::endl;
+                std::cerr << "buffers for " << name << " are different " << std::endl
+                          << "{ i: (gpu[i], cpu[i]) }" << std::endl;
                 for (uint32_t j = start; j < stop; ++j) {
-                    std::cerr << j << ": (" << cpu_copy[j] << ", " << buffer_c[j] << "), ";
+                    if (j == i) {
+                    std::cerr << " !!! " << j << ": (" << cpu_copy[j] << ", " << buffer_cpu[j] << "), ";
+                    } else {
+                        std::cerr << j << ": (" << cpu_copy[j] << ", " << buffer_cpu[j] << "), ";
+                    }
                 }
-                std::cerr  << std::endl;
-                throw std::runtime_error("buffers for " + name + " are different");
+                std::cerr << std::endl;
+                std::cerr << "buffers for " << name << " are different";
+                return false;
             }
         }
-        if (DEBUG_ENABLE) *logger << "buffers are equal";
+        LOG << "buffers for " << name << " are equal";
+        return true;
     }
 
-    void compare_matrices(Controls &controls, matrix_dcsr m_gpu, matrix_dcsr_cpu m_cpu) {
-        if (m_gpu.nnz() != m_cpu.cols_indices().size()) {
-            std::cerr << "diff nnz, gpu: " << m_gpu.nnz() << " vs cpu: " << m_cpu.cols_indices().size() << std::endl;
+    bool compare_matrices(Controls &controls, const matrix_dcsr &m_gpu, const matrix_dcsr_cpu &m_cpu) {
+        if (m_gpu.nnz() != m_cpu.cols().size()) {
+            std::cerr << "diff nnz, gpu: " << m_gpu.nnz() << " vs cpu: " << m_cpu.cols().size() << std::endl;
+            return false;
         }
-        compare_buffers(controls, m_gpu.rows_pointers_gpu(), m_cpu.rows_pointers(), m_gpu.nzr() + 1, "rows_pointers");
-        compare_buffers(controls, m_gpu.rows_compressed_gpu(), m_cpu.rows_compressed(), m_gpu.nzr(), "rows_compressed");
-        compare_buffers(controls, m_gpu.cols_indices_gpu(), m_cpu.cols_indices(), m_gpu.nnz(), "cols_indices");
+        if (m_gpu.nnz() == 0) {
+            LOG << "Matrix is empty";
+            return true;
+        }
+
+        return
+                compare_buffers(controls, m_gpu.rpt_gpu(), m_cpu.rpt(), m_gpu.nzr() + 1, "rpt") &&
+                compare_buffers(controls, m_gpu.rows_gpu(), m_cpu.rows(), m_gpu.nzr(), "rows") &&
+                compare_buffers(controls, m_gpu.cols_gpu(), m_cpu.cols(), m_gpu.nnz(), "cols");
     }
 
 
@@ -53,34 +84,33 @@ namespace utils {
     }
 
     uint32_t calculate_global_size(uint32_t work_group_size, uint32_t n) {
+        if (work_group_size == 0) throw std::runtime_error("ooooops");
         return (n + work_group_size - 1) / work_group_size * work_group_size;
     }
 
-    Controls create_controls() {
-        std::vector<cl::Platform> platforms;
-        std::vector<cl::Device> devices;
-        std::vector<cl::Kernel> kernels;
-        cl::Program program;
-        cl::Device device;
-        try {
-            cl::Platform::get(&platforms);
-            platforms[0].getDevices(CL_DEVICE_TYPE_GPU, &devices);
-            std::cout << devices[0].getInfo<CL_DEVICE_MAX_WORK_GROUP_SIZE>() << std::endl;
-            return Controls(devices[0]);
-
-        } catch (const cl::Error &e) {
-            std::stringstream exception;
-            exception << "\n" << e.what() << " : " << e.err() << "\n";
-            throw std::runtime_error(exception.str());
+    std::string mapDeviceType(cl_device_type type) {
+        switch (type) {
+            case (1 << 1):
+                return "CL_DEVICE_TYPE_CPU";
+            case (1 << 2):
+                return "CL_DEVICE_TYPE_GPU";
+            case (1 << 3):
+                return "CL_DEVICE_TYPE_ACCELERATOR";
+            default:
+                return "UNKNOWN";
         }
     }
 
     void printDeviceInfo(const cl::Device &device) {
+        std::cout << "        CL_DEVICE_TYPE: " << mapDeviceType(device.getInfo<CL_DEVICE_TYPE>()) << std::endl;
         std::cout << "        CL_DEVICE_AVAILABLE: " << device.getInfo<CL_DEVICE_AVAILABLE>() << std::endl;
-        std::cout << "        CL_DEVICE_LOCAL_MEM_SIZE: " <<  device.getInfo<CL_DEVICE_LOCAL_MEM_SIZE>() << std::endl;
-        std::cout << "        CL_DEVICE_GLOBAL_MEM_SIZE: " <<  device.getInfo<CL_DEVICE_GLOBAL_MEM_SIZE>() / (1024 * 1024) << std::endl;
-        std::cout << "        CL_DEVICE_MAX_WORK_GROUP_SIZE: " <<  device.getInfo<CL_DEVICE_MAX_WORK_GROUP_SIZE>() << std::endl;
-        std::cout << "        CL_DEVICE_MAX_WORK_ITEM_DIMENSIONS: " <<  device.getInfo<CL_DEVICE_MAX_WORK_ITEM_DIMENSIONS>() << std::endl;
+        std::cout << "        CL_DEVICE_LOCAL_MEM_SIZE: " << device.getInfo<CL_DEVICE_LOCAL_MEM_SIZE>() << std::endl;
+        std::cout << "        CL_DEVICE_GLOBAL_MEM_SIZE: "
+                  << device.getInfo<CL_DEVICE_GLOBAL_MEM_SIZE>() / (1024 * 1024) << std::endl;
+        std::cout << "        CL_DEVICE_MAX_WORK_GROUP_SIZE: " << device.getInfo<CL_DEVICE_MAX_WORK_GROUP_SIZE>()
+                  << std::endl;
+        std::cout << "        CL_DEVICE_MAX_WORK_ITEM_DIMENSIONS: "
+                  << device.getInfo<CL_DEVICE_MAX_WORK_ITEM_DIMENSIONS>() << std::endl;
 
 
     }
@@ -92,46 +122,15 @@ namespace utils {
         std::cout << "CL_PLATFORM_NAME: " << platform.getInfo<CL_PLATFORM_NAME>() << std::endl;
         std::cout << "CL_PLATFORM_VENDOR: " << platform.getInfo<CL_PLATFORM_VENDOR>() << std::endl;
 
-        platform.getDevices(CL_DEVICE_TYPE_CPU, &devices);
-        std::cout << "    CPU: \n";
-        for (const auto &dev: devices) {
-            printDeviceInfo(dev);
+        platform.getDevices(CL_DEVICE_TYPE_ALL, &devices);
+        for (uint32_t i = 0; i < devices.size(); ++i) {
+            std::cout << "        device id: " << i << "\n";
+            printDeviceInfo(devices[i]);
         }
-        devices.clear();
 
-        platform.getDevices(CL_DEVICE_TYPE_GPU, &devices);
-        std::cout << "    GPU: \n";
-        for (const auto &dev: devices) {
-            printDeviceInfo(dev);
-        }
-        devices.clear();
-
-        platform.getDevices(CL_DEVICE_TYPE_ACCELERATOR, &devices);
-        std::cout << "    ACCELERATOR: \n";
-        for (const auto &dev: devices) {
-            printDeviceInfo(dev);
-        }
-        devices.clear();
         std::cout << "-----------------------" << std::endl;
     }
 
-    void show_devices() {
-        std::vector<cl::Platform> platforms;
-        std::vector<cl::Kernel> kernels;
-        cl::Program program;
-        cl::Device device;
-        try {
-            cl::Platform::get(&platforms);
-            for (const auto &platform: platforms) {
-                printPlatformInfo(platform);
-            }
-
-        } catch (const cl::Error &e) {
-            std::stringstream exception;
-            exception << "\n" << e.what() << " : " << e.err() << "\n";
-            throw std::runtime_error(exception.str());
-        }
-    }
 
     std::string error_name(cl_int error) {
         switch (error) {
@@ -253,8 +252,10 @@ namespace utils {
     void print_gpu_buffer(Controls &controls, const cl::Buffer &buffer, uint32_t size) {
         cpu_buffer cpu_copy(size);
         controls.queue.enqueueReadBuffer(buffer, CL_TRUE, 0, sizeof(uint32_t) * cpu_copy.size(), cpu_copy.data());
+        uint32_t counter = 0;
         for (auto const &item: cpu_copy) {
-            std::cout << item << ", ";
+            std::cout << counter << ": " << item << ", ";
+            counter++;
         }
         std::cout << std::endl;
     }
@@ -269,11 +270,14 @@ namespace utils {
     }
 
 
-    void fill_random_buffer(cpu_buffer &buf, uint32_t mod) {
+    void fill_random_buffer(cpu_buffer &buf, uint32_t max) {
+        if (max <= 0 && max != -1) {
+            throw std::runtime_error("Illegal argument, 13417565323");
+        }
         uint32_t n = buf.size();
         FastRandom r(n);
         for (uint32_t i = 0; i < n; ++i) {
-            buf[i] = r.next() % mod;
+            buf[i] = max != -1 ? r.next(0, max) : r.next();
         }
     }
 

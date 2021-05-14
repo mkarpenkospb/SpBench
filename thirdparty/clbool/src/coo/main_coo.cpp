@@ -1,7 +1,7 @@
 #include "../test/coo_tests.hpp"
 
+//using namespace clbool::test;
 int main() {
-//    testBitonicSort();
 //    testReduceDuplicates();
 //    testMatrixAddition();
 //    testKronecker();
@@ -11,6 +11,7 @@ int main() {
 //    testHeapAndCopyKernels();
 //    checkCopying();
 //    simpleTestCopy();
+//    test_transpose();
 //    testMultiplication();
 //    testScan();
 //    testESC();
@@ -20,8 +21,10 @@ int main() {
 //    utils::show_devices();
 //      test_pref_sum();
 //    test_multiplication();
-    test_multiplication_hash();
+//    test_multiplication_hash();
 //    testNewBitonicSort();
+//    test_submatrix();
+//    test_reduce();
 }
 
 

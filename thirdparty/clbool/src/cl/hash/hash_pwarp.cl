@@ -7,9 +7,9 @@
 
 #endif
 #define TABLE_SIZE 32
-// 4 threads for 4 roes
+// 4 threads for 4 rows
 #define PWARP 4
-// how many rows (tables) can wo process by one threadblock
+// how many rows_gpu (tables) can wo process by one threadblock
 #define ROWS_PER_TB (GROUP_SIZE / PWARP)
 #define HASH_SCAL 107
 

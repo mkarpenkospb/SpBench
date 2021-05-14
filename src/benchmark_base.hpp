@@ -152,10 +152,10 @@ namespace benchmark {
                 size_t iterationsCount;
                 std::string name;
 
-
                 setupExperiment(experimentIdx, iterationsCount, name);
 
                 log << "> Begin experiment: " << experimentIdx << " name: "<< name << std::endl;
+                std::cout << "> Begin experiment: " << experimentIdx << " name: "<< name << std::endl;
 
                 PerExperiment perExperiment{};
                 perExperiment.userFriendlyName = std::move(name);
@@ -165,8 +165,8 @@ namespace benchmark {
 
                 TimeQuery timeQuery;
                 double firstIteration = 0.0;
-
                 for (auto iterationIdx = 0; iterationIdx < iterationsCount; iterationIdx++) {
+
                     setupIteration(experimentIdx, iterationIdx);
 
                     Timer timer; {
@@ -189,6 +189,7 @@ namespace benchmark {
                     if (iterationIdx == 0) {
                         firstIteration = timer.getElapsedTimeMs();
                     }
+
                 }
 
                 perExperiment.totalTime = timeQuery.getTotalTimeMS();

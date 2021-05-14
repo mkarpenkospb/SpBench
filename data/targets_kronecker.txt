@@ -1,0 +1,2 @@
+clbool_kronecker_coo
+clbool_kronecker_dcsr

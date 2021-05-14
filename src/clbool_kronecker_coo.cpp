@@ -31,6 +31,7 @@
 #include <common/utils.hpp>
 #include <common/env.hpp>
 #include <coo/coo_matrix_addition.hpp>
+#include <coo_utils.hpp>
 
 #define BENCH_DEBUG
 
@@ -39,11 +40,10 @@ namespace benchmark {
     public:
 
         Add(int argc, const char** argv) {
-            argsProcessor.parse(argc, argv);
-            assert(argsProcessor.isParsed());
-
-            benchmarkName = "Clbool-Add";
-            experimentsCount = argsProcessor.getExperimentsCount();
+            benchmarkName = "Clbool-Kronecker-COO";
+            experimentsCount = 1;
+            coeff = std::atoi(argv[2]);
+            itCnt = std::atoi(argv[3]);
         }
 
     protected:
@@ -57,52 +57,22 @@ namespace benchmark {
         }
 
         void setupExperiment(size_t experimentIdx, size_t &iterationsCount, std::string& name) override {
-            auto& entry = argsProcessor.getEntries()[experimentIdx];
-
-            iterationsCount = entry.iterations;
-            name = entry.name;
-
-            const auto& file = entry.name;
-            const auto& type = entry.isUndirected;
-
-            MatrixLoader loader(file, type);
-            loader.loadData();
-            input = std::move(loader.getMatrix());
-
+            iterationsCount = itCnt;
+            uint32_t nnz = 1000 * coeff;
+            name = "Matrix with nnz = " + std::to_string(nnz);
+            uint32_t size_a = 10000;
 #ifdef BENCH_DEBUG
-            log       << ">   Load A: \"" << file << "\" isUndirected: " << type << std::endl
-                      << "                 size: " << input.nrows << " x " << input.ncols << " nvals: " << input.nvals << std::endl;
+            log       << ">   Load A: \nsize: " << size_a << " x " << size_a << " nvals: " << nnz<< std::endl;
 #endif // BENCH_DEBUG
 
             {
-                size_t n = input.nrows;
-                assert(input.nrows == input.ncols);
-
-                A = std::move(clbool::matrix_coo(*controls, n, n, input.nvals, input.rows.data(), input.cols.data(), true));
-            }
-
-            MatrixLoader2 loader2(file);
-            loader2.loadData();
-            input = std::move(loader2.getMatrix());
-
-#ifdef BENCH_DEBUG
-            log       << ">   Load A2: \"" << file << "\" isUndirected: " << type << std::endl
-                      << "                 size: " << input.nrows << " x " << input.ncols << " nvals: " << input.nvals << std::endl;
-#endif // BENCH_DEBUG
-
-            {
-                size_t n = input.nrows;
-                assert(input.nrows == input.ncols);
-
-                A2 = std::move(clbool::matrix_coo(*controls, n, n, input.nvals,
-                                                  input.rows.data(), input.cols.data(), true));
+                A = std::move(clbool::coo_utils::matrix_coo_from_cpu(*controls,
+                       clbool::coo_utils::generate_coo_pairs_cpu(nnz, size_a), size_a, size_a));
             }
         }
 
         void tearDownExperiment(size_t experimentIdx) override {
-            input = Matrix{};
             A = clbool::matrix_coo{};
-            A2 = clbool::matrix_coo{};
         }
 
         void setupIteration(size_t experimentIdx, size_t iterationIdx) override {
@@ -110,7 +80,7 @@ namespace benchmark {
         }
 
         void execIteration(size_t experimentIdx, size_t iterationIdx) override {
-            clbool::coo::matrix_addition(*controls, R, A, A2);
+            clbool::coo::kronecker_product(*controls, R, A, A);
         }
 
         void tearDownIteration(size_t experimentIdx, size_t iterationIdx) override {
@@ -123,14 +93,11 @@ namespace benchmark {
         }
 
     protected:
-
+        uint32_t itCnt;
+        uint32_t coeff;
         clbool::Controls* controls;
         clbool::matrix_coo A;
-        clbool::matrix_coo A2;
         clbool::matrix_coo R;
-
-        ArgsProcessor argsProcessor;
-        Matrix input;
     };
 
 }

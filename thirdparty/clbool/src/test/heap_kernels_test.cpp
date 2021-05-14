@@ -3,18 +3,20 @@
 #include "../coo/coo_utils.hpp"
 #include "../dcsr/dcsr_matrix_multiplication.hpp"
 
-using namespace coo_utils;
-using namespace utils;
+using namespace clbool;
+using namespace clbool::coo_utils;
+using namespace clbool::utils;
+
 const uint32_t BINS_NUM = 38;
 
-void testHeapAndCopyKernels() {
+void clbool::test::testHeapAndCopyKernels() {
     Controls controls = utils::create_controls();
 
     uint32_t nnz_limit = 25;
     uint32_t max_size = 10;
 
-    matrix_dcsr_cpu a_cpu = coo_to_dcsr_cpu(generate_random_matrix_coo_cpu(nnz_limit, max_size));
-    matrix_dcsr_cpu b_cpu = coo_to_dcsr_cpu(generate_random_matrix_coo_cpu(nnz_limit + 1, max_size));
+    matrix_dcsr_cpu a_cpu = coo_pairs_to_dcsr_cpu(generate_coo_pairs_cpu(nnz_limit, max_size));
+    matrix_dcsr_cpu b_cpu = coo_pairs_to_dcsr_cpu(generate_coo_pairs_cpu(nnz_limit + 1, max_size));
 
     coo_utils::print_matrix(a_cpu);
     coo_utils::print_matrix(b_cpu);
@@ -35,7 +37,7 @@ void testHeapAndCopyKernels() {
 
     matrix_dcsr pre;
     build_groups_and_allocate_new_matrix(controls, pre,
-                                         cpu_workload_groups, nnz_estimation, a_gpu, b_gpu.nCols(),
+                                         cpu_workload_groups, nnz_estimation, a_gpu, b_gpu.ncols(),
                                          aux_ptr, aux_mem
                                          );
 
@@ -43,7 +45,7 @@ void testHeapAndCopyKernels() {
     cl::Buffer gpu_workload_groups(controls.context, CL_MEM_READ_WRITE, sizeof(uint32_t) * a_gpu.nzr());
     write_bins_info(controls, gpu_workload_groups, cpu_workload_groups, groups_pointers, groups_length);
 
-    std::cout << "pre_rows_pointers: \n"; utils::print_gpu_buffer(controls, pre.rows_pointers_gpu(), a_gpu.nzr() + 1);
+    std::cout << "pre_rows_pointers: \n"; utils::print_gpu_buffer(controls, pre.rpt_gpu(), a_gpu.nzr() + 1);
     std::cout << "gpu_workload_groups: \n"; utils::print_gpu_buffer(controls, gpu_workload_groups, a_gpu.nzr());
     std::cout << "groups_pointers: \n"; utils::print_cpu_buffer(groups_pointers);
     std::cout << "groups_length: \n"; utils::print_cpu_buffer(groups_length);
@@ -64,14 +66,14 @@ void testHeapAndCopyKernels() {
 }
 
 
-void testMultiplication() {
+void clbool::test::testMultiplication() {
     Controls controls = utils::create_controls();
 
     uint32_t nnz_limit = 15;
     uint32_t max_size = 30;
 
-    matrix_dcsr_cpu a_cpu = coo_to_dcsr_cpu(generate_random_matrix_coo_cpu(nnz_limit, max_size));
-    matrix_dcsr_cpu b_cpu = coo_to_dcsr_cpu(generate_random_matrix_coo_cpu(nnz_limit + 1, max_size));
+    matrix_dcsr_cpu a_cpu = coo_pairs_to_dcsr_cpu(generate_coo_pairs_cpu(nnz_limit, max_size));
+    matrix_dcsr_cpu b_cpu = coo_pairs_to_dcsr_cpu(generate_coo_pairs_cpu(nnz_limit + 1, max_size));
     matrix_dcsr_cpu c_cpu;
 
     coo_utils::print_matrix(a_cpu);
