@@ -27,10 +27,11 @@
 #include <args_processor.hpp>
 
 // clBool goes here
-#include <library_classes/controls.hpp>
-#include <library_classes/cpu_matrices.hpp>
+#include <core/controls.hpp>
+#include <core/cpu_matrices.hpp>
 #include <coo/coo_utils.hpp>
 #include <common/utils.hpp>
+#include <common/env.hpp>
 #include <common/matrices_conversions.hpp>
 #include <dcsr/dcsr_matrix_multiplication.hpp>
 
@@ -51,7 +52,7 @@ namespace benchmark {
     protected:
 
         void setupBenchmark() override {
-            controls = new Controls(utils::create_controls());
+            controls = new clbool::Controls(clbool::create_controls(0, 0));
         }
 
         void tearDownBenchmark() override {
@@ -79,21 +80,16 @@ namespace benchmark {
             size_t n = input.nrows;
             assert(input.nrows == input.ncols);
 
-            matrix_coo_cpu_pairs matrixA;
-            matrixA.reserve(input.nvals);
+            clbool::matrix_coo_cpu matrixA(input.rows, input.cols);
 
-            for (auto i = 0; i < input.nvals; i++) {
-                matrixA.push_back({ input.rows[i], input.cols[i] });
-            }
-
-            matrix_dcsr_cpu matrixDcsrA = coo_utils::coo_to_dcsr_cpu(matrixA);
+            clbool::matrix_dcsr_cpu matrixDcsrA = clbool::coo_utils::coo_to_dcsr_cpu(matrixA);
 
             A = std::move(matrix_dcsr_from_cpu(*controls, matrixDcsrA, n));
         }
 
         void tearDownExperiment(size_t experimentIdx) override {
             input = Matrix{};
-            A = matrix_dcsr{};
+            A = clbool::matrix_dcsr{};
         }
 
         void setupIteration(size_t experimentIdx, size_t iterationIdx) override {
@@ -101,7 +97,7 @@ namespace benchmark {
         }
 
         void execIteration(size_t experimentIdx, size_t iterationIdx) override {
-            matrix_multiplication(*controls, R, A, A);
+            clbool::matrix_multiplication(*controls, R, A, A);
         }
 
         void tearDownIteration(size_t experimentIdx, size_t iterationIdx) override {

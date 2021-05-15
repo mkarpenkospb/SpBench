@@ -49,7 +49,7 @@ namespace benchmark {
     protected:
 
         void setupBenchmark() override {
-            controls = new clbool::Controls(clbool::create_controls(1, 0));
+            controls = new clbool::Controls(clbool::create_controls(0, 0));
         }
 
         void tearDownBenchmark() override {
