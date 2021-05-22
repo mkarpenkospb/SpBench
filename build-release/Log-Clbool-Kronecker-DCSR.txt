@@ -1,0 +1,670 @@
+=-=-=-=-=-= RUN: Clbool-Kronecker-DCSR =-=-=-=-=-=
+
+>   Load A: 
+size: 10000 x 10000 nvals: 1000
+> Begin experiment: 0 name: Matrix with nnz = 1000
+   Result matrix: size 100000000 x 100000000 nvals 1000000
+[0] time: 120.588 ms
+   Result matrix: size 100000000 x 100000000 nvals 1000000
+[1] time: 0.777915 ms
+   Result matrix: size 100000000 x 100000000 nvals 1000000
+[2] time: 0.758731 ms
+   Result matrix: size 100000000 x 100000000 nvals 1000000
+[3] time: 0.741084 ms
+   Result matrix: size 100000000 x 100000000 nvals 1000000
+[4] time: 0.831074 ms
+   Result matrix: size 100000000 x 100000000 nvals 1000000
+[5] time: 0.780527 ms
+   Result matrix: size 100000000 x 100000000 nvals 1000000
+[6] time: 0.751347 ms
+   Result matrix: size 100000000 x 100000000 nvals 1000000
+[7] time: 0.824299 ms
+   Result matrix: size 100000000 x 100000000 nvals 1000000
+[8] time: 0.763801 ms
+   Result matrix: size 100000000 x 100000000 nvals 1000000
+[9] time: 0.740634 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 10
+>  total        = 127.557 ms
+>  average      = 12.7557 ms
+>  average (-1) = 0.774379 ms
+>  sd           = 37.8884 ms
+>  min          = 0.740634 ms
+>  max          = 120.588 ms
+>  samples: 
+>   0: 120.588 ms
+>   1: 0.777915 ms
+>   2: 0.758731 ms
+>   3: 0.741084 ms
+>   4: 0.831074 ms
+>   5: 0.780527 ms
+>   6: 0.751347 ms
+>   7: 0.824299 ms
+>   8: 0.763801 ms
+>   9: 0.740634 ms
+
+=-=-=-=-=-= FINISH: Clbool-Kronecker-DCSR =-=-=-=-=-=
+=-=-=-=-=-= RUN: Clbool-Kronecker-DCSR =-=-=-=-=-=
+
+>   Load A: 
+size: 10000 x 10000 nvals: 2000
+> Begin experiment: 0 name: Matrix with nnz = 2000
+   Result matrix: size 100000000 x 100000000 nvals 4000000
+[0] time: 3.33939 ms
+   Result matrix: size 100000000 x 100000000 nvals 4000000
+[1] time: 2.41945 ms
+   Result matrix: size 100000000 x 100000000 nvals 4000000
+[2] time: 2.42172 ms
+   Result matrix: size 100000000 x 100000000 nvals 4000000
+[3] time: 2.7295 ms
+   Result matrix: size 100000000 x 100000000 nvals 4000000
+[4] time: 2.48759 ms
+   Result matrix: size 100000000 x 100000000 nvals 4000000
+[5] time: 2.49578 ms
+   Result matrix: size 100000000 x 100000000 nvals 4000000
+[6] time: 2.48724 ms
+   Result matrix: size 100000000 x 100000000 nvals 4000000
+[7] time: 2.45905 ms
+   Result matrix: size 100000000 x 100000000 nvals 4000000
+[8] time: 2.46661 ms
+   Result matrix: size 100000000 x 100000000 nvals 4000000
+[9] time: 2.55309 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 10
+>  total        = 25.8594 ms
+>  average      = 2.58594 ms
+>  average (-1) = 2.50222 ms
+>  sd           = 0.279275 ms
+>  min          = 2.41945 ms
+>  max          = 3.33939 ms
+>  samples: 
+>   0: 3.33939 ms
+>   1: 2.41945 ms
+>   2: 2.42172 ms
+>   3: 2.7295 ms
+>   4: 2.48759 ms
+>   5: 2.49578 ms
+>   6: 2.48724 ms
+>   7: 2.45905 ms
+>   8: 2.46661 ms
+>   9: 2.55309 ms
+
+=-=-=-=-=-= FINISH: Clbool-Kronecker-DCSR =-=-=-=-=-=
+=-=-=-=-=-= RUN: Clbool-Kronecker-DCSR =-=-=-=-=-=
+
+>   Load A: 
+size: 10000 x 10000 nvals: 3000
+> Begin experiment: 0 name: Matrix with nnz = 3000
+   Result matrix: size 100000000 x 100000000 nvals 9000000
+[0] time: 5.77449 ms
+   Result matrix: size 100000000 x 100000000 nvals 9000000
+[1] time: 5.22942 ms
+   Result matrix: size 100000000 x 100000000 nvals 9000000
+[2] time: 5.21643 ms
+   Result matrix: size 100000000 x 100000000 nvals 9000000
+[3] time: 5.29778 ms
+   Result matrix: size 100000000 x 100000000 nvals 9000000
+[4] time: 5.20092 ms
+   Result matrix: size 100000000 x 100000000 nvals 9000000
+[5] time: 5.20251 ms
+   Result matrix: size 100000000 x 100000000 nvals 9000000
+[6] time: 5.20893 ms
+   Result matrix: size 100000000 x 100000000 nvals 9000000
+[7] time: 5.2924 ms
+   Result matrix: size 100000000 x 100000000 nvals 9000000
+[8] time: 5.19077 ms
+   Result matrix: size 100000000 x 100000000 nvals 9000000
+[9] time: 5.21753 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 10
+>  total        = 52.8312 ms
+>  average      = 5.28312 ms
+>  average (-1) = 5.22852 ms
+>  sd           = 0.176595 ms
+>  min          = 5.19077 ms
+>  max          = 5.77449 ms
+>  samples: 
+>   0: 5.77449 ms
+>   1: 5.22942 ms
+>   2: 5.21643 ms
+>   3: 5.29778 ms
+>   4: 5.20092 ms
+>   5: 5.20251 ms
+>   6: 5.20893 ms
+>   7: 5.2924 ms
+>   8: 5.19077 ms
+>   9: 5.21753 ms
+
+=-=-=-=-=-= FINISH: Clbool-Kronecker-DCSR =-=-=-=-=-=
+=-=-=-=-=-= RUN: Clbool-Kronecker-DCSR =-=-=-=-=-=
+
+>   Load A: 
+size: 10000 x 10000 nvals: 4000
+> Begin experiment: 0 name: Matrix with nnz = 4000
+   Result matrix: size 100000000 x 100000000 nvals 16000000
+[0] time: 8.82019 ms
+   Result matrix: size 100000000 x 100000000 nvals 16000000
+[1] time: 9.20731 ms
+   Result matrix: size 100000000 x 100000000 nvals 16000000
+[2] time: 9.02156 ms
+   Result matrix: size 100000000 x 100000000 nvals 16000000
+[3] time: 9.05144 ms
+   Result matrix: size 100000000 x 100000000 nvals 16000000
+[4] time: 9.13633 ms
+   Result matrix: size 100000000 x 100000000 nvals 16000000
+[5] time: 8.89405 ms
+   Result matrix: size 100000000 x 100000000 nvals 16000000
+[6] time: 8.92274 ms
+   Result matrix: size 100000000 x 100000000 nvals 16000000
+[7] time: 8.92197 ms
+   Result matrix: size 100000000 x 100000000 nvals 16000000
+[8] time: 8.90574 ms
+   Result matrix: size 100000000 x 100000000 nvals 16000000
+[9] time: 8.93426 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 10
+>  total        = 89.8156 ms
+>  average      = 8.98156 ms
+>  average (-1) = 8.99949 ms
+>  sd           = 0.120229 ms
+>  min          = 8.82019 ms
+>  max          = 9.20731 ms
+>  samples: 
+>   0: 8.82019 ms
+>   1: 9.20731 ms
+>   2: 9.02156 ms
+>   3: 9.05144 ms
+>   4: 9.13633 ms
+>   5: 8.89405 ms
+>   6: 8.92274 ms
+>   7: 8.92197 ms
+>   8: 8.90574 ms
+>   9: 8.93426 ms
+
+=-=-=-=-=-= FINISH: Clbool-Kronecker-DCSR =-=-=-=-=-=
+=-=-=-=-=-= RUN: Clbool-Kronecker-DCSR =-=-=-=-=-=
+
+>   Load A: 
+size: 10000 x 10000 nvals: 5000
+> Begin experiment: 0 name: Matrix with nnz = 5000
+   Result matrix: size 100000000 x 100000000 nvals 25000000
+[0] time: 12.2619 ms
+   Result matrix: size 100000000 x 100000000 nvals 25000000
+[1] time: 13.589 ms
+   Result matrix: size 100000000 x 100000000 nvals 25000000
+[2] time: 13.3948 ms
+   Result matrix: size 100000000 x 100000000 nvals 25000000
+[3] time: 13.3423 ms
+   Result matrix: size 100000000 x 100000000 nvals 25000000
+[4] time: 13.3327 ms
+   Result matrix: size 100000000 x 100000000 nvals 25000000
+[5] time: 13.2874 ms
+   Result matrix: size 100000000 x 100000000 nvals 25000000
+[6] time: 13.3447 ms
+   Result matrix: size 100000000 x 100000000 nvals 25000000
+[7] time: 13.2648 ms
+   Result matrix: size 100000000 x 100000000 nvals 25000000
+[8] time: 13.5121 ms
+   Result matrix: size 100000000 x 100000000 nvals 25000000
+[9] time: 13.2463 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 10
+>  total        = 132.576 ms
+>  average      = 13.2576 ms
+>  average (-1) = 13.3682 ms
+>  sd           = 0.366104 ms
+>  min          = 12.2619 ms
+>  max          = 13.589 ms
+>  samples: 
+>   0: 12.2619 ms
+>   1: 13.589 ms
+>   2: 13.3948 ms
+>   3: 13.3423 ms
+>   4: 13.3327 ms
+>   5: 13.2874 ms
+>   6: 13.3447 ms
+>   7: 13.2648 ms
+>   8: 13.5121 ms
+>   9: 13.2463 ms
+
+=-=-=-=-=-= FINISH: Clbool-Kronecker-DCSR =-=-=-=-=-=
+=-=-=-=-=-= RUN: Clbool-Kronecker-DCSR =-=-=-=-=-=
+
+>   Load A: 
+size: 10000 x 10000 nvals: 6000
+> Begin experiment: 0 name: Matrix with nnz = 6000
+   Result matrix: size 100000000 x 100000000 nvals 36000000
+[0] time: 17.0005 ms
+   Result matrix: size 100000000 x 100000000 nvals 36000000
+[1] time: 19.6291 ms
+   Result matrix: size 100000000 x 100000000 nvals 36000000
+[2] time: 19.654 ms
+   Result matrix: size 100000000 x 100000000 nvals 36000000
+[3] time: 18.985 ms
+   Result matrix: size 100000000 x 100000000 nvals 36000000
+[4] time: 18.9305 ms
+   Result matrix: size 100000000 x 100000000 nvals 36000000
+[5] time: 18.8465 ms
+   Result matrix: size 100000000 x 100000000 nvals 36000000
+[6] time: 18.9176 ms
+   Result matrix: size 100000000 x 100000000 nvals 36000000
+[7] time: 18.8514 ms
+   Result matrix: size 100000000 x 100000000 nvals 36000000
+[8] time: 18.8501 ms
+   Result matrix: size 100000000 x 100000000 nvals 36000000
+[9] time: 18.8323 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 10
+>  total        = 188.497 ms
+>  average      = 18.8497 ms
+>  average (-1) = 19.0552 ms
+>  sd           = 0.722921 ms
+>  min          = 17.0005 ms
+>  max          = 19.654 ms
+>  samples: 
+>   0: 17.0005 ms
+>   1: 19.6291 ms
+>   2: 19.654 ms
+>   3: 18.985 ms
+>   4: 18.9305 ms
+>   5: 18.8465 ms
+>   6: 18.9176 ms
+>   7: 18.8514 ms
+>   8: 18.8501 ms
+>   9: 18.8323 ms
+
+=-=-=-=-=-= FINISH: Clbool-Kronecker-DCSR =-=-=-=-=-=
+=-=-=-=-=-= RUN: Clbool-Kronecker-DCSR =-=-=-=-=-=
+
+>   Load A: 
+size: 10000 x 10000 nvals: 7000
+> Begin experiment: 0 name: Matrix with nnz = 7000
+   Result matrix: size 100000000 x 100000000 nvals 48986001
+[0] time: 23.3266 ms
+   Result matrix: size 100000000 x 100000000 nvals 48986001
+[1] time: 25.3871 ms
+   Result matrix: size 100000000 x 100000000 nvals 48986001
+[2] time: 25.0515 ms
+   Result matrix: size 100000000 x 100000000 nvals 48986001
+[3] time: 25.0699 ms
+   Result matrix: size 100000000 x 100000000 nvals 48986001
+[4] time: 25.0205 ms
+   Result matrix: size 100000000 x 100000000 nvals 48986001
+[5] time: 26.0411 ms
+   Result matrix: size 100000000 x 100000000 nvals 48986001
+[6] time: 25.0552 ms
+   Result matrix: size 100000000 x 100000000 nvals 48986001
+[7] time: 25.0182 ms
+   Result matrix: size 100000000 x 100000000 nvals 48986001
+[8] time: 25.0401 ms
+   Result matrix: size 100000000 x 100000000 nvals 48986001
+[9] time: 25.013 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 10
+>  total        = 250.023 ms
+>  average      = 25.0023 ms
+>  average (-1) = 25.1885 ms
+>  sd           = 0.670592 ms
+>  min          = 23.3266 ms
+>  max          = 26.0411 ms
+>  samples: 
+>   0: 23.3266 ms
+>   1: 25.3871 ms
+>   2: 25.0515 ms
+>   3: 25.0699 ms
+>   4: 25.0205 ms
+>   5: 26.0411 ms
+>   6: 25.0552 ms
+>   7: 25.0182 ms
+>   8: 25.0401 ms
+>   9: 25.013 ms
+
+=-=-=-=-=-= FINISH: Clbool-Kronecker-DCSR =-=-=-=-=-=
+=-=-=-=-=-= RUN: Clbool-Kronecker-DCSR =-=-=-=-=-=
+
+>   Load A: 
+size: 10000 x 10000 nvals: 8000
+> Begin experiment: 0 name: Matrix with nnz = 8000
+   Result matrix: size 100000000 x 100000000 nvals 64000000
+[0] time: 29.1493 ms
+   Result matrix: size 100000000 x 100000000 nvals 64000000
+[1] time: 31.9967 ms
+   Result matrix: size 100000000 x 100000000 nvals 64000000
+[2] time: 31.7605 ms
+   Result matrix: size 100000000 x 100000000 nvals 64000000
+[3] time: 31.8285 ms
+   Result matrix: size 100000000 x 100000000 nvals 64000000
+[4] time: 32.9765 ms
+   Result matrix: size 100000000 x 100000000 nvals 64000000
+[5] time: 31.8427 ms
+   Result matrix: size 100000000 x 100000000 nvals 64000000
+[6] time: 31.8781 ms
+   Result matrix: size 100000000 x 100000000 nvals 64000000
+[7] time: 31.845 ms
+   Result matrix: size 100000000 x 100000000 nvals 64000000
+[8] time: 31.8371 ms
+   Result matrix: size 100000000 x 100000000 nvals 64000000
+[9] time: 31.7845 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 10
+>  total        = 316.899 ms
+>  average      = 31.6899 ms
+>  average (-1) = 31.9722 ms
+>  sd           = 0.962717 ms
+>  min          = 29.1493 ms
+>  max          = 32.9765 ms
+>  samples: 
+>   0: 29.1493 ms
+>   1: 31.9967 ms
+>   2: 31.7605 ms
+>   3: 31.8285 ms
+>   4: 32.9765 ms
+>   5: 31.8427 ms
+>   6: 31.8781 ms
+>   7: 31.845 ms
+>   8: 31.8371 ms
+>   9: 31.7845 ms
+
+=-=-=-=-=-= FINISH: Clbool-Kronecker-DCSR =-=-=-=-=-=
+=-=-=-=-=-= RUN: Clbool-Kronecker-DCSR =-=-=-=-=-=
+
+>   Load A: 
+size: 10000 x 10000 nvals: 9000
+> Begin experiment: 0 name: Matrix with nnz = 9000
+   Result matrix: size 100000000 x 100000000 nvals 81000000
+[0] time: 35.362 ms
+   Result matrix: size 100000000 x 100000000 nvals 81000000
+[1] time: 36.4061 ms
+   Result matrix: size 100000000 x 100000000 nvals 81000000
+[2] time: 36.3339 ms
+   Result matrix: size 100000000 x 100000000 nvals 81000000
+[3] time: 36.3245 ms
+   Result matrix: size 100000000 x 100000000 nvals 81000000
+[4] time: 36.324 ms
+   Result matrix: size 100000000 x 100000000 nvals 81000000
+[5] time: 36.2976 ms
+   Result matrix: size 100000000 x 100000000 nvals 81000000
+[6] time: 36.3463 ms
+   Result matrix: size 100000000 x 100000000 nvals 81000000
+[7] time: 36.3471 ms
+   Result matrix: size 100000000 x 100000000 nvals 81000000
+[8] time: 36.2899 ms
+   Result matrix: size 100000000 x 100000000 nvals 81000000
+[9] time: 36.2038 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 10
+>  total        = 362.235 ms
+>  average      = 36.2235 ms
+>  average (-1) = 36.3192 ms
+>  sd           = 0.307066 ms
+>  min          = 35.362 ms
+>  max          = 36.4061 ms
+>  samples: 
+>   0: 35.362 ms
+>   1: 36.4061 ms
+>   2: 36.3339 ms
+>   3: 36.3245 ms
+>   4: 36.324 ms
+>   5: 36.2976 ms
+>   6: 36.3463 ms
+>   7: 36.3471 ms
+>   8: 36.2899 ms
+>   9: 36.2038 ms
+
+=-=-=-=-=-= FINISH: Clbool-Kronecker-DCSR =-=-=-=-=-=
+=-=-=-=-=-= RUN: Clbool-Kronecker-DCSR =-=-=-=-=-=
+
+>   Load A: 
+size: 10000 x 10000 nvals: 10000
+> Begin experiment: 0 name: Matrix with nnz = 10000
+   Result matrix: size 100000000 x 100000000 nvals 99980001
+[0] time: 42.9568 ms
+   Result matrix: size 100000000 x 100000000 nvals 99980001
+[1] time: 45.219 ms
+   Result matrix: size 100000000 x 100000000 nvals 99980001
+[2] time: 45.3123 ms
+   Result matrix: size 100000000 x 100000000 nvals 99980001
+[3] time: 45.2707 ms
+   Result matrix: size 100000000 x 100000000 nvals 99980001
+[4] time: 45.3417 ms
+   Result matrix: size 100000000 x 100000000 nvals 99980001
+[5] time: 45.4143 ms
+   Result matrix: size 100000000 x 100000000 nvals 99980001
+[6] time: 45.215 ms
+   Result matrix: size 100000000 x 100000000 nvals 99980001
+[7] time: 45.3063 ms
+   Result matrix: size 100000000 x 100000000 nvals 99980001
+[8] time: 45.2603 ms
+   Result matrix: size 100000000 x 100000000 nvals 99980001
+[9] time: 46.1078 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 10
+>  total        = 451.404 ms
+>  average      = 45.1404 ms
+>  average (-1) = 45.383 ms
+>  sd           = 0.811012 ms
+>  min          = 42.9568 ms
+>  max          = 46.1078 ms
+>  samples: 
+>   0: 42.9568 ms
+>   1: 45.219 ms
+>   2: 45.3123 ms
+>   3: 45.2707 ms
+>   4: 45.3417 ms
+>   5: 45.4143 ms
+>   6: 45.215 ms
+>   7: 45.3063 ms
+>   8: 45.2603 ms
+>   9: 46.1078 ms
+
+=-=-=-=-=-= FINISH: Clbool-Kronecker-DCSR =-=-=-=-=-=
+=-=-=-=-=-= RUN: Clbool-Kronecker-DCSR =-=-=-=-=-=
+
+>   Load A: 
+size: 10000 x 10000 nvals: 1000
+> Begin experiment: 0 name: Matrix with nnz = 1000
+   Result matrix: size 100000000 x 100000000 nvals 1000000
+[0] time: 2.20014 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 1
+>  total        = 2.20014 ms
+>  average      = 2.20014 ms
+>  average (-1) = 0 ms
+>  sd           = 0 ms
+>  min          = 2.20014 ms
+>  max          = 2.20014 ms
+>  samples: 
+>   0: 2.20014 ms
+
+=-=-=-=-=-= FINISH: Clbool-Kronecker-DCSR =-=-=-=-=-=
+=-=-=-=-=-= RUN: Clbool-Kronecker-DCSR =-=-=-=-=-=
+
+>   Load A: 
+size: 10000 x 10000 nvals: 2000
+> Begin experiment: 0 name: Matrix with nnz = 2000
+   Result matrix: size 100000000 x 100000000 nvals 4000000
+[0] time: 3.4029 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 1
+>  total        = 3.4029 ms
+>  average      = 3.4029 ms
+>  average (-1) = 0 ms
+>  sd           = 0 ms
+>  min          = 3.4029 ms
+>  max          = 3.4029 ms
+>  samples: 
+>   0: 3.4029 ms
+
+=-=-=-=-=-= FINISH: Clbool-Kronecker-DCSR =-=-=-=-=-=
+=-=-=-=-=-= RUN: Clbool-Kronecker-DCSR =-=-=-=-=-=
+
+>   Load A: 
+size: 10000 x 10000 nvals: 3000
+> Begin experiment: 0 name: Matrix with nnz = 3000
+   Result matrix: size 100000000 x 100000000 nvals 9000000
+[0] time: 6.54422 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 1
+>  total        = 6.54422 ms
+>  average      = 6.54422 ms
+>  average (-1) = 0 ms
+>  sd           = 0 ms
+>  min          = 6.54422 ms
+>  max          = 6.54422 ms
+>  samples: 
+>   0: 6.54422 ms
+
+=-=-=-=-=-= FINISH: Clbool-Kronecker-DCSR =-=-=-=-=-=
+=-=-=-=-=-= RUN: Clbool-Kronecker-DCSR =-=-=-=-=-=
+
+>   Load A: 
+size: 10000 x 10000 nvals: 4000
+> Begin experiment: 0 name: Matrix with nnz = 4000
+   Result matrix: size 100000000 x 100000000 nvals 16000000
+[0] time: 9.9475 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 1
+>  total        = 9.9475 ms
+>  average      = 9.9475 ms
+>  average (-1) = 0 ms
+>  sd           = 0 ms
+>  min          = 9.9475 ms
+>  max          = 9.9475 ms
+>  samples: 
+>   0: 9.9475 ms
+
+=-=-=-=-=-= FINISH: Clbool-Kronecker-DCSR =-=-=-=-=-=
+=-=-=-=-=-= RUN: Clbool-Kronecker-DCSR =-=-=-=-=-=
+
+>   Load A: 
+size: 10000 x 10000 nvals: 5000
+> Begin experiment: 0 name: Matrix with nnz = 5000
+   Result matrix: size 100000000 x 100000000 nvals 25000000
+[0] time: 13.7386 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 1
+>  total        = 13.7386 ms
+>  average      = 13.7386 ms
+>  average (-1) = 0 ms
+>  sd           = 0 ms
+>  min          = 13.7386 ms
+>  max          = 13.7386 ms
+>  samples: 
+>   0: 13.7386 ms
+
+=-=-=-=-=-= FINISH: Clbool-Kronecker-DCSR =-=-=-=-=-=
+=-=-=-=-=-= RUN: Clbool-Kronecker-DCSR =-=-=-=-=-=
+
+>   Load A: 
+size: 10000 x 10000 nvals: 6000
+> Begin experiment: 0 name: Matrix with nnz = 6000
+   Result matrix: size 100000000 x 100000000 nvals 36000000
+[0] time: 17.0563 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 1
+>  total        = 17.0563 ms
+>  average      = 17.0563 ms
+>  average (-1) = 0 ms
+>  sd           = 0 ms
+>  min          = 17.0563 ms
+>  max          = 17.0563 ms
+>  samples: 
+>   0: 17.0563 ms
+
+=-=-=-=-=-= FINISH: Clbool-Kronecker-DCSR =-=-=-=-=-=
+=-=-=-=-=-= RUN: Clbool-Kronecker-DCSR =-=-=-=-=-=
+
+>   Load A: 
+size: 10000 x 10000 nvals: 7000
+> Begin experiment: 0 name: Matrix with nnz = 7000
+   Result matrix: size 100000000 x 100000000 nvals 48986001
+[0] time: 23.5401 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 1
+>  total        = 23.5401 ms
+>  average      = 23.5401 ms
+>  average (-1) = 0 ms
+>  sd           = 0 ms
+>  min          = 23.5401 ms
+>  max          = 23.5401 ms
+>  samples: 
+>   0: 23.5401 ms
+
+=-=-=-=-=-= FINISH: Clbool-Kronecker-DCSR =-=-=-=-=-=
+=-=-=-=-=-= RUN: Clbool-Kronecker-DCSR =-=-=-=-=-=
+
+>   Load A: 
+size: 10000 x 10000 nvals: 8000
+> Begin experiment: 0 name: Matrix with nnz = 8000
+   Result matrix: size 100000000 x 100000000 nvals 64000000
+[0] time: 29.1021 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 1
+>  total        = 29.1021 ms
+>  average      = 29.1021 ms
+>  average (-1) = 0 ms
+>  sd           = 0 ms
+>  min          = 29.1021 ms
+>  max          = 29.1021 ms
+>  samples: 
+>   0: 29.1021 ms
+
+=-=-=-=-=-= FINISH: Clbool-Kronecker-DCSR =-=-=-=-=-=
+=-=-=-=-=-= RUN: Clbool-Kronecker-DCSR =-=-=-=-=-=
+
+>   Load A: 
+size: 10000 x 10000 nvals: 9000
+> Begin experiment: 0 name: Matrix with nnz = 9000
+   Result matrix: size 100000000 x 100000000 nvals 81000000
+[0] time: 39.3193 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 1
+>  total        = 39.3193 ms
+>  average      = 39.3193 ms
+>  average (-1) = 0 ms
+>  sd           = 0 ms
+>  min          = 39.3193 ms
+>  max          = 39.3193 ms
+>  samples: 
+>   0: 39.3193 ms
+
+=-=-=-=-=-= FINISH: Clbool-Kronecker-DCSR =-=-=-=-=-=
+=-=-=-=-=-= RUN: Clbool-Kronecker-DCSR =-=-=-=-=-=
+
+>   Load A: 
+size: 10000 x 10000 nvals: 10000
+> Begin experiment: 0 name: Matrix with nnz = 10000
+   Result matrix: size 100000000 x 100000000 nvals 99980001
+[0] time: 42.3603 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 1
+>  total        = 42.3603 ms
+>  average      = 42.3603 ms
+>  average (-1) = 0 ms
+>  sd           = 0 ms
+>  min          = 42.3603 ms
+>  max          = 42.3603 ms
+>  samples: 
+>   0: 42.3603 ms
+
+=-=-=-=-=-= FINISH: Clbool-Kronecker-DCSR =-=-=-=-=-=

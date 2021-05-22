@@ -1,0 +1,13 @@
+Benchmarking: Clbool-Add
+
+                                     Friendly name|      iterations|  expectation ms|           sd ms| 
+                                data/wing/wing.mtx:              10          1.73313          3.97251
+            data/luxembourg_osm/luxembourg_osm.mtx:              10          1.20832         0.527032
+                    data/amazon0312/amazon0312.mtx:              10          19.8395        0.0991356
+                  data/amazon-2008/amazon-2008.mtx:              10          35.2413          3.28171
+                    data/web-Google/web-Google.mtx:              10          38.0999         0.527395
+                    data/roadNet-PA/roadNet-PA.mtx:              10          13.2357         0.704972
+                    data/roadNet-TX/roadNet-TX.mtx:              10          15.4847         0.519896
+                  data/belgium_osm/belgium_osm.mtx:              10          9.85645         0.424673
+                    data/roadNet-CA/roadNet-CA.mtx:              10           21.007         0.445748
+          data/netherlands_osm/netherlands_osm.mtx:              10           15.512         0.484772

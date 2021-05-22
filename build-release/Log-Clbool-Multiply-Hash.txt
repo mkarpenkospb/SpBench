@@ -1,0 +1,2735 @@
+=-=-=-=-=-= RUN: Clbool-Multiply-Hash =-=-=-=-=-=
+
+=-=-=-=-=-= RUN: Clbool-Multiply-Hash =-=-=-=-=-=
+
+=-=-=-=-=-= RUN: Clbool-Multiply-Hash =-=-=-=-=-=
+
+=-=-=-=-=-= RUN: Clbool-Multiply-Hash =-=-=-=-=-=
+
+=-=-=-=-=-= RUN: Clbool-Multiply-Hash =-=-=-=-=-=
+
+=-=-=-=-=-= RUN: Clbool-Multiply-Hash =-=-=-=-=-=
+
+=-=-=-=-=-= RUN: Clbool-Multiply-Hash =-=-=-=-=-=
+
+=-=-=-=-=-= RUN: Clbool-Multiply-Hash =-=-=-=-=-=
+
+=-=-=-=-=-= RUN: Clbool-Multiply-Hash =-=-=-=-=-=
+
+=-=-=-=-=-= RUN: Clbool-Multiply-Hash =-=-=-=-=-=
+
+=-=-=-=-=-= RUN: Clbool-Multiply-Hash =-=-=-=-=-=
+
+>   Load matrix: "data/wing/wing.mtx" isUndirected: 1
+                 size: 62032 x 62032 nvals: 243088
+> Begin experiment: 0 name: data/wing/wing.mtx
+   Result matrix: size 62032 x 62032 nvals 714200
+[0] time: 651.461 ms
+   Result matrix: size 62032 x 62032 nvals 714200
+[1] time: 1.3644 ms
+   Result matrix: size 62032 x 62032 nvals 714200
+[2] time: 1.31667 ms
+   Result matrix: size 62032 x 62032 nvals 714200
+[3] time: 1.26669 ms
+   Result matrix: size 62032 x 62032 nvals 714200
+[4] time: 1.24964 ms
+   Result matrix: size 62032 x 62032 nvals 714200
+[5] time: 1.27174 ms
+   Result matrix: size 62032 x 62032 nvals 714200
+[6] time: 1.35536 ms
+   Result matrix: size 62032 x 62032 nvals 714200
+[7] time: 1.28034 ms
+   Result matrix: size 62032 x 62032 nvals 714200
+[8] time: 1.24894 ms
+   Result matrix: size 62032 x 62032 nvals 714200
+[9] time: 1.31412 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 10
+>  total        = 663.129 ms
+>  average      = 66.3129 ms
+>  average (-1) = 1.29643 ms
+>  sd           = 205.6 ms
+>  min          = 1.24894 ms
+>  max          = 651.461 ms
+>  samples: 
+>   0: 651.461 ms
+>   1: 1.3644 ms
+>   2: 1.31667 ms
+>   3: 1.26669 ms
+>   4: 1.24964 ms
+>   5: 1.27174 ms
+>   6: 1.35536 ms
+>   7: 1.28034 ms
+>   8: 1.24894 ms
+>   9: 1.31412 ms
+
+=-=-=-=-=-= FINISH: Clbool-Multiply-Hash =-=-=-=-=-=
+=-=-=-=-=-= RUN: Clbool-Multiply-Hash =-=-=-=-=-=
+
+>   Load matrix: "data/luxembourg_osm/luxembourg_osm.mtx" isUndirected: 1
+                 size: 114599 x 114599 nvals: 239332
+> Begin experiment: 0 name: data/luxembourg_osm/luxembourg_osm.mtx
+   Result matrix: size 114599 x 114599 nvals 393261
+[0] time: 3.18928 ms
+   Result matrix: size 114599 x 114599 nvals 393261
+[1] time: 2.49553 ms
+   Result matrix: size 114599 x 114599 nvals 393261
+[2] time: 1.62343 ms
+   Result matrix: size 114599 x 114599 nvals 393261
+[3] time: 1.4393 ms
+   Result matrix: size 114599 x 114599 nvals 393261
+[4] time: 1.86702 ms
+   Result matrix: size 114599 x 114599 nvals 393261
+[5] time: 1.33918 ms
+   Result matrix: size 114599 x 114599 nvals 393261
+[6] time: 1.63305 ms
+   Result matrix: size 114599 x 114599 nvals 393261
+[7] time: 1.46451 ms
+   Result matrix: size 114599 x 114599 nvals 393261
+[8] time: 1.43738 ms
+   Result matrix: size 114599 x 114599 nvals 393261
+[9] time: 1.6422 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 10
+>  total        = 18.1309 ms
+>  average      = 1.81309 ms
+>  average (-1) = 1.66018 ms
+>  sd           = 0.585672 ms
+>  min          = 1.33918 ms
+>  max          = 3.18928 ms
+>  samples: 
+>   0: 3.18928 ms
+>   1: 2.49553 ms
+>   2: 1.62343 ms
+>   3: 1.4393 ms
+>   4: 1.86702 ms
+>   5: 1.33918 ms
+>   6: 1.63305 ms
+>   7: 1.46451 ms
+>   8: 1.43738 ms
+>   9: 1.6422 ms
+
+=-=-=-=-=-= FINISH: Clbool-Multiply-Hash =-=-=-=-=-=
+=-=-=-=-=-= RUN: Clbool-Multiply-Hash =-=-=-=-=-=
+
+>   Load matrix: "data/amazon0312/amazon0312.mtx" isUndirected: 0
+                 size: 400727 x 400727 nvals: 3200440
+> Begin experiment: 0 name: data/amazon0312/amazon0312.mtx
+   Result matrix: size 400727 x 400727 nvals 14390544
+[0] time: 157.027 ms
+   Result matrix: size 400727 x 400727 nvals 14390544
+[1] time: 59.9929 ms
+   Result matrix: size 400727 x 400727 nvals 14390544
+[2] time: 57.6327 ms
+   Result matrix: size 400727 x 400727 nvals 14390544
+[3] time: 55.5683 ms
+   Result matrix: size 400727 x 400727 nvals 14390544
+[4] time: 55.5804 ms
+   Result matrix: size 400727 x 400727 nvals 14390544
+[5] time: 54.7277 ms
+   Result matrix: size 400727 x 400727 nvals 14390544
+[6] time: 51.58 ms
+   Result matrix: size 400727 x 400727 nvals 14390544
+[7] time: 52.9537 ms
+   Result matrix: size 400727 x 400727 nvals 14390544
+[8] time: 52.2716 ms
+   Result matrix: size 400727 x 400727 nvals 14390544
+[9] time: 52.2374 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 10
+>  total        = 649.572 ms
+>  average      = 64.9572 ms
+>  average (-1) = 54.7272 ms
+>  sd           = 32.458 ms
+>  min          = 51.58 ms
+>  max          = 157.027 ms
+>  samples: 
+>   0: 157.027 ms
+>   1: 59.9929 ms
+>   2: 57.6327 ms
+>   3: 55.5683 ms
+>   4: 55.5804 ms
+>   5: 54.7277 ms
+>   6: 51.58 ms
+>   7: 52.9537 ms
+>   8: 52.2716 ms
+>   9: 52.2374 ms
+
+=-=-=-=-=-= FINISH: Clbool-Multiply-Hash =-=-=-=-=-=
+=-=-=-=-=-= RUN: Clbool-Multiply-Hash =-=-=-=-=-=
+
+>   Load matrix: "data/amazon-2008/amazon-2008.mtx" isUndirected: 0
+                 size: 735323 x 735323 nvals: 5158388
+> Begin experiment: 0 name: data/amazon-2008/amazon-2008.mtx
+   Result matrix: size 735323 x 735323 nvals 25366745
+[0] time: 96.9621 ms
+   Result matrix: size 735323 x 735323 nvals 25366745
+[1] time: 93.7256 ms
+   Result matrix: size 735323 x 735323 nvals 25366745
+[2] time: 87.8333 ms
+   Result matrix: size 735323 x 735323 nvals 25366745
+[3] time: 86.2125 ms
+   Result matrix: size 735323 x 735323 nvals 25366745
+[4] time: 81.3231 ms
+   Result matrix: size 735323 x 735323 nvals 25366745
+[5] time: 82.4694 ms
+   Result matrix: size 735323 x 735323 nvals 25366745
+[6] time: 81.2703 ms
+   Result matrix: size 735323 x 735323 nvals 25366745
+[7] time: 81.3413 ms
+   Result matrix: size 735323 x 735323 nvals 25366745
+[8] time: 82.7222 ms
+   Result matrix: size 735323 x 735323 nvals 25366745
+[9] time: 81.6878 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 10
+>  total        = 855.548 ms
+>  average      = 85.5548 ms
+>  average (-1) = 84.2873 ms
+>  sd           = 5.66693 ms
+>  min          = 81.2703 ms
+>  max          = 96.9621 ms
+>  samples: 
+>   0: 96.9621 ms
+>   1: 93.7256 ms
+>   2: 87.8333 ms
+>   3: 86.2125 ms
+>   4: 81.3231 ms
+>   5: 82.4694 ms
+>   6: 81.2703 ms
+>   7: 81.3413 ms
+>   8: 82.7222 ms
+>   9: 81.6878 ms
+
+=-=-=-=-=-= FINISH: Clbool-Multiply-Hash =-=-=-=-=-=
+=-=-=-=-=-= RUN: Clbool-Multiply-Hash =-=-=-=-=-=
+
+>   Load matrix: "data/web-Google/web-Google.mtx" isUndirected: 0
+                 size: 916428 x 916428 nvals: 5105039
+> Begin experiment: 0 name: data/web-Google/web-Google.mtx
+   Result matrix: size 916428 x 916428 nvals 29710164
+[0] time: 730.9 ms
+   Result matrix: size 916428 x 916428 nvals 29710164
+[1] time: 124.914 ms
+   Result matrix: size 916428 x 916428 nvals 29710164
+[2] time: 124.91 ms
+   Result matrix: size 916428 x 916428 nvals 29710164
+[3] time: 126.61 ms
+   Result matrix: size 916428 x 916428 nvals 29710164
+[4] time: 126.155 ms
+   Result matrix: size 916428 x 916428 nvals 29710164
+[5] time: 124.957 ms
+   Result matrix: size 916428 x 916428 nvals 29710164
+[6] time: 124.932 ms
+   Result matrix: size 916428 x 916428 nvals 29710164
+[7] time: 125.986 ms
+   Result matrix: size 916428 x 916428 nvals 29710164
+[8] time: 126.365 ms
+   Result matrix: size 916428 x 916428 nvals 29710164
+[9] time: 124.991 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 10
+>  total        = 1860.72 ms
+>  average      = 186.072 ms
+>  average (-1) = 125.536 ms
+>  sd           = 191.434 ms
+>  min          = 124.91 ms
+>  max          = 730.9 ms
+>  samples: 
+>   0: 730.9 ms
+>   1: 124.914 ms
+>   2: 124.91 ms
+>   3: 126.61 ms
+>   4: 126.155 ms
+>   5: 124.957 ms
+>   6: 124.932 ms
+>   7: 125.986 ms
+>   8: 126.365 ms
+>   9: 124.991 ms
+
+=-=-=-=-=-= FINISH: Clbool-Multiply-Hash =-=-=-=-=-=
+=-=-=-=-=-= RUN: Clbool-Multiply-Hash =-=-=-=-=-=
+
+>   Load matrix: "data/roadNet-PA/roadNet-PA.mtx" isUndirected: 1
+                 size: 1090920 x 1090920 nvals: 3083796
+> Begin experiment: 0 name: data/roadNet-PA/roadNet-PA.mtx
+   Result matrix: size 1090920 x 1090920 nvals 7238920
+[0] time: 16.0463 ms
+   Result matrix: size 1090920 x 1090920 nvals 7238920
+[1] time: 16.2002 ms
+   Result matrix: size 1090920 x 1090920 nvals 7238920
+[2] time: 15.477 ms
+   Result matrix: size 1090920 x 1090920 nvals 7238920
+[3] time: 15.0444 ms
+   Result matrix: size 1090920 x 1090920 nvals 7238920
+[4] time: 13.5203 ms
+   Result matrix: size 1090920 x 1090920 nvals 7238920
+[5] time: 14.4074 ms
+   Result matrix: size 1090920 x 1090920 nvals 7238920
+[6] time: 13.8734 ms
+   Result matrix: size 1090920 x 1090920 nvals 7238920
+[7] time: 13.8234 ms
+   Result matrix: size 1090920 x 1090920 nvals 7238920
+[8] time: 14.4498 ms
+   Result matrix: size 1090920 x 1090920 nvals 7238920
+[9] time: 13.8917 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 10
+>  total        = 146.734 ms
+>  average      = 14.6734 ms
+>  average (-1) = 14.5209 ms
+>  sd           = 0.967424 ms
+>  min          = 13.5203 ms
+>  max          = 16.2002 ms
+>  samples: 
+>   0: 16.0463 ms
+>   1: 16.2002 ms
+>   2: 15.477 ms
+>   3: 15.0444 ms
+>   4: 13.5203 ms
+>   5: 14.4074 ms
+>   6: 13.8734 ms
+>   7: 13.8234 ms
+>   8: 14.4498 ms
+>   9: 13.8917 ms
+
+=-=-=-=-=-= FINISH: Clbool-Multiply-Hash =-=-=-=-=-=
+=-=-=-=-=-= RUN: Clbool-Multiply-Hash =-=-=-=-=-=
+
+>   Load matrix: "data/roadNet-TX/roadNet-TX.mtx" isUndirected: 1
+                 size: 1393383 x 1393383 nvals: 3843320
+> Begin experiment: 0 name: data/roadNet-TX/roadNet-TX.mtx
+   Result matrix: size 1393383 x 1393383 nvals 8903897
+[0] time: 18.3267 ms
+   Result matrix: size 1393383 x 1393383 nvals 8903897
+[1] time: 16.712 ms
+   Result matrix: size 1393383 x 1393383 nvals 8903897
+[2] time: 17.4128 ms
+   Result matrix: size 1393383 x 1393383 nvals 8903897
+[3] time: 16.7414 ms
+   Result matrix: size 1393383 x 1393383 nvals 8903897
+[4] time: 16.6553 ms
+   Result matrix: size 1393383 x 1393383 nvals 8903897
+[5] time: 16.6126 ms
+   Result matrix: size 1393383 x 1393383 nvals 8903897
+[6] time: 16.5272 ms
+   Result matrix: size 1393383 x 1393383 nvals 8903897
+[7] time: 16.5837 ms
+   Result matrix: size 1393383 x 1393383 nvals 8903897
+[8] time: 17.4111 ms
+   Result matrix: size 1393383 x 1393383 nvals 8903897
+[9] time: 16.7861 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 10
+>  total        = 169.769 ms
+>  average      = 16.9769 ms
+>  average (-1) = 16.8269 ms
+>  sd           = 0.573062 ms
+>  min          = 16.5272 ms
+>  max          = 18.3267 ms
+>  samples: 
+>   0: 18.3267 ms
+>   1: 16.712 ms
+>   2: 17.4128 ms
+>   3: 16.7414 ms
+>   4: 16.6553 ms
+>   5: 16.6126 ms
+>   6: 16.5272 ms
+>   7: 16.5837 ms
+>   8: 17.4111 ms
+>   9: 16.7861 ms
+
+=-=-=-=-=-= FINISH: Clbool-Multiply-Hash =-=-=-=-=-=
+=-=-=-=-=-= RUN: Clbool-Multiply-Hash =-=-=-=-=-=
+
+>   Load matrix: "data/belgium_osm/belgium_osm.mtx" isUndirected: 1
+                 size: 1441295 x 1441295 nvals: 3099940
+> Begin experiment: 0 name: data/belgium_osm/belgium_osm.mtx
+   Result matrix: size 1441295 x 1441295 nvals 5323073
+[0] time: 19.3204 ms
+   Result matrix: size 1441295 x 1441295 nvals 5323073
+[1] time: 16.6101 ms
+   Result matrix: size 1441295 x 1441295 nvals 5323073
+[2] time: 18.2741 ms
+   Result matrix: size 1441295 x 1441295 nvals 5323073
+[3] time: 16.7756 ms
+   Result matrix: size 1441295 x 1441295 nvals 5323073
+[4] time: 16.6496 ms
+   Result matrix: size 1441295 x 1441295 nvals 5323073
+[5] time: 16.6424 ms
+   Result matrix: size 1441295 x 1441295 nvals 5323073
+[6] time: 16.7404 ms
+   Result matrix: size 1441295 x 1441295 nvals 5323073
+[7] time: 16.5959 ms
+   Result matrix: size 1441295 x 1441295 nvals 5323073
+[8] time: 16.9647 ms
+   Result matrix: size 1441295 x 1441295 nvals 5323073
+[9] time: 16.5479 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 10
+>  total        = 171.121 ms
+>  average      = 17.1121 ms
+>  average (-1) = 16.8668 ms
+>  sd           = 0.929235 ms
+>  min          = 16.5479 ms
+>  max          = 19.3204 ms
+>  samples: 
+>   0: 19.3204 ms
+>   1: 16.6101 ms
+>   2: 18.2741 ms
+>   3: 16.7756 ms
+>   4: 16.6496 ms
+>   5: 16.6424 ms
+>   6: 16.7404 ms
+>   7: 16.5959 ms
+>   8: 16.9647 ms
+>   9: 16.5479 ms
+
+=-=-=-=-=-= FINISH: Clbool-Multiply-Hash =-=-=-=-=-=
+=-=-=-=-=-= RUN: Clbool-Multiply-Hash =-=-=-=-=-=
+
+>   Load matrix: "data/roadNet-CA/roadNet-CA.mtx" isUndirected: 1
+                 size: 1971281 x 1971281 nvals: 5533214
+> Begin experiment: 0 name: data/roadNet-CA/roadNet-CA.mtx
+   Result matrix: size 1971281 x 1971281 nvals 12908450
+[0] time: 25.2593 ms
+   Result matrix: size 1971281 x 1971281 nvals 12908450
+[1] time: 24.6488 ms
+   Result matrix: size 1971281 x 1971281 nvals 12908450
+[2] time: 23.3206 ms
+   Result matrix: size 1971281 x 1971281 nvals 12908450
+[3] time: 22.9466 ms
+   Result matrix: size 1971281 x 1971281 nvals 12908450
+[4] time: 23.7523 ms
+   Result matrix: size 1971281 x 1971281 nvals 12908450
+[5] time: 23.4076 ms
+   Result matrix: size 1971281 x 1971281 nvals 12908450
+[6] time: 23.8345 ms
+   Result matrix: size 1971281 x 1971281 nvals 12908450
+[7] time: 23.2451 ms
+   Result matrix: size 1971281 x 1971281 nvals 12908450
+[8] time: 23.244 ms
+   Result matrix: size 1971281 x 1971281 nvals 12908450
+[9] time: 23.1131 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 10
+>  total        = 236.772 ms
+>  average      = 23.6772 ms
+>  average (-1) = 23.5014 ms
+>  sd           = 0.738147 ms
+>  min          = 22.9466 ms
+>  max          = 25.2593 ms
+>  samples: 
+>   0: 25.2593 ms
+>   1: 24.6488 ms
+>   2: 23.3206 ms
+>   3: 22.9466 ms
+>   4: 23.7523 ms
+>   5: 23.4076 ms
+>   6: 23.8345 ms
+>   7: 23.2451 ms
+>   8: 23.244 ms
+>   9: 23.1131 ms
+
+=-=-=-=-=-= FINISH: Clbool-Multiply-Hash =-=-=-=-=-=
+=-=-=-=-=-= RUN: Clbool-Multiply-Hash =-=-=-=-=-=
+
+>   Load matrix: "data/netherlands_osm/netherlands_osm.mtx" isUndirected: 1
+                 size: 2216688 x 2216688 nvals: 4882476
+> Begin experiment: 0 name: data/netherlands_osm/netherlands_osm.mtx
+   Result matrix: size 2216688 x 2216688 nvals 8755758
+[0] time: 27.1925 ms
+   Result matrix: size 2216688 x 2216688 nvals 8755758
+[1] time: 26.568 ms
+   Result matrix: size 2216688 x 2216688 nvals 8755758
+[2] time: 24.4666 ms
+   Result matrix: size 2216688 x 2216688 nvals 8755758
+[3] time: 24.6657 ms
+   Result matrix: size 2216688 x 2216688 nvals 8755758
+[4] time: 24.5721 ms
+   Result matrix: size 2216688 x 2216688 nvals 8755758
+[5] time: 24.5277 ms
+   Result matrix: size 2216688 x 2216688 nvals 8755758
+[6] time: 25.218 ms
+   Result matrix: size 2216688 x 2216688 nvals 8755758
+[7] time: 25.8944 ms
+   Result matrix: size 2216688 x 2216688 nvals 8755758
+[8] time: 24.7631 ms
+   Result matrix: size 2216688 x 2216688 nvals 8755758
+[9] time: 24.4866 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 10
+>  total        = 252.355 ms
+>  average      = 25.2355 ms
+>  average (-1) = 25.018 ms
+>  sd           = 0.982106 ms
+>  min          = 24.4666 ms
+>  max          = 27.1925 ms
+>  samples: 
+>   0: 27.1925 ms
+>   1: 26.568 ms
+>   2: 24.4666 ms
+>   3: 24.6657 ms
+>   4: 24.5721 ms
+>   5: 24.5277 ms
+>   6: 25.218 ms
+>   7: 25.8944 ms
+>   8: 24.7631 ms
+>   9: 24.4866 ms
+
+=-=-=-=-=-= FINISH: Clbool-Multiply-Hash =-=-=-=-=-=
+=-=-=-=-=-= RUN: Clbool-Multiply-Hash =-=-=-=-=-=
+
+>   Load matrix: "data/wing/wing.mtx" isUndirected: 1
+                 size: 62032 x 62032 nvals: 243088
+> Begin experiment: 0 name: data/wing/wing.mtx
+   Result matrix: size 62032 x 62032 nvals 714200
+[0] time: 3.16987 ms
+   Result matrix: size 62032 x 62032 nvals 714200
+[1] time: 1.29787 ms
+   Result matrix: size 62032 x 62032 nvals 714200
+[2] time: 1.68564 ms
+   Result matrix: size 62032 x 62032 nvals 714200
+[3] time: 1.27999 ms
+   Result matrix: size 62032 x 62032 nvals 714200
+[4] time: 1.27518 ms
+   Result matrix: size 62032 x 62032 nvals 714200
+[5] time: 1.27535 ms
+   Result matrix: size 62032 x 62032 nvals 714200
+[6] time: 1.27495 ms
+   Result matrix: size 62032 x 62032 nvals 714200
+[7] time: 1.27015 ms
+   Result matrix: size 62032 x 62032 nvals 714200
+[8] time: 1.97257 ms
+   Result matrix: size 62032 x 62032 nvals 714200
+[9] time: 1.32522 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 10
+>  total        = 15.8268 ms
+>  average      = 1.58268 ms
+>  average (-1) = 1.40633 ms
+>  sd           = 0.605732 ms
+>  min          = 1.27015 ms
+>  max          = 3.16987 ms
+>  samples: 
+>   0: 3.16987 ms
+>   1: 1.29787 ms
+>   2: 1.68564 ms
+>   3: 1.27999 ms
+>   4: 1.27518 ms
+>   5: 1.27535 ms
+>   6: 1.27495 ms
+>   7: 1.27015 ms
+>   8: 1.97257 ms
+>   9: 1.32522 ms
+
+=-=-=-=-=-= FINISH: Clbool-Multiply-Hash =-=-=-=-=-=
+=-=-=-=-=-= RUN: Clbool-Multiply-Hash =-=-=-=-=-=
+
+>   Load matrix: "data/luxembourg_osm/luxembourg_osm.mtx" isUndirected: 1
+                 size: 114599 x 114599 nvals: 239332
+> Begin experiment: 0 name: data/luxembourg_osm/luxembourg_osm.mtx
+   Result matrix: size 114599 x 114599 nvals 393261
+[0] time: 3.51617 ms
+   Result matrix: size 114599 x 114599 nvals 393261
+[1] time: 1.43013 ms
+   Result matrix: size 114599 x 114599 nvals 393261
+[2] time: 1.3959 ms
+   Result matrix: size 114599 x 114599 nvals 393261
+[3] time: 1.54708 ms
+   Result matrix: size 114599 x 114599 nvals 393261
+[4] time: 1.34117 ms
+   Result matrix: size 114599 x 114599 nvals 393261
+[5] time: 1.47389 ms
+   Result matrix: size 114599 x 114599 nvals 393261
+[6] time: 1.73892 ms
+   Result matrix: size 114599 x 114599 nvals 393261
+[7] time: 1.48369 ms
+   Result matrix: size 114599 x 114599 nvals 393261
+[8] time: 1.39854 ms
+   Result matrix: size 114599 x 114599 nvals 393261
+[9] time: 1.46128 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 10
+>  total        = 16.7868 ms
+>  average      = 1.67868 ms
+>  average (-1) = 1.47451 ms
+>  sd           = 0.654783 ms
+>  min          = 1.34117 ms
+>  max          = 3.51617 ms
+>  samples: 
+>   0: 3.51617 ms
+>   1: 1.43013 ms
+>   2: 1.3959 ms
+>   3: 1.54708 ms
+>   4: 1.34117 ms
+>   5: 1.47389 ms
+>   6: 1.73892 ms
+>   7: 1.48369 ms
+>   8: 1.39854 ms
+>   9: 1.46128 ms
+
+=-=-=-=-=-= FINISH: Clbool-Multiply-Hash =-=-=-=-=-=
+=-=-=-=-=-= RUN: Clbool-Multiply-Hash =-=-=-=-=-=
+
+>   Load matrix: "data/amazon0312/amazon0312.mtx" isUndirected: 0
+                 size: 400727 x 400727 nvals: 3200440
+> Begin experiment: 0 name: data/amazon0312/amazon0312.mtx
+   Result matrix: size 400727 x 400727 nvals 14390544
+[0] time: 61.8391 ms
+   Result matrix: size 400727 x 400727 nvals 14390544
+[1] time: 60.6852 ms
+   Result matrix: size 400727 x 400727 nvals 14390544
+[2] time: 59.3868 ms
+   Result matrix: size 400727 x 400727 nvals 14390544
+[3] time: 56.2539 ms
+   Result matrix: size 400727 x 400727 nvals 14390544
+[4] time: 55.2638 ms
+   Result matrix: size 400727 x 400727 nvals 14390544
+[5] time: 53.5198 ms
+   Result matrix: size 400727 x 400727 nvals 14390544
+[6] time: 51.4728 ms
+   Result matrix: size 400727 x 400727 nvals 14390544
+[7] time: 51.2737 ms
+   Result matrix: size 400727 x 400727 nvals 14390544
+[8] time: 53.8668 ms
+   Result matrix: size 400727 x 400727 nvals 14390544
+[9] time: 50.9039 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 10
+>  total        = 554.466 ms
+>  average      = 55.4466 ms
+>  average (-1) = 54.7363 ms
+>  sd           = 4.00785 ms
+>  min          = 50.9039 ms
+>  max          = 61.8391 ms
+>  samples: 
+>   0: 61.8391 ms
+>   1: 60.6852 ms
+>   2: 59.3868 ms
+>   3: 56.2539 ms
+>   4: 55.2638 ms
+>   5: 53.5198 ms
+>   6: 51.4728 ms
+>   7: 51.2737 ms
+>   8: 53.8668 ms
+>   9: 50.9039 ms
+
+=-=-=-=-=-= FINISH: Clbool-Multiply-Hash =-=-=-=-=-=
+=-=-=-=-=-= RUN: Clbool-Multiply-Hash =-=-=-=-=-=
+
+>   Load matrix: "data/amazon-2008/amazon-2008.mtx" isUndirected: 0
+                 size: 735323 x 735323 nvals: 5158388
+> Begin experiment: 0 name: data/amazon-2008/amazon-2008.mtx
+   Result matrix: size 735323 x 735323 nvals 25366745
+[0] time: 82.1039 ms
+   Result matrix: size 735323 x 735323 nvals 25366745
+[1] time: 81.1049 ms
+   Result matrix: size 735323 x 735323 nvals 25366745
+[2] time: 81.2754 ms
+   Result matrix: size 735323 x 735323 nvals 25366745
+[3] time: 80.6393 ms
+   Result matrix: size 735323 x 735323 nvals 25366745
+[4] time: 80.5771 ms
+   Result matrix: size 735323 x 735323 nvals 25366745
+[5] time: 81.7705 ms
+   Result matrix: size 735323 x 735323 nvals 25366745
+[6] time: 80.9805 ms
+   Result matrix: size 735323 x 735323 nvals 25366745
+[7] time: 81.1761 ms
+   Result matrix: size 735323 x 735323 nvals 25366745
+[8] time: 81.7139 ms
+   Result matrix: size 735323 x 735323 nvals 25366745
+[9] time: 80.4708 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 10
+>  total        = 811.812 ms
+>  average      = 81.1812 ms
+>  average (-1) = 81.0787 ms
+>  sd           = 0.547789 ms
+>  min          = 80.4708 ms
+>  max          = 82.1039 ms
+>  samples: 
+>   0: 82.1039 ms
+>   1: 81.1049 ms
+>   2: 81.2754 ms
+>   3: 80.6393 ms
+>   4: 80.5771 ms
+>   5: 81.7705 ms
+>   6: 80.9805 ms
+>   7: 81.1761 ms
+>   8: 81.7139 ms
+>   9: 80.4708 ms
+
+=-=-=-=-=-= FINISH: Clbool-Multiply-Hash =-=-=-=-=-=
+=-=-=-=-=-= RUN: Clbool-Multiply-Hash =-=-=-=-=-=
+
+>   Load matrix: "data/web-Google/web-Google.mtx" isUndirected: 0
+                 size: 916428 x 916428 nvals: 5105039
+> Begin experiment: 0 name: data/web-Google/web-Google.mtx
+   Result matrix: size 916428 x 916428 nvals 29710164
+[0] time: 464.269 ms
+   Result matrix: size 916428 x 916428 nvals 29710164
+[1] time: 122.342 ms
+   Result matrix: size 916428 x 916428 nvals 29710164
+[2] time: 122.264 ms
+   Result matrix: size 916428 x 916428 nvals 29710164
+[3] time: 122.687 ms
+   Result matrix: size 916428 x 916428 nvals 29710164
+[4] time: 122.553 ms
+   Result matrix: size 916428 x 916428 nvals 29710164
+[5] time: 122.529 ms
+   Result matrix: size 916428 x 916428 nvals 29710164
+[6] time: 122.309 ms
+   Result matrix: size 916428 x 916428 nvals 29710164
+[7] time: 122.365 ms
+   Result matrix: size 916428 x 916428 nvals 29710164
+[8] time: 122.269 ms
+   Result matrix: size 916428 x 916428 nvals 29710164
+[9] time: 122.235 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 10
+>  total        = 1565.82 ms
+>  average      = 156.582 ms
+>  average (-1) = 122.395 ms
+>  sd           = 108.11 ms
+>  min          = 122.235 ms
+>  max          = 464.269 ms
+>  samples: 
+>   0: 464.269 ms
+>   1: 122.342 ms
+>   2: 122.264 ms
+>   3: 122.687 ms
+>   4: 122.553 ms
+>   5: 122.529 ms
+>   6: 122.309 ms
+>   7: 122.365 ms
+>   8: 122.269 ms
+>   9: 122.235 ms
+
+=-=-=-=-=-= FINISH: Clbool-Multiply-Hash =-=-=-=-=-=
+=-=-=-=-=-= RUN: Clbool-Multiply-Hash =-=-=-=-=-=
+
+>   Load matrix: "data/roadNet-PA/roadNet-PA.mtx" isUndirected: 1
+                 size: 1090920 x 1090920 nvals: 3083796
+> Begin experiment: 0 name: data/roadNet-PA/roadNet-PA.mtx
+   Result matrix: size 1090920 x 1090920 nvals 7238920
+[0] time: 14.6679 ms
+   Result matrix: size 1090920 x 1090920 nvals 7238920
+[1] time: 13.9272 ms
+   Result matrix: size 1090920 x 1090920 nvals 7238920
+[2] time: 13.4856 ms
+   Result matrix: size 1090920 x 1090920 nvals 7238920
+[3] time: 14.3318 ms
+   Result matrix: size 1090920 x 1090920 nvals 7238920
+[4] time: 13.2878 ms
+   Result matrix: size 1090920 x 1090920 nvals 7238920
+[5] time: 13.8392 ms
+   Result matrix: size 1090920 x 1090920 nvals 7238920
+[6] time: 13.4218 ms
+   Result matrix: size 1090920 x 1090920 nvals 7238920
+[7] time: 14.9196 ms
+   Result matrix: size 1090920 x 1090920 nvals 7238920
+[8] time: 13.0773 ms
+   Result matrix: size 1090920 x 1090920 nvals 7238920
+[9] time: 13.0682 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 10
+>  total        = 138.026 ms
+>  average      = 13.8026 ms
+>  average (-1) = 13.7065 ms
+>  sd           = 0.655668 ms
+>  min          = 13.0682 ms
+>  max          = 14.9196 ms
+>  samples: 
+>   0: 14.6679 ms
+>   1: 13.9272 ms
+>   2: 13.4856 ms
+>   3: 14.3318 ms
+>   4: 13.2878 ms
+>   5: 13.8392 ms
+>   6: 13.4218 ms
+>   7: 14.9196 ms
+>   8: 13.0773 ms
+>   9: 13.0682 ms
+
+=-=-=-=-=-= FINISH: Clbool-Multiply-Hash =-=-=-=-=-=
+=-=-=-=-=-= RUN: Clbool-Multiply-Hash =-=-=-=-=-=
+
+>   Load matrix: "data/roadNet-TX/roadNet-TX.mtx" isUndirected: 1
+                 size: 1393383 x 1393383 nvals: 3843320
+> Begin experiment: 0 name: data/roadNet-TX/roadNet-TX.mtx
+   Result matrix: size 1393383 x 1393383 nvals 8903897
+[0] time: 18.075 ms
+   Result matrix: size 1393383 x 1393383 nvals 8903897
+[1] time: 15.8369 ms
+   Result matrix: size 1393383 x 1393383 nvals 8903897
+[2] time: 17.2442 ms
+   Result matrix: size 1393383 x 1393383 nvals 8903897
+[3] time: 15.6307 ms
+   Result matrix: size 1393383 x 1393383 nvals 8903897
+[4] time: 15.6323 ms
+   Result matrix: size 1393383 x 1393383 nvals 8903897
+[5] time: 15.5854 ms
+   Result matrix: size 1393383 x 1393383 nvals 8903897
+[6] time: 15.6135 ms
+   Result matrix: size 1393383 x 1393383 nvals 8903897
+[7] time: 15.8814 ms
+   Result matrix: size 1393383 x 1393383 nvals 8903897
+[8] time: 15.8843 ms
+   Result matrix: size 1393383 x 1393383 nvals 8903897
+[9] time: 15.8074 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 10
+>  total        = 161.191 ms
+>  average      = 16.1191 ms
+>  average (-1) = 15.9018 ms
+>  sd           = 0.843013 ms
+>  min          = 15.5854 ms
+>  max          = 18.075 ms
+>  samples: 
+>   0: 18.075 ms
+>   1: 15.8369 ms
+>   2: 17.2442 ms
+>   3: 15.6307 ms
+>   4: 15.6323 ms
+>   5: 15.5854 ms
+>   6: 15.6135 ms
+>   7: 15.8814 ms
+>   8: 15.8843 ms
+>   9: 15.8074 ms
+
+=-=-=-=-=-= FINISH: Clbool-Multiply-Hash =-=-=-=-=-=
+=-=-=-=-=-= RUN: Clbool-Multiply-Hash =-=-=-=-=-=
+
+>   Load matrix: "data/belgium_osm/belgium_osm.mtx" isUndirected: 1
+                 size: 1441295 x 1441295 nvals: 3099940
+> Begin experiment: 0 name: data/belgium_osm/belgium_osm.mtx
+   Result matrix: size 1441295 x 1441295 nvals 5323073
+[0] time: 19.2154 ms
+   Result matrix: size 1441295 x 1441295 nvals 5323073
+[1] time: 16.0445 ms
+   Result matrix: size 1441295 x 1441295 nvals 5323073
+[2] time: 17.2373 ms
+   Result matrix: size 1441295 x 1441295 nvals 5323073
+[3] time: 15.8259 ms
+   Result matrix: size 1441295 x 1441295 nvals 5323073
+[4] time: 16.6489 ms
+   Result matrix: size 1441295 x 1441295 nvals 5323073
+[5] time: 15.8469 ms
+   Result matrix: size 1441295 x 1441295 nvals 5323073
+[6] time: 15.8922 ms
+   Result matrix: size 1441295 x 1441295 nvals 5323073
+[7] time: 16.4961 ms
+   Result matrix: size 1441295 x 1441295 nvals 5323073
+[8] time: 16.4515 ms
+   Result matrix: size 1441295 x 1441295 nvals 5323073
+[9] time: 15.751 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 10
+>  total        = 165.41 ms
+>  average      = 16.541 ms
+>  average (-1) = 16.2438 ms
+>  sd           = 1.05112 ms
+>  min          = 15.751 ms
+>  max          = 19.2154 ms
+>  samples: 
+>   0: 19.2154 ms
+>   1: 16.0445 ms
+>   2: 17.2373 ms
+>   3: 15.8259 ms
+>   4: 16.6489 ms
+>   5: 15.8469 ms
+>   6: 15.8922 ms
+>   7: 16.4961 ms
+>   8: 16.4515 ms
+>   9: 15.751 ms
+
+=-=-=-=-=-= FINISH: Clbool-Multiply-Hash =-=-=-=-=-=
+=-=-=-=-=-= RUN: Clbool-Multiply-Hash =-=-=-=-=-=
+
+>   Load matrix: "data/roadNet-CA/roadNet-CA.mtx" isUndirected: 1
+                 size: 1971281 x 1971281 nvals: 5533214
+> Begin experiment: 0 name: data/roadNet-CA/roadNet-CA.mtx
+   Result matrix: size 1971281 x 1971281 nvals 12908450
+[0] time: 24.3855 ms
+   Result matrix: size 1971281 x 1971281 nvals 12908450
+[1] time: 23.5038 ms
+   Result matrix: size 1971281 x 1971281 nvals 12908450
+[2] time: 22.3983 ms
+   Result matrix: size 1971281 x 1971281 nvals 12908450
+[3] time: 23.0853 ms
+   Result matrix: size 1971281 x 1971281 nvals 12908450
+[4] time: 23.1347 ms
+   Result matrix: size 1971281 x 1971281 nvals 12908450
+[5] time: 22.0402 ms
+   Result matrix: size 1971281 x 1971281 nvals 12908450
+[6] time: 22.2241 ms
+   Result matrix: size 1971281 x 1971281 nvals 12908450
+[7] time: 22.671 ms
+   Result matrix: size 1971281 x 1971281 nvals 12908450
+[8] time: 22.1257 ms
+   Result matrix: size 1971281 x 1971281 nvals 12908450
+[9] time: 22.335 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 10
+>  total        = 227.904 ms
+>  average      = 22.7904 ms
+>  average (-1) = 22.6131 ms
+>  sd           = 0.742326 ms
+>  min          = 22.0402 ms
+>  max          = 24.3855 ms
+>  samples: 
+>   0: 24.3855 ms
+>   1: 23.5038 ms
+>   2: 22.3983 ms
+>   3: 23.0853 ms
+>   4: 23.1347 ms
+>   5: 22.0402 ms
+>   6: 22.2241 ms
+>   7: 22.671 ms
+>   8: 22.1257 ms
+>   9: 22.335 ms
+
+=-=-=-=-=-= FINISH: Clbool-Multiply-Hash =-=-=-=-=-=
+=-=-=-=-=-= RUN: Clbool-Multiply-Hash =-=-=-=-=-=
+
+>   Load matrix: "data/netherlands_osm/netherlands_osm.mtx" isUndirected: 1
+                 size: 2216688 x 2216688 nvals: 4882476
+> Begin experiment: 0 name: data/netherlands_osm/netherlands_osm.mtx
+   Result matrix: size 2216688 x 2216688 nvals 8755758
+[0] time: 24.9638 ms
+   Result matrix: size 2216688 x 2216688 nvals 8755758
+[1] time: 23.5205 ms
+   Result matrix: size 2216688 x 2216688 nvals 8755758
+[2] time: 23.529 ms
+   Result matrix: size 2216688 x 2216688 nvals 8755758
+[3] time: 23.3974 ms
+   Result matrix: size 2216688 x 2216688 nvals 8755758
+[4] time: 23.687 ms
+   Result matrix: size 2216688 x 2216688 nvals 8755758
+[5] time: 24.3099 ms
+   Result matrix: size 2216688 x 2216688 nvals 8755758
+[6] time: 23.3874 ms
+   Result matrix: size 2216688 x 2216688 nvals 8755758
+[7] time: 23.57 ms
+   Result matrix: size 2216688 x 2216688 nvals 8755758
+[8] time: 23.2805 ms
+   Result matrix: size 2216688 x 2216688 nvals 8755758
+[9] time: 23.4076 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 10
+>  total        = 237.053 ms
+>  average      = 23.7053 ms
+>  average (-1) = 23.5655 ms
+>  sd           = 0.526856 ms
+>  min          = 23.2805 ms
+>  max          = 24.9638 ms
+>  samples: 
+>   0: 24.9638 ms
+>   1: 23.5205 ms
+>   2: 23.529 ms
+>   3: 23.3974 ms
+>   4: 23.687 ms
+>   5: 24.3099 ms
+>   6: 23.3874 ms
+>   7: 23.57 ms
+>   8: 23.2805 ms
+>   9: 23.4076 ms
+
+=-=-=-=-=-= FINISH: Clbool-Multiply-Hash =-=-=-=-=-=
+=-=-=-=-=-= RUN: Clbool-Multiply-Hash =-=-=-=-=-=
+
+>   Load matrix: "data/wing/wing.mtx" isUndirected: 1
+                 size: 62032 x 62032 nvals: 243088
+> Begin experiment: 0 name: data/wing/wing.mtx
+   Result matrix: size 62032 x 62032 nvals 714200
+[0] time: 3.26684 ms
+   Result matrix: size 62032 x 62032 nvals 714200
+[1] time: 1.29144 ms
+   Result matrix: size 62032 x 62032 nvals 714200
+[2] time: 1.28639 ms
+   Result matrix: size 62032 x 62032 nvals 714200
+[3] time: 1.29541 ms
+   Result matrix: size 62032 x 62032 nvals 714200
+[4] time: 1.25316 ms
+   Result matrix: size 62032 x 62032 nvals 714200
+[5] time: 1.24831 ms
+   Result matrix: size 62032 x 62032 nvals 714200
+[6] time: 1.29936 ms
+   Result matrix: size 62032 x 62032 nvals 714200
+[7] time: 1.23053 ms
+   Result matrix: size 62032 x 62032 nvals 714200
+[8] time: 1.3403 ms
+   Result matrix: size 62032 x 62032 nvals 714200
+[9] time: 1.23158 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 10
+>  total        = 14.7433 ms
+>  average      = 1.47433 ms
+>  average (-1) = 1.27516 ms
+>  sd           = 0.63077 ms
+>  min          = 1.23053 ms
+>  max          = 3.26684 ms
+>  samples: 
+>   0: 3.26684 ms
+>   1: 1.29144 ms
+>   2: 1.28639 ms
+>   3: 1.29541 ms
+>   4: 1.25316 ms
+>   5: 1.24831 ms
+>   6: 1.29936 ms
+>   7: 1.23053 ms
+>   8: 1.3403 ms
+>   9: 1.23158 ms
+
+=-=-=-=-=-= FINISH: Clbool-Multiply-Hash =-=-=-=-=-=
+=-=-=-=-=-= RUN: Clbool-Multiply-Hash =-=-=-=-=-=
+
+>   Load matrix: "data/luxembourg_osm/luxembourg_osm.mtx" isUndirected: 1
+                 size: 114599 x 114599 nvals: 239332
+> Begin experiment: 0 name: data/luxembourg_osm/luxembourg_osm.mtx
+   Result matrix: size 114599 x 114599 nvals 393261
+[0] time: 3.09387 ms
+   Result matrix: size 114599 x 114599 nvals 393261
+[1] time: 1.37379 ms
+   Result matrix: size 114599 x 114599 nvals 393261
+[2] time: 1.35832 ms
+   Result matrix: size 114599 x 114599 nvals 393261
+[3] time: 1.39544 ms
+   Result matrix: size 114599 x 114599 nvals 393261
+[4] time: 1.43482 ms
+   Result matrix: size 114599 x 114599 nvals 393261
+[5] time: 1.3109 ms
+   Result matrix: size 114599 x 114599 nvals 393261
+[6] time: 1.32002 ms
+   Result matrix: size 114599 x 114599 nvals 393261
+[7] time: 1.34207 ms
+   Result matrix: size 114599 x 114599 nvals 393261
+[8] time: 1.31006 ms
+   Result matrix: size 114599 x 114599 nvals 393261
+[9] time: 1.60048 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 10
+>  total        = 15.5398 ms
+>  average      = 1.55398 ms
+>  average (-1) = 1.38288 ms
+>  sd           = 0.547898 ms
+>  min          = 1.31006 ms
+>  max          = 3.09387 ms
+>  samples: 
+>   0: 3.09387 ms
+>   1: 1.37379 ms
+>   2: 1.35832 ms
+>   3: 1.39544 ms
+>   4: 1.43482 ms
+>   5: 1.3109 ms
+>   6: 1.32002 ms
+>   7: 1.34207 ms
+>   8: 1.31006 ms
+>   9: 1.60048 ms
+
+=-=-=-=-=-= FINISH: Clbool-Multiply-Hash =-=-=-=-=-=
+=-=-=-=-=-= RUN: Clbool-Multiply-Hash =-=-=-=-=-=
+
+=-=-=-=-=-= RUN: Clbool-Multiply-Hash =-=-=-=-=-=
+
+>   Load matrix: "data/wing/wing.mtx" isUndirected: 1
+                 size: 62032 x 62032 nvals: 243088
+> Begin experiment: 0 name: data/wing/wing.mtx
+   Result matrix: size 62032 x 62032 nvals 714200
+[0] time: 3.11183 ms
+   Result matrix: size 62032 x 62032 nvals 714200
+[1] time: 1.28908 ms
+   Result matrix: size 62032 x 62032 nvals 714200
+[2] time: 1.25252 ms
+   Result matrix: size 62032 x 62032 nvals 714200
+[3] time: 1.27756 ms
+   Result matrix: size 62032 x 62032 nvals 714200
+[4] time: 1.24885 ms
+   Result matrix: size 62032 x 62032 nvals 714200
+[5] time: 1.24658 ms
+   Result matrix: size 62032 x 62032 nvals 714200
+[6] time: 1.26601 ms
+   Result matrix: size 62032 x 62032 nvals 714200
+[7] time: 1.24165 ms
+   Result matrix: size 62032 x 62032 nvals 714200
+[8] time: 1.26226 ms
+   Result matrix: size 62032 x 62032 nvals 714200
+[9] time: 1.27433 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 10
+>  total        = 14.4707 ms
+>  average      = 1.44707 ms
+>  average (-1) = 1.26209 ms
+>  sd           = 0.585133 ms
+>  min          = 1.24165 ms
+>  max          = 3.11183 ms
+>  samples: 
+>   0: 3.11183 ms
+>   1: 1.28908 ms
+>   2: 1.25252 ms
+>   3: 1.27756 ms
+>   4: 1.24885 ms
+>   5: 1.24658 ms
+>   6: 1.26601 ms
+>   7: 1.24165 ms
+>   8: 1.26226 ms
+>   9: 1.27433 ms
+
+=-=-=-=-=-= FINISH: Clbool-Multiply-Hash =-=-=-=-=-=
+=-=-=-=-=-= RUN: Clbool-Multiply-Hash =-=-=-=-=-=
+
+>   Load matrix: "data/luxembourg_osm/luxembourg_osm.mtx" isUndirected: 1
+                 size: 114599 x 114599 nvals: 239332
+> Begin experiment: 0 name: data/luxembourg_osm/luxembourg_osm.mtx
+   Result matrix: size 114599 x 114599 nvals 393261
+[0] time: 3.20846 ms
+   Result matrix: size 114599 x 114599 nvals 393261
+[1] time: 1.39012 ms
+   Result matrix: size 114599 x 114599 nvals 393261
+[2] time: 1.35259 ms
+   Result matrix: size 114599 x 114599 nvals 393261
+[3] time: 1.43172 ms
+   Result matrix: size 114599 x 114599 nvals 393261
+[4] time: 1.36985 ms
+   Result matrix: size 114599 x 114599 nvals 393261
+[5] time: 1.33864 ms
+   Result matrix: size 114599 x 114599 nvals 393261
+[6] time: 1.36616 ms
+   Result matrix: size 114599 x 114599 nvals 393261
+[7] time: 1.39385 ms
+   Result matrix: size 114599 x 114599 nvals 393261
+[8] time: 1.43192 ms
+   Result matrix: size 114599 x 114599 nvals 393261
+[9] time: 1.33527 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 10
+>  total        = 15.6186 ms
+>  average      = 1.56186 ms
+>  average (-1) = 1.3789 ms
+>  sd           = 0.579556 ms
+>  min          = 1.33527 ms
+>  max          = 3.20846 ms
+>  samples: 
+>   0: 3.20846 ms
+>   1: 1.39012 ms
+>   2: 1.35259 ms
+>   3: 1.43172 ms
+>   4: 1.36985 ms
+>   5: 1.33864 ms
+>   6: 1.36616 ms
+>   7: 1.39385 ms
+>   8: 1.43192 ms
+>   9: 1.33527 ms
+
+=-=-=-=-=-= FINISH: Clbool-Multiply-Hash =-=-=-=-=-=
+=-=-=-=-=-= RUN: Clbool-Multiply-Hash =-=-=-=-=-=
+
+>   Load matrix: "data/amazon0312/amazon0312.mtx" isUndirected: 0
+                 size: 400727 x 400727 nvals: 3200440
+> Begin experiment: 0 name: data/amazon0312/amazon0312.mtx
+   Result matrix: size 400727 x 400727 nvals 14390544
+[0] time: 261.089 ms
+   Result matrix: size 400727 x 400727 nvals 14390544
+[1] time: 81.812 ms
+   Result matrix: size 400727 x 400727 nvals 14390544
+[2] time: 80.5583 ms
+   Result matrix: size 400727 x 400727 nvals 14390544
+[3] time: 77.7675 ms
+   Result matrix: size 400727 x 400727 nvals 14390544
+[4] time: 74.237 ms
+   Result matrix: size 400727 x 400727 nvals 14390544
+[5] time: 74.2343 ms
+   Result matrix: size 400727 x 400727 nvals 14390544
+[6] time: 73.9341 ms
+   Result matrix: size 400727 x 400727 nvals 14390544
+[7] time: 74.0593 ms
+   Result matrix: size 400727 x 400727 nvals 14390544
+[8] time: 73.772 ms
+   Result matrix: size 400727 x 400727 nvals 14390544
+[9] time: 75.4648 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 10
+>  total        = 946.928 ms
+>  average      = 94.6928 ms
+>  average (-1) = 76.2044 ms
+>  sd           = 58.5386 ms
+>  min          = 73.772 ms
+>  max          = 261.089 ms
+>  samples: 
+>   0: 261.089 ms
+>   1: 81.812 ms
+>   2: 80.5583 ms
+>   3: 77.7675 ms
+>   4: 74.237 ms
+>   5: 74.2343 ms
+>   6: 73.9341 ms
+>   7: 74.0593 ms
+>   8: 73.772 ms
+>   9: 75.4648 ms
+
+=-=-=-=-=-= FINISH: Clbool-Multiply-Hash =-=-=-=-=-=
+=-=-=-=-=-= RUN: Clbool-Multiply-Hash =-=-=-=-=-=
+
+>   Load matrix: "data/amazon-2008/amazon-2008.mtx" isUndirected: 0
+                 size: 735323 x 735323 nvals: 5158388
+> Begin experiment: 0 name: data/amazon-2008/amazon-2008.mtx
+   Result matrix: size 735323 x 735323 nvals 25366745
+[0] time: 115.215 ms
+   Result matrix: size 735323 x 735323 nvals 25366745
+[1] time: 113.923 ms
+   Result matrix: size 735323 x 735323 nvals 25366745
+[2] time: 114.012 ms
+   Result matrix: size 735323 x 735323 nvals 25366745
+[3] time: 114.114 ms
+   Result matrix: size 735323 x 735323 nvals 25366745
+[4] time: 114.241 ms
+   Result matrix: size 735323 x 735323 nvals 25366745
+[5] time: 114.311 ms
+   Result matrix: size 735323 x 735323 nvals 25366745
+[6] time: 113.695 ms
+   Result matrix: size 735323 x 735323 nvals 25366745
+[7] time: 113.799 ms
+   Result matrix: size 735323 x 735323 nvals 25366745
+[8] time: 114.149 ms
+   Result matrix: size 735323 x 735323 nvals 25366745
+[9] time: 115.499 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 10
+>  total        = 1142.96 ms
+>  average      = 114.296 ms
+>  average (-1) = 114.194 ms
+>  sd           = 0.594202 ms
+>  min          = 113.695 ms
+>  max          = 115.499 ms
+>  samples: 
+>   0: 115.215 ms
+>   1: 113.923 ms
+>   2: 114.012 ms
+>   3: 114.114 ms
+>   4: 114.241 ms
+>   5: 114.311 ms
+>   6: 113.695 ms
+>   7: 113.799 ms
+>   8: 114.149 ms
+>   9: 115.499 ms
+
+=-=-=-=-=-= FINISH: Clbool-Multiply-Hash =-=-=-=-=-=
+=-=-=-=-=-= RUN: Clbool-Multiply-Hash =-=-=-=-=-=
+
+>   Load matrix: "data/web-Google/web-Google.mtx" isUndirected: 0
+                 size: 916428 x 916428 nvals: 5105039
+> Begin experiment: 0 name: data/web-Google/web-Google.mtx
+   Result matrix: size 916428 x 916428 nvals 29710164
+[0] time: 591.15 ms
+   Result matrix: size 916428 x 916428 nvals 29710164
+[1] time: 133.668 ms
+   Result matrix: size 916428 x 916428 nvals 29710164
+[2] time: 133.731 ms
+   Result matrix: size 916428 x 916428 nvals 29710164
+[3] time: 133.967 ms
+   Result matrix: size 916428 x 916428 nvals 29710164
+[4] time: 135.419 ms
+   Result matrix: size 916428 x 916428 nvals 29710164
+[5] time: 134.186 ms
+   Result matrix: size 916428 x 916428 nvals 29710164
+[6] time: 134.386 ms
+   Result matrix: size 916428 x 916428 nvals 29710164
+[7] time: 134.37 ms
+   Result matrix: size 916428 x 916428 nvals 29710164
+[8] time: 135.082 ms
+   Result matrix: size 916428 x 916428 nvals 29710164
+[9] time: 134.39 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 10
+>  total        = 1800.35 ms
+>  average      = 180.035 ms
+>  average (-1) = 134.355 ms
+>  sd           = 144.452 ms
+>  min          = 133.668 ms
+>  max          = 591.15 ms
+>  samples: 
+>   0: 591.15 ms
+>   1: 133.668 ms
+>   2: 133.731 ms
+>   3: 133.967 ms
+>   4: 135.419 ms
+>   5: 134.186 ms
+>   6: 134.386 ms
+>   7: 134.37 ms
+>   8: 135.082 ms
+>   9: 134.39 ms
+
+=-=-=-=-=-= FINISH: Clbool-Multiply-Hash =-=-=-=-=-=
+=-=-=-=-=-= RUN: Clbool-Multiply-Hash =-=-=-=-=-=
+
+>   Load matrix: "data/roadNet-PA/roadNet-PA.mtx" isUndirected: 1
+                 size: 1090920 x 1090920 nvals: 3083796
+> Begin experiment: 0 name: data/roadNet-PA/roadNet-PA.mtx
+   Result matrix: size 1090920 x 1090920 nvals 7238920
+[0] time: 16.4837 ms
+   Result matrix: size 1090920 x 1090920 nvals 7238920
+[1] time: 14.478 ms
+   Result matrix: size 1090920 x 1090920 nvals 7238920
+[2] time: 13.7606 ms
+   Result matrix: size 1090920 x 1090920 nvals 7238920
+[3] time: 13.9753 ms
+   Result matrix: size 1090920 x 1090920 nvals 7238920
+[4] time: 14.0945 ms
+   Result matrix: size 1090920 x 1090920 nvals 7238920
+[5] time: 13.9215 ms
+   Result matrix: size 1090920 x 1090920 nvals 7238920
+[6] time: 14.2087 ms
+   Result matrix: size 1090920 x 1090920 nvals 7238920
+[7] time: 13.7759 ms
+   Result matrix: size 1090920 x 1090920 nvals 7238920
+[8] time: 14.0844 ms
+   Result matrix: size 1090920 x 1090920 nvals 7238920
+[9] time: 13.9947 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 10
+>  total        = 142.777 ms
+>  average      = 14.2777 ms
+>  average (-1) = 14.0326 ms
+>  sd           = 0.802767 ms
+>  min          = 13.7606 ms
+>  max          = 16.4837 ms
+>  samples: 
+>   0: 16.4837 ms
+>   1: 14.478 ms
+>   2: 13.7606 ms
+>   3: 13.9753 ms
+>   4: 14.0945 ms
+>   5: 13.9215 ms
+>   6: 14.2087 ms
+>   7: 13.7759 ms
+>   8: 14.0844 ms
+>   9: 13.9947 ms
+
+=-=-=-=-=-= FINISH: Clbool-Multiply-Hash =-=-=-=-=-=
+=-=-=-=-=-= RUN: Clbool-Multiply-Hash =-=-=-=-=-=
+
+>   Load matrix: "data/roadNet-TX/roadNet-TX.mtx" isUndirected: 1
+                 size: 1393383 x 1393383 nvals: 3843320
+> Begin experiment: 0 name: data/roadNet-TX/roadNet-TX.mtx
+   Result matrix: size 1393383 x 1393383 nvals 8903897
+[0] time: 18.4839 ms
+   Result matrix: size 1393383 x 1393383 nvals 8903897
+[1] time: 16.8748 ms
+   Result matrix: size 1393383 x 1393383 nvals 8903897
+[2] time: 17.4943 ms
+   Result matrix: size 1393383 x 1393383 nvals 8903897
+[3] time: 17.0404 ms
+   Result matrix: size 1393383 x 1393383 nvals 8903897
+[4] time: 16.5381 ms
+   Result matrix: size 1393383 x 1393383 nvals 8903897
+[5] time: 16.6735 ms
+   Result matrix: size 1393383 x 1393383 nvals 8903897
+[6] time: 16.8362 ms
+   Result matrix: size 1393383 x 1393383 nvals 8903897
+[7] time: 16.819 ms
+   Result matrix: size 1393383 x 1393383 nvals 8903897
+[8] time: 16.9487 ms
+   Result matrix: size 1393383 x 1393383 nvals 8903897
+[9] time: 16.6787 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 10
+>  total        = 170.388 ms
+>  average      = 17.0388 ms
+>  average (-1) = 16.8782 ms
+>  sd           = 0.570969 ms
+>  min          = 16.5381 ms
+>  max          = 18.4839 ms
+>  samples: 
+>   0: 18.4839 ms
+>   1: 16.8748 ms
+>   2: 17.4943 ms
+>   3: 17.0404 ms
+>   4: 16.5381 ms
+>   5: 16.6735 ms
+>   6: 16.8362 ms
+>   7: 16.819 ms
+>   8: 16.9487 ms
+>   9: 16.6787 ms
+
+=-=-=-=-=-= FINISH: Clbool-Multiply-Hash =-=-=-=-=-=
+=-=-=-=-=-= RUN: Clbool-Multiply-Hash =-=-=-=-=-=
+
+>   Load matrix: "data/belgium_osm/belgium_osm.mtx" isUndirected: 1
+                 size: 1441295 x 1441295 nvals: 3099940
+> Begin experiment: 0 name: data/belgium_osm/belgium_osm.mtx
+   Result matrix: size 1441295 x 1441295 nvals 5323073
+[0] time: 18.3624 ms
+   Result matrix: size 1441295 x 1441295 nvals 5323073
+[1] time: 16.7656 ms
+   Result matrix: size 1441295 x 1441295 nvals 5323073
+[2] time: 16.4867 ms
+   Result matrix: size 1441295 x 1441295 nvals 5323073
+[3] time: 17.0419 ms
+   Result matrix: size 1441295 x 1441295 nvals 5323073
+[4] time: 17.0417 ms
+   Result matrix: size 1441295 x 1441295 nvals 5323073
+[5] time: 16.6231 ms
+   Result matrix: size 1441295 x 1441295 nvals 5323073
+[6] time: 16.6359 ms
+   Result matrix: size 1441295 x 1441295 nvals 5323073
+[7] time: 16.9253 ms
+   Result matrix: size 1441295 x 1441295 nvals 5323073
+[8] time: 16.7407 ms
+   Result matrix: size 1441295 x 1441295 nvals 5323073
+[9] time: 16.6144 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 10
+>  total        = 169.238 ms
+>  average      = 16.9238 ms
+>  average (-1) = 16.7639 ms
+>  sd           = 0.539152 ms
+>  min          = 16.4867 ms
+>  max          = 18.3624 ms
+>  samples: 
+>   0: 18.3624 ms
+>   1: 16.7656 ms
+>   2: 16.4867 ms
+>   3: 17.0419 ms
+>   4: 17.0417 ms
+>   5: 16.6231 ms
+>   6: 16.6359 ms
+>   7: 16.9253 ms
+>   8: 16.7407 ms
+>   9: 16.6144 ms
+
+=-=-=-=-=-= FINISH: Clbool-Multiply-Hash =-=-=-=-=-=
+=-=-=-=-=-= RUN: Clbool-Multiply-Hash =-=-=-=-=-=
+
+>   Load matrix: "data/roadNet-CA/roadNet-CA.mtx" isUndirected: 1
+                 size: 1971281 x 1971281 nvals: 5533214
+> Begin experiment: 0 name: data/roadNet-CA/roadNet-CA.mtx
+   Result matrix: size 1971281 x 1971281 nvals 12908450
+[0] time: 24.1965 ms
+   Result matrix: size 1971281 x 1971281 nvals 12908450
+[1] time: 23.0083 ms
+   Result matrix: size 1971281 x 1971281 nvals 12908450
+[2] time: 22.9948 ms
+   Result matrix: size 1971281 x 1971281 nvals 12908450
+[3] time: 23.0733 ms
+   Result matrix: size 1971281 x 1971281 nvals 12908450
+[4] time: 24.1261 ms
+   Result matrix: size 1971281 x 1971281 nvals 12908450
+[5] time: 24.8413 ms
+   Result matrix: size 1971281 x 1971281 nvals 12908450
+[6] time: 22.9644 ms
+   Result matrix: size 1971281 x 1971281 nvals 12908450
+[7] time: 23.6609 ms
+   Result matrix: size 1971281 x 1971281 nvals 12908450
+[8] time: 23.1777 ms
+   Result matrix: size 1971281 x 1971281 nvals 12908450
+[9] time: 23.0767 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 10
+>  total        = 235.12 ms
+>  average      = 23.512 ms
+>  average (-1) = 23.4359 ms
+>  sd           = 0.662456 ms
+>  min          = 22.9644 ms
+>  max          = 24.8413 ms
+>  samples: 
+>   0: 24.1965 ms
+>   1: 23.0083 ms
+>   2: 22.9948 ms
+>   3: 23.0733 ms
+>   4: 24.1261 ms
+>   5: 24.8413 ms
+>   6: 22.9644 ms
+>   7: 23.6609 ms
+>   8: 23.1777 ms
+>   9: 23.0767 ms
+
+=-=-=-=-=-= FINISH: Clbool-Multiply-Hash =-=-=-=-=-=
+=-=-=-=-=-= RUN: Clbool-Multiply-Hash =-=-=-=-=-=
+
+>   Load matrix: "data/netherlands_osm/netherlands_osm.mtx" isUndirected: 1
+                 size: 2216688 x 2216688 nvals: 4882476
+> Begin experiment: 0 name: data/netherlands_osm/netherlands_osm.mtx
+   Result matrix: size 2216688 x 2216688 nvals 8755758
+[0] time: 26.7488 ms
+   Result matrix: size 2216688 x 2216688 nvals 8755758
+[1] time: 24.6011 ms
+   Result matrix: size 2216688 x 2216688 nvals 8755758
+[2] time: 25.1613 ms
+   Result matrix: size 2216688 x 2216688 nvals 8755758
+[3] time: 24.5548 ms
+   Result matrix: size 2216688 x 2216688 nvals 8755758
+[4] time: 24.6052 ms
+   Result matrix: size 2216688 x 2216688 nvals 8755758
+[5] time: 24.3818 ms
+   Result matrix: size 2216688 x 2216688 nvals 8755758
+[6] time: 24.4735 ms
+   Result matrix: size 2216688 x 2216688 nvals 8755758
+[7] time: 24.252 ms
+   Result matrix: size 2216688 x 2216688 nvals 8755758
+[8] time: 24.3131 ms
+   Result matrix: size 2216688 x 2216688 nvals 8755758
+[9] time: 24.6306 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 10
+>  total        = 247.722 ms
+>  average      = 24.7722 ms
+>  average (-1) = 24.5526 ms
+>  sd           = 0.738292 ms
+>  min          = 24.252 ms
+>  max          = 26.7488 ms
+>  samples: 
+>   0: 26.7488 ms
+>   1: 24.6011 ms
+>   2: 25.1613 ms
+>   3: 24.5548 ms
+>   4: 24.6052 ms
+>   5: 24.3818 ms
+>   6: 24.4735 ms
+>   7: 24.252 ms
+>   8: 24.3131 ms
+>   9: 24.6306 ms
+
+=-=-=-=-=-= FINISH: Clbool-Multiply-Hash =-=-=-=-=-=
+=-=-=-=-=-= RUN: Clbool-Multiply-Hash =-=-=-=-=-=
+
+>   Load matrix: "data/wing/wing.mtx" isUndirected: 1
+                 size: 62032 x 62032 nvals: 243088
+> Begin experiment: 0 name: data/wing/wing.mtx
+   Result matrix: size 62032 x 62032 nvals 714200
+[0] time: 3.22717 ms
+   Result matrix: size 62032 x 62032 nvals 714200
+[1] time: 1.27568 ms
+   Result matrix: size 62032 x 62032 nvals 714200
+[2] time: 1.28228 ms
+   Result matrix: size 62032 x 62032 nvals 714200
+[3] time: 1.28209 ms
+   Result matrix: size 62032 x 62032 nvals 714200
+[4] time: 1.76366 ms
+   Result matrix: size 62032 x 62032 nvals 714200
+[5] time: 1.2614 ms
+   Result matrix: size 62032 x 62032 nvals 714200
+[6] time: 1.26637 ms
+   Result matrix: size 62032 x 62032 nvals 714200
+[7] time: 1.26469 ms
+   Result matrix: size 62032 x 62032 nvals 714200
+[8] time: 1.79323 ms
+   Result matrix: size 62032 x 62032 nvals 714200
+[9] time: 1.33223 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 10
+>  total        = 15.7488 ms
+>  average      = 1.57488 ms
+>  average (-1) = 1.39129 ms
+>  sd           = 0.616693 ms
+>  min          = 1.2614 ms
+>  max          = 3.22717 ms
+>  samples: 
+>   0: 3.22717 ms
+>   1: 1.27568 ms
+>   2: 1.28228 ms
+>   3: 1.28209 ms
+>   4: 1.76366 ms
+>   5: 1.2614 ms
+>   6: 1.26637 ms
+>   7: 1.26469 ms
+>   8: 1.79323 ms
+>   9: 1.33223 ms
+
+=-=-=-=-=-= FINISH: Clbool-Multiply-Hash =-=-=-=-=-=
+=-=-=-=-=-= RUN: Clbool-Multiply-Hash =-=-=-=-=-=
+
+>   Load matrix: "data/luxembourg_osm/luxembourg_osm.mtx" isUndirected: 1
+                 size: 114599 x 114599 nvals: 239332
+> Begin experiment: 0 name: data/luxembourg_osm/luxembourg_osm.mtx
+   Result matrix: size 114599 x 114599 nvals 393261
+[0] time: 3.37397 ms
+   Result matrix: size 114599 x 114599 nvals 393261
+[1] time: 1.46788 ms
+   Result matrix: size 114599 x 114599 nvals 393261
+[2] time: 1.36841 ms
+   Result matrix: size 114599 x 114599 nvals 393261
+[3] time: 1.4002 ms
+   Result matrix: size 114599 x 114599 nvals 393261
+[4] time: 1.33958 ms
+   Result matrix: size 114599 x 114599 nvals 393261
+[5] time: 2.36231 ms
+   Result matrix: size 114599 x 114599 nvals 393261
+[6] time: 1.42974 ms
+   Result matrix: size 114599 x 114599 nvals 393261
+[7] time: 1.3992 ms
+   Result matrix: size 114599 x 114599 nvals 393261
+[8] time: 1.34451 ms
+   Result matrix: size 114599 x 114599 nvals 393261
+[9] time: 1.39501 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 10
+>  total        = 16.8808 ms
+>  average      = 1.68808 ms
+>  average (-1) = 1.50076 ms
+>  sd           = 0.667162 ms
+>  min          = 1.33958 ms
+>  max          = 3.37397 ms
+>  samples: 
+>   0: 3.37397 ms
+>   1: 1.46788 ms
+>   2: 1.36841 ms
+>   3: 1.4002 ms
+>   4: 1.33958 ms
+>   5: 2.36231 ms
+>   6: 1.42974 ms
+>   7: 1.3992 ms
+>   8: 1.34451 ms
+>   9: 1.39501 ms
+
+=-=-=-=-=-= FINISH: Clbool-Multiply-Hash =-=-=-=-=-=
+=-=-=-=-=-= RUN: Clbool-Multiply-Hash =-=-=-=-=-=
+
+>   Load matrix: "data/amazon0312/amazon0312.mtx" isUndirected: 0
+                 size: 400727 x 400727 nvals: 3200440
+> Begin experiment: 0 name: data/amazon0312/amazon0312.mtx
+   Result matrix: size 400727 x 400727 nvals 14390544
+[0] time: 64.479 ms
+   Result matrix: size 400727 x 400727 nvals 14390544
+[1] time: 63.3672 ms
+   Result matrix: size 400727 x 400727 nvals 14390544
+[2] time: 60.9091 ms
+   Result matrix: size 400727 x 400727 nvals 14390544
+[3] time: 57.0762 ms
+   Result matrix: size 400727 x 400727 nvals 14390544
+[4] time: 56.1466 ms
+   Result matrix: size 400727 x 400727 nvals 14390544
+[5] time: 54.1622 ms
+   Result matrix: size 400727 x 400727 nvals 14390544
+[6] time: 52.0452 ms
+   Result matrix: size 400727 x 400727 nvals 14390544
+[7] time: 52.4792 ms
+   Result matrix: size 400727 x 400727 nvals 14390544
+[8] time: 52.5448 ms
+   Result matrix: size 400727 x 400727 nvals 14390544
+[9] time: 52.9487 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 10
+>  total        = 566.158 ms
+>  average      = 56.6158 ms
+>  average (-1) = 55.7421 ms
+>  sd           = 4.7178 ms
+>  min          = 52.0452 ms
+>  max          = 64.479 ms
+>  samples: 
+>   0: 64.479 ms
+>   1: 63.3672 ms
+>   2: 60.9091 ms
+>   3: 57.0762 ms
+>   4: 56.1466 ms
+>   5: 54.1622 ms
+>   6: 52.0452 ms
+>   7: 52.4792 ms
+>   8: 52.5448 ms
+>   9: 52.9487 ms
+
+=-=-=-=-=-= FINISH: Clbool-Multiply-Hash =-=-=-=-=-=
+=-=-=-=-=-= RUN: Clbool-Multiply-Hash =-=-=-=-=-=
+
+>   Load matrix: "data/amazon-2008/amazon-2008.mtx" isUndirected: 0
+                 size: 735323 x 735323 nvals: 5158388
+> Begin experiment: 0 name: data/amazon-2008/amazon-2008.mtx
+   Result matrix: size 735323 x 735323 nvals 25366745
+[0] time: 93.6052 ms
+   Result matrix: size 735323 x 735323 nvals 25366745
+[1] time: 88.7649 ms
+   Result matrix: size 735323 x 735323 nvals 25366745
+[2] time: 85.8376 ms
+   Result matrix: size 735323 x 735323 nvals 25366745
+[3] time: 81.3368 ms
+   Result matrix: size 735323 x 735323 nvals 25366745
+[4] time: 81.4307 ms
+   Result matrix: size 735323 x 735323 nvals 25366745
+[5] time: 80.6016 ms
+   Result matrix: size 735323 x 735323 nvals 25366745
+[6] time: 88.4298 ms
+   Result matrix: size 735323 x 735323 nvals 25366745
+[7] time: 82.1454 ms
+   Result matrix: size 735323 x 735323 nvals 25366745
+[8] time: 81.3788 ms
+   Result matrix: size 735323 x 735323 nvals 25366745
+[9] time: 81.2435 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 10
+>  total        = 844.774 ms
+>  average      = 84.4774 ms
+>  average (-1) = 83.4632 ms
+>  sd           = 4.45767 ms
+>  min          = 80.6016 ms
+>  max          = 93.6052 ms
+>  samples: 
+>   0: 93.6052 ms
+>   1: 88.7649 ms
+>   2: 85.8376 ms
+>   3: 81.3368 ms
+>   4: 81.4307 ms
+>   5: 80.6016 ms
+>   6: 88.4298 ms
+>   7: 82.1454 ms
+>   8: 81.3788 ms
+>   9: 81.2435 ms
+
+=-=-=-=-=-= FINISH: Clbool-Multiply-Hash =-=-=-=-=-=
+=-=-=-=-=-= RUN: Clbool-Multiply-Hash =-=-=-=-=-=
+
+>   Load matrix: "data/web-Google/web-Google.mtx" isUndirected: 0
+                 size: 916428 x 916428 nvals: 5105039
+> Begin experiment: 0 name: data/web-Google/web-Google.mtx
+   Result matrix: size 916428 x 916428 nvals 29710164
+[0] time: 124.196 ms
+   Result matrix: size 916428 x 916428 nvals 29710164
+[1] time: 124.394 ms
+   Result matrix: size 916428 x 916428 nvals 29710164
+[2] time: 125.969 ms
+   Result matrix: size 916428 x 916428 nvals 29710164
+[3] time: 124.707 ms
+   Result matrix: size 916428 x 916428 nvals 29710164
+[4] time: 125.093 ms
+   Result matrix: size 916428 x 916428 nvals 29710164
+[5] time: 124.518 ms
+   Result matrix: size 916428 x 916428 nvals 29710164
+[6] time: 125.911 ms
+   Result matrix: size 916428 x 916428 nvals 29710164
+[7] time: 124.901 ms
+   Result matrix: size 916428 x 916428 nvals 29710164
+[8] time: 124.783 ms
+   Result matrix: size 916428 x 916428 nvals 29710164
+[9] time: 124.592 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 10
+>  total        = 1249.06 ms
+>  average      = 124.906 ms
+>  average (-1) = 124.985 ms
+>  sd           = 0.600289 ms
+>  min          = 124.196 ms
+>  max          = 125.969 ms
+>  samples: 
+>   0: 124.196 ms
+>   1: 124.394 ms
+>   2: 125.969 ms
+>   3: 124.707 ms
+>   4: 125.093 ms
+>   5: 124.518 ms
+>   6: 125.911 ms
+>   7: 124.901 ms
+>   8: 124.783 ms
+>   9: 124.592 ms
+
+=-=-=-=-=-= FINISH: Clbool-Multiply-Hash =-=-=-=-=-=
+=-=-=-=-=-= RUN: Clbool-Multiply-Hash =-=-=-=-=-=
+
+>   Load matrix: "data/roadNet-PA/roadNet-PA.mtx" isUndirected: 1
+                 size: 1090920 x 1090920 nvals: 3083796
+> Begin experiment: 0 name: data/roadNet-PA/roadNet-PA.mtx
+   Result matrix: size 1090920 x 1090920 nvals 7238920
+[0] time: 14.576 ms
+   Result matrix: size 1090920 x 1090920 nvals 7238920
+[1] time: 13.6519 ms
+   Result matrix: size 1090920 x 1090920 nvals 7238920
+[2] time: 13.5531 ms
+   Result matrix: size 1090920 x 1090920 nvals 7238920
+[3] time: 13.378 ms
+   Result matrix: size 1090920 x 1090920 nvals 7238920
+[4] time: 13.6877 ms
+   Result matrix: size 1090920 x 1090920 nvals 7238920
+[5] time: 13.387 ms
+   Result matrix: size 1090920 x 1090920 nvals 7238920
+[6] time: 13.4563 ms
+   Result matrix: size 1090920 x 1090920 nvals 7238920
+[7] time: 13.6694 ms
+   Result matrix: size 1090920 x 1090920 nvals 7238920
+[8] time: 13.6455 ms
+   Result matrix: size 1090920 x 1090920 nvals 7238920
+[9] time: 13.9835 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 10
+>  total        = 136.988 ms
+>  average      = 13.6988 ms
+>  average (-1) = 13.6014 ms
+>  sd           = 0.355397 ms
+>  min          = 13.378 ms
+>  max          = 14.576 ms
+>  samples: 
+>   0: 14.576 ms
+>   1: 13.6519 ms
+>   2: 13.5531 ms
+>   3: 13.378 ms
+>   4: 13.6877 ms
+>   5: 13.387 ms
+>   6: 13.4563 ms
+>   7: 13.6694 ms
+>   8: 13.6455 ms
+>   9: 13.9835 ms
+
+=-=-=-=-=-= FINISH: Clbool-Multiply-Hash =-=-=-=-=-=
+=-=-=-=-=-= RUN: Clbool-Multiply-Hash =-=-=-=-=-=
+
+>   Load matrix: "data/roadNet-TX/roadNet-TX.mtx" isUndirected: 1
+                 size: 1393383 x 1393383 nvals: 3843320
+> Begin experiment: 0 name: data/roadNet-TX/roadNet-TX.mtx
+   Result matrix: size 1393383 x 1393383 nvals 8903897
+[0] time: 17.2571 ms
+   Result matrix: size 1393383 x 1393383 nvals 8903897
+[1] time: 16.3729 ms
+   Result matrix: size 1393383 x 1393383 nvals 8903897
+[2] time: 16.3548 ms
+   Result matrix: size 1393383 x 1393383 nvals 8903897
+[3] time: 16.2793 ms
+   Result matrix: size 1393383 x 1393383 nvals 8903897
+[4] time: 16.5428 ms
+   Result matrix: size 1393383 x 1393383 nvals 8903897
+[5] time: 16.4083 ms
+   Result matrix: size 1393383 x 1393383 nvals 8903897
+[6] time: 16.4687 ms
+   Result matrix: size 1393383 x 1393383 nvals 8903897
+[7] time: 16.9899 ms
+   Result matrix: size 1393383 x 1393383 nvals 8903897
+[8] time: 17.3269 ms
+   Result matrix: size 1393383 x 1393383 nvals 8903897
+[9] time: 16.8027 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 10
+>  total        = 166.803 ms
+>  average      = 16.6803 ms
+>  average (-1) = 16.6162 ms
+>  sd           = 0.388802 ms
+>  min          = 16.2793 ms
+>  max          = 17.3269 ms
+>  samples: 
+>   0: 17.2571 ms
+>   1: 16.3729 ms
+>   2: 16.3548 ms
+>   3: 16.2793 ms
+>   4: 16.5428 ms
+>   5: 16.4083 ms
+>   6: 16.4687 ms
+>   7: 16.9899 ms
+>   8: 17.3269 ms
+>   9: 16.8027 ms
+
+=-=-=-=-=-= FINISH: Clbool-Multiply-Hash =-=-=-=-=-=
+=-=-=-=-=-= RUN: Clbool-Multiply-Hash =-=-=-=-=-=
+
+>   Load matrix: "data/belgium_osm/belgium_osm.mtx" isUndirected: 1
+                 size: 1441295 x 1441295 nvals: 3099940
+> Begin experiment: 0 name: data/belgium_osm/belgium_osm.mtx
+   Result matrix: size 1441295 x 1441295 nvals 5323073
+[0] time: 17.5025 ms
+   Result matrix: size 1441295 x 1441295 nvals 5323073
+[1] time: 16.1068 ms
+   Result matrix: size 1441295 x 1441295 nvals 5323073
+[2] time: 16.0747 ms
+   Result matrix: size 1441295 x 1441295 nvals 5323073
+[3] time: 16.1857 ms
+   Result matrix: size 1441295 x 1441295 nvals 5323073
+[4] time: 16.1412 ms
+   Result matrix: size 1441295 x 1441295 nvals 5323073
+[5] time: 16.2085 ms
+   Result matrix: size 1441295 x 1441295 nvals 5323073
+[6] time: 16.1494 ms
+   Result matrix: size 1441295 x 1441295 nvals 5323073
+[7] time: 16.2737 ms
+   Result matrix: size 1441295 x 1441295 nvals 5323073
+[8] time: 16.0857 ms
+   Result matrix: size 1441295 x 1441295 nvals 5323073
+[9] time: 16.0962 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 10
+>  total        = 162.824 ms
+>  average      = 16.2824 ms
+>  average (-1) = 16.1469 ms
+>  sd           = 0.433146 ms
+>  min          = 16.0747 ms
+>  max          = 17.5025 ms
+>  samples: 
+>   0: 17.5025 ms
+>   1: 16.1068 ms
+>   2: 16.0747 ms
+>   3: 16.1857 ms
+>   4: 16.1412 ms
+>   5: 16.2085 ms
+>   6: 16.1494 ms
+>   7: 16.2737 ms
+>   8: 16.0857 ms
+>   9: 16.0962 ms
+
+=-=-=-=-=-= FINISH: Clbool-Multiply-Hash =-=-=-=-=-=
+=-=-=-=-=-= RUN: Clbool-Multiply-Hash =-=-=-=-=-=
+
+>   Load matrix: "data/roadNet-CA/roadNet-CA.mtx" isUndirected: 1
+                 size: 1971281 x 1971281 nvals: 5533214
+> Begin experiment: 0 name: data/roadNet-CA/roadNet-CA.mtx
+   Result matrix: size 1971281 x 1971281 nvals 12908450
+[0] time: 23.4347 ms
+   Result matrix: size 1971281 x 1971281 nvals 12908450
+[1] time: 22.6456 ms
+   Result matrix: size 1971281 x 1971281 nvals 12908450
+[2] time: 22.6615 ms
+   Result matrix: size 1971281 x 1971281 nvals 12908450
+[3] time: 22.5573 ms
+   Result matrix: size 1971281 x 1971281 nvals 12908450
+[4] time: 22.6629 ms
+   Result matrix: size 1971281 x 1971281 nvals 12908450
+[5] time: 23.6973 ms
+   Result matrix: size 1971281 x 1971281 nvals 12908450
+[6] time: 23.3435 ms
+   Result matrix: size 1971281 x 1971281 nvals 12908450
+[7] time: 23.1156 ms
+   Result matrix: size 1971281 x 1971281 nvals 12908450
+[8] time: 23.0408 ms
+   Result matrix: size 1971281 x 1971281 nvals 12908450
+[9] time: 22.5091 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 10
+>  total        = 229.668 ms
+>  average      = 22.9668 ms
+>  average (-1) = 22.9148 ms
+>  sd           = 0.420061 ms
+>  min          = 22.5091 ms
+>  max          = 23.6973 ms
+>  samples: 
+>   0: 23.4347 ms
+>   1: 22.6456 ms
+>   2: 22.6615 ms
+>   3: 22.5573 ms
+>   4: 22.6629 ms
+>   5: 23.6973 ms
+>   6: 23.3435 ms
+>   7: 23.1156 ms
+>   8: 23.0408 ms
+>   9: 22.5091 ms
+
+=-=-=-=-=-= FINISH: Clbool-Multiply-Hash =-=-=-=-=-=
+=-=-=-=-=-= RUN: Clbool-Multiply-Hash =-=-=-=-=-=
+
+>   Load matrix: "data/netherlands_osm/netherlands_osm.mtx" isUndirected: 1
+                 size: 2216688 x 2216688 nvals: 4882476
+> Begin experiment: 0 name: data/netherlands_osm/netherlands_osm.mtx
+   Result matrix: size 2216688 x 2216688 nvals 8755758
+[0] time: 25.6478 ms
+   Result matrix: size 2216688 x 2216688 nvals 8755758
+[1] time: 24.3251 ms
+   Result matrix: size 2216688 x 2216688 nvals 8755758
+[2] time: 25.018 ms
+   Result matrix: size 2216688 x 2216688 nvals 8755758
+[3] time: 25.55 ms
+   Result matrix: size 2216688 x 2216688 nvals 8755758
+[4] time: 24.4605 ms
+   Result matrix: size 2216688 x 2216688 nvals 8755758
+[5] time: 24.2641 ms
+   Result matrix: size 2216688 x 2216688 nvals 8755758
+[6] time: 24.219 ms
+   Result matrix: size 2216688 x 2216688 nvals 8755758
+[7] time: 24.6468 ms
+   Result matrix: size 2216688 x 2216688 nvals 8755758
+[8] time: 24.1074 ms
+   Result matrix: size 2216688 x 2216688 nvals 8755758
+[9] time: 25.0289 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 10
+>  total        = 247.268 ms
+>  average      = 24.7268 ms
+>  average (-1) = 24.6244 ms
+>  sd           = 0.557395 ms
+>  min          = 24.1074 ms
+>  max          = 25.6478 ms
+>  samples: 
+>   0: 25.6478 ms
+>   1: 24.3251 ms
+>   2: 25.018 ms
+>   3: 25.55 ms
+>   4: 24.4605 ms
+>   5: 24.2641 ms
+>   6: 24.219 ms
+>   7: 24.6468 ms
+>   8: 24.1074 ms
+>   9: 25.0289 ms
+
+=-=-=-=-=-= FINISH: Clbool-Multiply-Hash =-=-=-=-=-=
+=-=-=-=-=-= RUN: Clbool-Multiply-Hash =-=-=-=-=-=
+
+>   Load matrix: "data/amazon0312/amazon0312.mtx" isUndirected: 0
+                 size: 400727 x 400727 nvals: 3200440
+> Begin experiment: 0 name: data/amazon0312/amazon0312.mtx
+   Result matrix: size 400727 x 400727 nvals 14390544
+[0] time: 64.7093 ms
+   Result matrix: size 400727 x 400727 nvals 14390544
+[1] time: 62.5937 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 2
+>  total        = 127.303 ms
+>  average      = 63.6515 ms
+>  average (-1) = 62.5937 ms
+>  sd           = 1.49597 ms
+>  min          = 62.5937 ms
+>  max          = 64.7093 ms
+>  samples: 
+>   0: 64.7093 ms
+>   1: 62.5937 ms
+
+=-=-=-=-=-= FINISH: Clbool-Multiply-Hash =-=-=-=-=-=
+=-=-=-=-=-= RUN: Clbool-Multiply-Hash =-=-=-=-=-=
+
+>   Load matrix: "data/amazon-2008/amazon-2008.mtx" isUndirected: 0
+                 size: 735323 x 735323 nvals: 5158388
+> Begin experiment: 0 name: data/amazon-2008/amazon-2008.mtx
+   Result matrix: size 735323 x 735323 nvals 25366745
+[0] time: 91.7868 ms
+   Result matrix: size 735323 x 735323 nvals 25366745
+[1] time: 92.7448 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 2
+>  total        = 184.532 ms
+>  average      = 92.2658 ms
+>  average (-1) = 92.7448 ms
+>  sd           = 0.677405 ms
+>  min          = 91.7868 ms
+>  max          = 92.7448 ms
+>  samples: 
+>   0: 91.7868 ms
+>   1: 92.7448 ms
+
+=-=-=-=-=-= FINISH: Clbool-Multiply-Hash =-=-=-=-=-=
+=-=-=-=-=-= RUN: Clbool-Multiply-Hash =-=-=-=-=-=
+
+>   Load matrix: "data/web-Google/web-Google.mtx" isUndirected: 0
+                 size: 916428 x 916428 nvals: 5105039
+> Begin experiment: 0 name: data/web-Google/web-Google.mtx
+   Result matrix: size 916428 x 916428 nvals 29710164
+[0] time: 145.439 ms
+   Result matrix: size 916428 x 916428 nvals 29710164
+[1] time: 131.716 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 2
+>  total        = 277.155 ms
+>  average      = 138.578 ms
+>  average (-1) = 131.716 ms
+>  sd           = 9.70358 ms
+>  min          = 131.716 ms
+>  max          = 145.439 ms
+>  samples: 
+>   0: 145.439 ms
+>   1: 131.716 ms
+
+=-=-=-=-=-= FINISH: Clbool-Multiply-Hash =-=-=-=-=-=
+=-=-=-=-=-= RUN: Clbool-Multiply-Hash =-=-=-=-=-=
+
+>   Load matrix: "data/wing/wing.mtx" isUndirected: 1
+                 size: 62032 x 62032 nvals: 243088
+> Begin experiment: 0 name: data/wing/wing.mtx
+   Result matrix: size 62032 x 62032 nvals 714200
+[0] time: 3.16741 ms
+   Result matrix: size 62032 x 62032 nvals 714200
+[1] time: 1.32587 ms
+   Result matrix: size 62032 x 62032 nvals 714200
+[2] time: 1.28126 ms
+   Result matrix: size 62032 x 62032 nvals 714200
+[3] time: 1.28105 ms
+   Result matrix: size 62032 x 62032 nvals 714200
+[4] time: 2.01075 ms
+   Result matrix: size 62032 x 62032 nvals 714200
+[5] time: 1.32477 ms
+   Result matrix: size 62032 x 62032 nvals 714200
+[6] time: 1.26358 ms
+   Result matrix: size 62032 x 62032 nvals 714200
+[7] time: 1.34207 ms
+   Result matrix: size 62032 x 62032 nvals 714200
+[8] time: 1.27361 ms
+   Result matrix: size 62032 x 62032 nvals 714200
+[9] time: 1.31231 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 10
+>  total        = 15.5827 ms
+>  average      = 1.55827 ms
+>  average (-1) = 1.37947 ms
+>  sd           = 0.608394 ms
+>  min          = 1.26358 ms
+>  max          = 3.16741 ms
+>  samples: 
+>   0: 3.16741 ms
+>   1: 1.32587 ms
+>   2: 1.28126 ms
+>   3: 1.28105 ms
+>   4: 2.01075 ms
+>   5: 1.32477 ms
+>   6: 1.26358 ms
+>   7: 1.34207 ms
+>   8: 1.27361 ms
+>   9: 1.31231 ms
+
+=-=-=-=-=-= FINISH: Clbool-Multiply-Hash =-=-=-=-=-=
+=-=-=-=-=-= RUN: Clbool-Multiply-Hash =-=-=-=-=-=
+
+>   Load matrix: "data/luxembourg_osm/luxembourg_osm.mtx" isUndirected: 1
+                 size: 114599 x 114599 nvals: 239332
+> Begin experiment: 0 name: data/luxembourg_osm/luxembourg_osm.mtx
+   Result matrix: size 114599 x 114599 nvals 393261
+[0] time: 3.39194 ms
+   Result matrix: size 114599 x 114599 nvals 393261
+[1] time: 1.47941 ms
+   Result matrix: size 114599 x 114599 nvals 393261
+[2] time: 1.34729 ms
+   Result matrix: size 114599 x 114599 nvals 393261
+[3] time: 1.33915 ms
+   Result matrix: size 114599 x 114599 nvals 393261
+[4] time: 1.34259 ms
+   Result matrix: size 114599 x 114599 nvals 393261
+[5] time: 1.36627 ms
+   Result matrix: size 114599 x 114599 nvals 393261
+[6] time: 1.35066 ms
+   Result matrix: size 114599 x 114599 nvals 393261
+[7] time: 1.37067 ms
+   Result matrix: size 114599 x 114599 nvals 393261
+[8] time: 1.45853 ms
+   Result matrix: size 114599 x 114599 nvals 393261
+[9] time: 1.33926 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 10
+>  total        = 15.7858 ms
+>  average      = 1.57858 ms
+>  average (-1) = 1.37709 ms
+>  sd           = 0.639144 ms
+>  min          = 1.33915 ms
+>  max          = 3.39194 ms
+>  samples: 
+>   0: 3.39194 ms
+>   1: 1.47941 ms
+>   2: 1.34729 ms
+>   3: 1.33915 ms
+>   4: 1.34259 ms
+>   5: 1.36627 ms
+>   6: 1.35066 ms
+>   7: 1.37067 ms
+>   8: 1.45853 ms
+>   9: 1.33926 ms
+
+=-=-=-=-=-= FINISH: Clbool-Multiply-Hash =-=-=-=-=-=
+=-=-=-=-=-= RUN: Clbool-Multiply-Hash =-=-=-=-=-=
+
+>   Load matrix: "data/amazon0312/amazon0312.mtx" isUndirected: 0
+                 size: 400727 x 400727 nvals: 3200440
+> Begin experiment: 0 name: data/amazon0312/amazon0312.mtx
+   Result matrix: size 400727 x 400727 nvals 14390544
+[0] time: 61.7693 ms
+   Result matrix: size 400727 x 400727 nvals 14390544
+[1] time: 60.3951 ms
+   Result matrix: size 400727 x 400727 nvals 14390544
+[2] time: 59.6059 ms
+   Result matrix: size 400727 x 400727 nvals 14390544
+[3] time: 57.1964 ms
+   Result matrix: size 400727 x 400727 nvals 14390544
+[4] time: 56.3906 ms
+   Result matrix: size 400727 x 400727 nvals 14390544
+[5] time: 54.9536 ms
+   Result matrix: size 400727 x 400727 nvals 14390544
+[6] time: 51.9605 ms
+   Result matrix: size 400727 x 400727 nvals 14390544
+[7] time: 51.976 ms
+   Result matrix: size 400727 x 400727 nvals 14390544
+[8] time: 55.1354 ms
+   Result matrix: size 400727 x 400727 nvals 14390544
+[9] time: 51.922 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 10
+>  total        = 561.305 ms
+>  average      = 56.1305 ms
+>  average (-1) = 55.504 ms
+>  sd           = 3.62094 ms
+>  min          = 51.922 ms
+>  max          = 61.7693 ms
+>  samples: 
+>   0: 61.7693 ms
+>   1: 60.3951 ms
+>   2: 59.6059 ms
+>   3: 57.1964 ms
+>   4: 56.3906 ms
+>   5: 54.9536 ms
+>   6: 51.9605 ms
+>   7: 51.976 ms
+>   8: 55.1354 ms
+>   9: 51.922 ms
+
+=-=-=-=-=-= FINISH: Clbool-Multiply-Hash =-=-=-=-=-=
+=-=-=-=-=-= RUN: Clbool-Multiply-Hash =-=-=-=-=-=
+
+>   Load matrix: "data/amazon-2008/amazon-2008.mtx" isUndirected: 0
+                 size: 735323 x 735323 nvals: 5158388
+> Begin experiment: 0 name: data/amazon-2008/amazon-2008.mtx
+   Result matrix: size 735323 x 735323 nvals 25366745
+[0] time: 81.3565 ms
+   Result matrix: size 735323 x 735323 nvals 25366745
+[1] time: 80.7501 ms
+   Result matrix: size 735323 x 735323 nvals 25366745
+[2] time: 80.6714 ms
+   Result matrix: size 735323 x 735323 nvals 25366745
+[3] time: 81.2009 ms
+   Result matrix: size 735323 x 735323 nvals 25366745
+[4] time: 80.7835 ms
+   Result matrix: size 735323 x 735323 nvals 25366745
+[5] time: 82.5608 ms
+   Result matrix: size 735323 x 735323 nvals 25366745
+[6] time: 82.0113 ms
+   Result matrix: size 735323 x 735323 nvals 25366745
+[7] time: 80.8818 ms
+   Result matrix: size 735323 x 735323 nvals 25366745
+[8] time: 80.7475 ms
+   Result matrix: size 735323 x 735323 nvals 25366745
+[9] time: 80.9247 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 10
+>  total        = 811.889 ms
+>  average      = 81.1889 ms
+>  average (-1) = 81.1702 ms
+>  sd           = 0.629844 ms
+>  min          = 80.6714 ms
+>  max          = 82.5608 ms
+>  samples: 
+>   0: 81.3565 ms
+>   1: 80.7501 ms
+>   2: 80.6714 ms
+>   3: 81.2009 ms
+>   4: 80.7835 ms
+>   5: 82.5608 ms
+>   6: 82.0113 ms
+>   7: 80.8818 ms
+>   8: 80.7475 ms
+>   9: 80.9247 ms
+
+=-=-=-=-=-= FINISH: Clbool-Multiply-Hash =-=-=-=-=-=
+=-=-=-=-=-= RUN: Clbool-Multiply-Hash =-=-=-=-=-=
+
+>   Load matrix: "data/web-Google/web-Google.mtx" isUndirected: 0
+                 size: 916428 x 916428 nvals: 5105039
+> Begin experiment: 0 name: data/web-Google/web-Google.mtx
+   Result matrix: size 916428 x 916428 nvals 29710164
+[0] time: 124.222 ms
+   Result matrix: size 916428 x 916428 nvals 29710164
+[1] time: 125.676 ms
+   Result matrix: size 916428 x 916428 nvals 29710164
+[2] time: 124.074 ms
+   Result matrix: size 916428 x 916428 nvals 29710164
+[3] time: 124.329 ms
+   Result matrix: size 916428 x 916428 nvals 29710164
+[4] time: 124.747 ms
+   Result matrix: size 916428 x 916428 nvals 29710164
+[5] time: 124.991 ms
+   Result matrix: size 916428 x 916428 nvals 29710164
+[6] time: 125.407 ms
+   Result matrix: size 916428 x 916428 nvals 29710164
+[7] time: 123.986 ms
+   Result matrix: size 916428 x 916428 nvals 29710164
+[8] time: 124.72 ms
+   Result matrix: size 916428 x 916428 nvals 29710164
+[9] time: 125.288 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 10
+>  total        = 1247.44 ms
+>  average      = 124.744 ms
+>  average (-1) = 124.802 ms
+>  sd           = 0.589988 ms
+>  min          = 123.986 ms
+>  max          = 125.676 ms
+>  samples: 
+>   0: 124.222 ms
+>   1: 125.676 ms
+>   2: 124.074 ms
+>   3: 124.329 ms
+>   4: 124.747 ms
+>   5: 124.991 ms
+>   6: 125.407 ms
+>   7: 123.986 ms
+>   8: 124.72 ms
+>   9: 125.288 ms
+
+=-=-=-=-=-= FINISH: Clbool-Multiply-Hash =-=-=-=-=-=
+=-=-=-=-=-= RUN: Clbool-Multiply-Hash =-=-=-=-=-=
+
+>   Load matrix: "data/roadNet-PA/roadNet-PA.mtx" isUndirected: 1
+                 size: 1090920 x 1090920 nvals: 3083796
+> Begin experiment: 0 name: data/roadNet-PA/roadNet-PA.mtx
+   Result matrix: size 1090920 x 1090920 nvals 7238920
+[0] time: 15.5646 ms
+   Result matrix: size 1090920 x 1090920 nvals 7238920
+[1] time: 14.6658 ms
+   Result matrix: size 1090920 x 1090920 nvals 7238920
+[2] time: 15.1467 ms
+   Result matrix: size 1090920 x 1090920 nvals 7238920
+[3] time: 13.8383 ms
+   Result matrix: size 1090920 x 1090920 nvals 7238920
+[4] time: 14.5665 ms
+   Result matrix: size 1090920 x 1090920 nvals 7238920
+[5] time: 13.7759 ms
+   Result matrix: size 1090920 x 1090920 nvals 7238920
+[6] time: 14.0154 ms
+   Result matrix: size 1090920 x 1090920 nvals 7238920
+[7] time: 13.8086 ms
+   Result matrix: size 1090920 x 1090920 nvals 7238920
+[8] time: 13.9731 ms
+   Result matrix: size 1090920 x 1090920 nvals 7238920
+[9] time: 13.9256 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 10
+>  total        = 143.28 ms
+>  average      = 14.328 ms
+>  average (-1) = 14.1906 ms
+>  sd           = 0.629848 ms
+>  min          = 13.7759 ms
+>  max          = 15.5646 ms
+>  samples: 
+>   0: 15.5646 ms
+>   1: 14.6658 ms
+>   2: 15.1467 ms
+>   3: 13.8383 ms
+>   4: 14.5665 ms
+>   5: 13.7759 ms
+>   6: 14.0154 ms
+>   7: 13.8086 ms
+>   8: 13.9731 ms
+>   9: 13.9256 ms
+
+=-=-=-=-=-= FINISH: Clbool-Multiply-Hash =-=-=-=-=-=
+=-=-=-=-=-= RUN: Clbool-Multiply-Hash =-=-=-=-=-=
+
+>   Load matrix: "data/roadNet-TX/roadNet-TX.mtx" isUndirected: 1
+                 size: 1393383 x 1393383 nvals: 3843320
+> Begin experiment: 0 name: data/roadNet-TX/roadNet-TX.mtx
+   Result matrix: size 1393383 x 1393383 nvals 8903897
+[0] time: 17.7808 ms
+   Result matrix: size 1393383 x 1393383 nvals 8903897
+[1] time: 18.1712 ms
+   Result matrix: size 1393383 x 1393383 nvals 8903897
+[2] time: 16.3863 ms
+   Result matrix: size 1393383 x 1393383 nvals 8903897
+[3] time: 16.8572 ms
+   Result matrix: size 1393383 x 1393383 nvals 8903897
+[4] time: 16.5587 ms
+   Result matrix: size 1393383 x 1393383 nvals 8903897
+[5] time: 16.5281 ms
+   Result matrix: size 1393383 x 1393383 nvals 8903897
+[6] time: 16.6184 ms
+   Result matrix: size 1393383 x 1393383 nvals 8903897
+[7] time: 16.6054 ms
+   Result matrix: size 1393383 x 1393383 nvals 8903897
+[8] time: 16.7017 ms
+   Result matrix: size 1393383 x 1393383 nvals 8903897
+[9] time: 16.4391 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 10
+>  total        = 168.647 ms
+>  average      = 16.8647 ms
+>  average (-1) = 16.7629 ms
+>  sd           = 0.607151 ms
+>  min          = 16.3863 ms
+>  max          = 18.1712 ms
+>  samples: 
+>   0: 17.7808 ms
+>   1: 18.1712 ms
+>   2: 16.3863 ms
+>   3: 16.8572 ms
+>   4: 16.5587 ms
+>   5: 16.5281 ms
+>   6: 16.6184 ms
+>   7: 16.6054 ms
+>   8: 16.7017 ms
+>   9: 16.4391 ms
+
+=-=-=-=-=-= FINISH: Clbool-Multiply-Hash =-=-=-=-=-=
+=-=-=-=-=-= RUN: Clbool-Multiply-Hash =-=-=-=-=-=
+
+>   Load matrix: "data/belgium_osm/belgium_osm.mtx" isUndirected: 1
+                 size: 1441295 x 1441295 nvals: 3099940
+> Begin experiment: 0 name: data/belgium_osm/belgium_osm.mtx
+   Result matrix: size 1441295 x 1441295 nvals 5323073
+[0] time: 17.7468 ms
+   Result matrix: size 1441295 x 1441295 nvals 5323073
+[1] time: 18.1786 ms
+   Result matrix: size 1441295 x 1441295 nvals 5323073
+[2] time: 17.0784 ms
+   Result matrix: size 1441295 x 1441295 nvals 5323073
+[3] time: 17.5857 ms
+   Result matrix: size 1441295 x 1441295 nvals 5323073
+[4] time: 16.7803 ms
+   Result matrix: size 1441295 x 1441295 nvals 5323073
+[5] time: 17.0807 ms
+   Result matrix: size 1441295 x 1441295 nvals 5323073
+[6] time: 16.9234 ms
+   Result matrix: size 1441295 x 1441295 nvals 5323073
+[7] time: 16.6291 ms
+   Result matrix: size 1441295 x 1441295 nvals 5323073
+[8] time: 18.1333 ms
+   Result matrix: size 1441295 x 1441295 nvals 5323073
+[9] time: 16.8429 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 10
+>  total        = 172.979 ms
+>  average      = 17.2979 ms
+>  average (-1) = 17.248 ms
+>  sd           = 0.569197 ms
+>  min          = 16.6291 ms
+>  max          = 18.1786 ms
+>  samples: 
+>   0: 17.7468 ms
+>   1: 18.1786 ms
+>   2: 17.0784 ms
+>   3: 17.5857 ms
+>   4: 16.7803 ms
+>   5: 17.0807 ms
+>   6: 16.9234 ms
+>   7: 16.6291 ms
+>   8: 18.1333 ms
+>   9: 16.8429 ms
+
+=-=-=-=-=-= FINISH: Clbool-Multiply-Hash =-=-=-=-=-=
+=-=-=-=-=-= RUN: Clbool-Multiply-Hash =-=-=-=-=-=
+
+>   Load matrix: "data/roadNet-CA/roadNet-CA.mtx" isUndirected: 1
+                 size: 1971281 x 1971281 nvals: 5533214
+> Begin experiment: 0 name: data/roadNet-CA/roadNet-CA.mtx
+   Result matrix: size 1971281 x 1971281 nvals 12908450
+[0] time: 24.5485 ms
+   Result matrix: size 1971281 x 1971281 nvals 12908450
+[1] time: 23.0046 ms
+   Result matrix: size 1971281 x 1971281 nvals 12908450
+[2] time: 23.7219 ms
+   Result matrix: size 1971281 x 1971281 nvals 12908450
+[3] time: 22.9685 ms
+   Result matrix: size 1971281 x 1971281 nvals 12908450
+[4] time: 23.6307 ms
+   Result matrix: size 1971281 x 1971281 nvals 12908450
+[5] time: 22.6808 ms
+   Result matrix: size 1971281 x 1971281 nvals 12908450
+[6] time: 22.7719 ms
+   Result matrix: size 1971281 x 1971281 nvals 12908450
+[7] time: 22.9235 ms
+   Result matrix: size 1971281 x 1971281 nvals 12908450
+[8] time: 22.8628 ms
+   Result matrix: size 1971281 x 1971281 nvals 12908450
+[9] time: 23.218 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 10
+>  total        = 232.331 ms
+>  average      = 23.2331 ms
+>  average (-1) = 23.087 ms
+>  sd           = 0.577393 ms
+>  min          = 22.6808 ms
+>  max          = 24.5485 ms
+>  samples: 
+>   0: 24.5485 ms
+>   1: 23.0046 ms
+>   2: 23.7219 ms
+>   3: 22.9685 ms
+>   4: 23.6307 ms
+>   5: 22.6808 ms
+>   6: 22.7719 ms
+>   7: 22.9235 ms
+>   8: 22.8628 ms
+>   9: 23.218 ms
+
+=-=-=-=-=-= FINISH: Clbool-Multiply-Hash =-=-=-=-=-=
+=-=-=-=-=-= RUN: Clbool-Multiply-Hash =-=-=-=-=-=
+
+>   Load matrix: "data/netherlands_osm/netherlands_osm.mtx" isUndirected: 1
+                 size: 2216688 x 2216688 nvals: 4882476
+> Begin experiment: 0 name: data/netherlands_osm/netherlands_osm.mtx
+   Result matrix: size 2216688 x 2216688 nvals 8755758
+[0] time: 27.545 ms
+   Result matrix: size 2216688 x 2216688 nvals 8755758
+[1] time: 24.8103 ms
+   Result matrix: size 2216688 x 2216688 nvals 8755758
+[2] time: 25.1706 ms
+   Result matrix: size 2216688 x 2216688 nvals 8755758
+[3] time: 24.5717 ms
+   Result matrix: size 2216688 x 2216688 nvals 8755758
+[4] time: 24.553 ms
+   Result matrix: size 2216688 x 2216688 nvals 8755758
+[5] time: 24.4571 ms
+   Result matrix: size 2216688 x 2216688 nvals 8755758
+[6] time: 24.3372 ms
+   Result matrix: size 2216688 x 2216688 nvals 8755758
+[7] time: 25.387 ms
+   Result matrix: size 2216688 x 2216688 nvals 8755758
+[8] time: 26.2772 ms
+   Result matrix: size 2216688 x 2216688 nvals 8755758
+[9] time: 24.6697 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 10
+>  total        = 251.779 ms
+>  average      = 25.1779 ms
+>  average (-1) = 24.9149 ms
+>  sd           = 1.01288 ms
+>  min          = 24.3372 ms
+>  max          = 27.545 ms
+>  samples: 
+>   0: 27.545 ms
+>   1: 24.8103 ms
+>   2: 25.1706 ms
+>   3: 24.5717 ms
+>   4: 24.553 ms
+>   5: 24.4571 ms
+>   6: 24.3372 ms
+>   7: 25.387 ms
+>   8: 26.2772 ms
+>   9: 24.6697 ms
+
+=-=-=-=-=-= FINISH: Clbool-Multiply-Hash =-=-=-=-=-=
+=-=-=-=-=-= RUN: Clbool-Multiply-Hash =-=-=-=-=-=
+
+>   Load matrix: "data/wing/wing.mtx" isUndirected: 1
+                 size: 62032 x 62032 nvals: 243088
+> Begin experiment: 0 name: data/wing/wing.mtx
+   Result matrix: size 62032 x 62032 nvals 714200
+[0] time: 3.38877 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 1
+>  total        = 3.38877 ms
+>  average      = 3.38877 ms
+>  average (-1) = 0 ms
+>  sd           = 0 ms
+>  min          = 3.38877 ms
+>  max          = 3.38877 ms
+>  samples: 
+>   0: 3.38877 ms
+
+=-=-=-=-=-= FINISH: Clbool-Multiply-Hash =-=-=-=-=-=
+=-=-=-=-=-= RUN: Clbool-Multiply-Hash =-=-=-=-=-=
+
+>   Load matrix: "data/luxembourg_osm/luxembourg_osm.mtx" isUndirected: 1
+                 size: 114599 x 114599 nvals: 239332
+> Begin experiment: 0 name: data/luxembourg_osm/luxembourg_osm.mtx
+   Result matrix: size 114599 x 114599 nvals 393261
+[0] time: 3.2409 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 1
+>  total        = 3.2409 ms
+>  average      = 3.2409 ms
+>  average (-1) = 0 ms
+>  sd           = 0 ms
+>  min          = 3.2409 ms
+>  max          = 3.2409 ms
+>  samples: 
+>   0: 3.2409 ms
+
+=-=-=-=-=-= FINISH: Clbool-Multiply-Hash =-=-=-=-=-=
+=-=-=-=-=-= RUN: Clbool-Multiply-Hash =-=-=-=-=-=
+
+>   Load matrix: "data/amazon0312/amazon0312.mtx" isUndirected: 0
+                 size: 400727 x 400727 nvals: 3200440
+> Begin experiment: 0 name: data/amazon0312/amazon0312.mtx
+   Result matrix: size 400727 x 400727 nvals 14390544
+[0] time: 62.1133 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 1
+>  total        = 62.1133 ms
+>  average      = 62.1133 ms
+>  average (-1) = 0 ms
+>  sd           = 0 ms
+>  min          = 62.1133 ms
+>  max          = 62.1133 ms
+>  samples: 
+>   0: 62.1133 ms
+
+=-=-=-=-=-= FINISH: Clbool-Multiply-Hash =-=-=-=-=-=
+=-=-=-=-=-= RUN: Clbool-Multiply-Hash =-=-=-=-=-=
+
+>   Load matrix: "data/amazon-2008/amazon-2008.mtx" isUndirected: 0
+                 size: 735323 x 735323 nvals: 5158388
+> Begin experiment: 0 name: data/amazon-2008/amazon-2008.mtx
+   Result matrix: size 735323 x 735323 nvals 25366745
+[0] time: 97.0417 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 1
+>  total        = 97.0417 ms
+>  average      = 97.0417 ms
+>  average (-1) = 0 ms
+>  sd           = 0 ms
+>  min          = 97.0417 ms
+>  max          = 97.0417 ms
+>  samples: 
+>   0: 97.0417 ms
+
+=-=-=-=-=-= FINISH: Clbool-Multiply-Hash =-=-=-=-=-=
+=-=-=-=-=-= RUN: Clbool-Multiply-Hash =-=-=-=-=-=
+
+>   Load matrix: "data/web-Google/web-Google.mtx" isUndirected: 0
+                 size: 916428 x 916428 nvals: 5105039
+> Begin experiment: 0 name: data/web-Google/web-Google.mtx
+   Result matrix: size 916428 x 916428 nvals 29710164
+[0] time: 145.059 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 1
+>  total        = 145.059 ms
+>  average      = 145.059 ms
+>  average (-1) = 0 ms
+>  sd           = 0 ms
+>  min          = 145.059 ms
+>  max          = 145.059 ms
+>  samples: 
+>   0: 145.059 ms
+
+=-=-=-=-=-= FINISH: Clbool-Multiply-Hash =-=-=-=-=-=
+=-=-=-=-=-= RUN: Clbool-Multiply-Hash =-=-=-=-=-=
+
+>   Load matrix: "data/roadNet-PA/roadNet-PA.mtx" isUndirected: 1
+                 size: 1090920 x 1090920 nvals: 3083796
+> Begin experiment: 0 name: data/roadNet-PA/roadNet-PA.mtx
+   Result matrix: size 1090920 x 1090920 nvals 7238920
+[0] time: 15.3783 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 1
+>  total        = 15.3783 ms
+>  average      = 15.3783 ms
+>  average (-1) = 0 ms
+>  sd           = 0 ms
+>  min          = 15.3783 ms
+>  max          = 15.3783 ms
+>  samples: 
+>   0: 15.3783 ms
+
+=-=-=-=-=-= FINISH: Clbool-Multiply-Hash =-=-=-=-=-=
+=-=-=-=-=-= RUN: Clbool-Multiply-Hash =-=-=-=-=-=
+
+>   Load matrix: "data/roadNet-TX/roadNet-TX.mtx" isUndirected: 1
+                 size: 1393383 x 1393383 nvals: 3843320
+> Begin experiment: 0 name: data/roadNet-TX/roadNet-TX.mtx
+   Result matrix: size 1393383 x 1393383 nvals 8903897
+[0] time: 19.5934 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 1
+>  total        = 19.5934 ms
+>  average      = 19.5934 ms
+>  average (-1) = 0 ms
+>  sd           = 0 ms
+>  min          = 19.5934 ms
+>  max          = 19.5934 ms
+>  samples: 
+>   0: 19.5934 ms
+
+=-=-=-=-=-= FINISH: Clbool-Multiply-Hash =-=-=-=-=-=
+=-=-=-=-=-= RUN: Clbool-Multiply-Hash =-=-=-=-=-=
+
+>   Load matrix: "data/belgium_osm/belgium_osm.mtx" isUndirected: 1
+                 size: 1441295 x 1441295 nvals: 3099940
+> Begin experiment: 0 name: data/belgium_osm/belgium_osm.mtx
+   Result matrix: size 1441295 x 1441295 nvals 5323073
+[0] time: 19.4053 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 1
+>  total        = 19.4053 ms
+>  average      = 19.4053 ms
+>  average (-1) = 0 ms
+>  sd           = 0 ms
+>  min          = 19.4053 ms
+>  max          = 19.4053 ms
+>  samples: 
+>   0: 19.4053 ms
+
+=-=-=-=-=-= FINISH: Clbool-Multiply-Hash =-=-=-=-=-=
+=-=-=-=-=-= RUN: Clbool-Multiply-Hash =-=-=-=-=-=
+
+>   Load matrix: "data/roadNet-CA/roadNet-CA.mtx" isUndirected: 1
+                 size: 1971281 x 1971281 nvals: 5533214
+> Begin experiment: 0 name: data/roadNet-CA/roadNet-CA.mtx
+   Result matrix: size 1971281 x 1971281 nvals 12908450
+[0] time: 25.4619 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 1
+>  total        = 25.4619 ms
+>  average      = 25.4619 ms
+>  average (-1) = 0 ms
+>  sd           = 0 ms
+>  min          = 25.4619 ms
+>  max          = 25.4619 ms
+>  samples: 
+>   0: 25.4619 ms
+
+=-=-=-=-=-= FINISH: Clbool-Multiply-Hash =-=-=-=-=-=
+=-=-=-=-=-= RUN: Clbool-Multiply-Hash =-=-=-=-=-=
+
+>   Load matrix: "data/netherlands_osm/netherlands_osm.mtx" isUndirected: 1
+                 size: 2216688 x 2216688 nvals: 4882476
+> Begin experiment: 0 name: data/netherlands_osm/netherlands_osm.mtx
+   Result matrix: size 2216688 x 2216688 nvals 8755758
+[0] time: 28.4153 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 1
+>  total        = 28.4153 ms
+>  average      = 28.4153 ms
+>  average (-1) = 0 ms
+>  sd           = 0 ms
+>  min          = 28.4153 ms
+>  max          = 28.4153 ms
+>  samples: 
+>   0: 28.4153 ms
+
+=-=-=-=-=-= FINISH: Clbool-Multiply-Hash =-=-=-=-=-=
