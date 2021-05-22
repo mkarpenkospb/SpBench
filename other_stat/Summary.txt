@@ -1,0 +1,167 @@
+--
+Benchmarking: Clbool-Add
+
+                                     Friendly name|      iterations|  expectation ms|           sd ms| 
+                                data/wing/wing.mtx:              10          1.93811         0.383658
+            data/luxembourg_osm/luxembourg_osm.mtx:              10           1.6484         0.383883
+                    data/amazon0312/amazon0312.mtx:              10          23.8634          1.84631
+                  data/amazon-2008/amazon-2008.mtx:              10          35.4398         0.603862
+                    data/web-Google/web-Google.mtx:              10          43.1332           3.1252
+                    data/roadNet-PA/roadNet-PA.mtx:              10          12.5931         0.165719
+                    data/roadNet-TX/roadNet-TX.mtx:              10          15.4714         0.122985
+                  data/belgium_osm/belgium_osm.mtx:              10          10.5311         0.250037
+                    data/roadNet-CA/roadNet-CA.mtx:              10          22.4715         0.053398
+          data/netherlands_osm/netherlands_osm.mtx:              10          18.6324         0.129003
+--
+Benchmarking: Clbool-Multiply-Hash
+
+                                     Friendly name|      iterations|  expectation ms|           sd ms| 
+                                data/wing/wing.mtx:              10          1.90752          0.36913
+            data/luxembourg_osm/luxembourg_osm.mtx:              10          2.06433         0.437911
+                    data/amazon0312/amazon0312.mtx:              10            55.56          3.26018
+                  data/amazon-2008/amazon-2008.mtx:              10          82.1126         0.381369
+                    data/web-Google/web-Google.mtx:              10          127.615          0.58673
+                    data/roadNet-PA/roadNet-PA.mtx:              10          14.2303         0.260949
+                    data/roadNet-TX/roadNet-TX.mtx:              10          16.9997         0.221912
+                  data/belgium_osm/belgium_osm.mtx:              10          16.9529         0.264292
+                    data/roadNet-CA/roadNet-CA.mtx:              10          23.4644          0.10787
+          data/netherlands_osm/netherlands_osm.mtx:              10          24.9325         0.210997
+--
+Benchmarking: Clbool-Multiply
+
+                                     Friendly name|      iterations|  expectation ms|           sd ms| 
+                                data/wing/wing.mtx:              10          4.34748         0.454228
+            data/luxembourg_osm/luxembourg_osm.mtx:              10          6.81247         0.481411
+                    data/amazon0312/amazon0312.mtx:              10          63.0876         0.114054
+                  data/amazon-2008/amazon-2008.mtx:              10          98.2304          2.05788
+                    data/roadNet-PA/roadNet-PA.mtx:              10          35.4841         0.417102
+                    data/roadNet-TX/roadNet-TX.mtx:              10          42.7041         0.398573
+                  data/belgium_osm/belgium_osm.mtx:              10           39.622         0.346763
+                    data/roadNet-CA/roadNet-CA.mtx:              10          57.6284         0.568316
+          data/netherlands_osm/netherlands_osm.mtx:              10          57.8415         0.209715
+--
+Benchmarking: clSPARSE-Multiply
+
+                                     Friendly name|      iterations|  expectation ms|           sd ms| 
+                                data/wing/wing.mtx:              10          4.22111         0.412622
+            data/luxembourg_osm/luxembourg_osm.mtx:              10          6.92056         0.468578
+                    data/amazon0312/amazon0312.mtx:              10           52.208          3.58826
+                  data/amazon-2008/amazon-2008.mtx:              10          77.4315          2.70364
+                    data/web-Google/web-Google.mtx:              10          207.512          1.92076
+                    data/roadNet-PA/roadNet-PA.mtx:              10          56.6502           2.2542
+                    data/roadNet-TX/roadNet-TX.mtx:              10           70.497          2.02523
+                  data/belgium_osm/belgium_osm.mtx:              10          68.2464          1.84345
+                    data/roadNet-CA/roadNet-CA.mtx:              10          98.2986          3.08373
+          data/netherlands_osm/netherlands_osm.mtx:              10          102.888          2.38517
+--
+Benchmarking: Cubool-Add
+
+                                     Friendly name|      iterations|  expectation ms|           sd ms| 
+                                data/wing/wing.mtx:              10          1.12597        0.0357983
+            data/luxembourg_osm/luxembourg_osm.mtx:              10          1.77754        0.0234844
+                    data/amazon0312/amazon0312.mtx:              10          11.4523         0.944781
+                  data/amazon-2008/amazon-2008.mtx:              10          17.5635         0.703442
+                    data/web-Google/web-Google.mtx:              10          24.8658          2.48797
+                    data/roadNet-PA/roadNet-PA.mtx:              10          16.9936          2.23198
+                    data/roadNet-TX/roadNet-TX.mtx:              10          19.6518         0.290587
+                  data/belgium_osm/belgium_osm.mtx:              10          19.5194         0.201356
+                    data/roadNet-CA/roadNet-CA.mtx:              10          30.5492          1.71199
+          data/netherlands_osm/netherlands_osm.mtx:              10          30.1744         0.794574
+--
+Benchmarking: Cubool-Multiply
+
+                                     Friendly name|      iterations|  expectation ms|           sd ms| 
+                                data/wing/wing.mtx:              10          1.90532         0.404868
+            data/luxembourg_osm/luxembourg_osm.mtx:              10          2.47831        0.0444264
+                    data/amazon0312/amazon0312.mtx:              10          23.2616         0.874379
+                  data/amazon-2008/amazon-2008.mtx:              10          33.3278          1.96169
+                    data/web-Google/web-Google.mtx:              10          41.8384         0.864659
+                    data/roadNet-PA/roadNet-PA.mtx:              10           18.188         0.174377
+                    data/roadNet-TX/roadNet-TX.mtx:              10          22.6987          0.19701
+                  data/belgium_osm/belgium_osm.mtx:              10          23.2167         0.134753
+                    data/roadNet-CA/roadNet-CA.mtx:              10          32.0527         0.311596
+          data/netherlands_osm/netherlands_osm.mtx:              10          35.3604         0.312631
+--
+Benchmarking: Cusp-Add
+
+                                     Friendly name|      iterations|  expectation ms|           sd ms| 
+                                data/wing/wing.mtx:              10          1.40789        0.0718241
+            data/luxembourg_osm/luxembourg_osm.mtx:              10          1.03491        0.0733185
+                    data/amazon0312/amazon0312.mtx:              10          16.2043         0.447699
+                  data/amazon-2008/amazon-2008.mtx:              10          29.5421         0.843288
+                    data/web-Google/web-Google.mtx:              10           31.911         0.330254
+                    data/roadNet-PA/roadNet-PA.mtx:              10           11.229         0.271121
+                    data/roadNet-TX/roadNet-TX.mtx:              10          14.5802         0.399362
+                  data/belgium_osm/belgium_osm.mtx:              10          10.2082         0.308355
+                    data/roadNet-CA/roadNet-CA.mtx:              10          19.4128         0.999563
+          data/netherlands_osm/netherlands_osm.mtx:              10          14.8535         0.334499
+--
+Benchmarking: cuSPARSE-Add
+
+                                     Friendly name|      iterations|  expectation ms|           sd ms| 
+                                data/wing/wing.mtx:              10          2.44617        0.0417627
+            data/luxembourg_osm/luxembourg_osm.mtx:              10         0.881162        0.0414071
+                    data/amazon0312/amazon0312.mtx:              10          24.3479         0.804804
+                  data/amazon-2008/amazon-2008.mtx:              10          27.2104          1.39877
+                    data/web-Google/web-Google.mtx:              10          89.0261         0.263955
+                    data/roadNet-PA/roadNet-PA.mtx:              10          11.6943         0.055639
+                    data/roadNet-TX/roadNet-TX.mtx:              10          16.9166          0.70369
+                  data/belgium_osm/belgium_osm.mtx:              10           10.507         0.212249
+                    data/roadNet-CA/roadNet-CA.mtx:              10          20.2589        0.0376587
+          data/netherlands_osm/netherlands_osm.mtx:              10            18.38         0.252982
+--
+Benchmarking: cuSPARSE-Multiply
+
+                                     Friendly name|      iterations|  expectation ms|           sd ms| 
+                                data/wing/wing.mtx:              10          20.1734         0.205357
+            data/luxembourg_osm/luxembourg_osm.mtx:              10          1.72989        0.0365938
+                    data/amazon0312/amazon0312.mtx:              10          412.857         0.663806
+                  data/amazon-2008/amazon-2008.mtx:              10          184.861          10.9879
+                    data/web-Google/web-Google.mtx:              10          4761.36          1.74381
+                    data/roadNet-PA/roadNet-PA.mtx:              10          37.5067         0.151356
+                    data/roadNet-TX/roadNet-TX.mtx:              10          46.7783         0.322865
+                  data/belgium_osm/belgium_osm.mtx:              10          26.7087        0.0684749
+                    data/roadNet-CA/roadNet-CA.mtx:              10          65.8459          4.47448
+          data/netherlands_osm/netherlands_osm.mtx:              10          51.4996          0.36263
+--
+Benchmarking: Cusp-Multiply
+
+                                     Friendly name|      iterations|  expectation ms|           sd ms| 
+                                data/wing/wing.mtx:              10          5.29773         0.103552
+            data/luxembourg_osm/luxembourg_osm.mtx:              10          3.74054        0.0815692
+                    data/amazon0312/amazon0312.mtx:              10          108.575         0.482555
+                  data/amazon-2008/amazon-2008.mtx:              10          172.056         0.199851
+                    data/web-Google/web-Google.mtx:               8          246.232          9.90196
+                    data/roadNet-PA/roadNet-PA.mtx:              10          42.1334         0.352325
+                    data/roadNet-TX/roadNet-TX.mtx:              10          53.1355          4.75364
+                  data/belgium_osm/belgium_osm.mtx:              10          32.9139         0.172424
+                    data/roadNet-CA/roadNet-CA.mtx:              10          74.4609          1.45997
+          data/netherlands_osm/netherlands_osm.mtx:              10          51.0817         0.137745
+--
+Benchmarking: SuiteSparse-Add
+
+                                     Friendly name|      iterations|  expectation ms|           sd ms| 
+                                data/wing/wing.mtx:              10           2.3899         0.331526
+            data/luxembourg_osm/luxembourg_osm.mtx:              10          1.69374         0.230116
+                    data/amazon0312/amazon0312.mtx:              10          37.2584         0.286548
+                  data/amazon-2008/amazon-2008.mtx:              10           64.857          1.37244
+                    data/web-Google/web-Google.mtx:              10          77.2124          1.58245
+                    data/roadNet-PA/roadNet-PA.mtx:              10          36.6951           1.4208
+                    data/roadNet-TX/roadNet-TX.mtx:              10          45.3522        0.0818435
+                  data/belgium_osm/belgium_osm.mtx:              10          28.5647         0.145513
+                    data/roadNet-CA/roadNet-CA.mtx:              10          65.2538          1.28618
+          data/netherlands_osm/netherlands_osm.mtx:              10          50.2326          1.09886
+--
+Benchmarking: SuiteSparse-Multiply
+
+                                     Friendly name|      iterations|  expectation ms|           sd ms| 
+                                data/wing/wing.mtx:              10          7.96934          6.14917
+            data/luxembourg_osm/luxembourg_osm.mtx:              10          3.12323         0.151631
+                    data/amazon0312/amazon0312.mtx:              10          257.657          1.02632
+                  data/amazon-2008/amazon-2008.mtx:              10          369.521          2.66492
+                    data/web-Google/web-Google.mtx:              10          673.398         0.576052
+                    data/roadNet-PA/roadNet-PA.mtx:              10          66.6195          2.04582
+                    data/roadNet-TX/roadNet-TX.mtx:              10          80.7716           1.8005
+                  data/belgium_osm/belgium_osm.mtx:              10          56.9166         0.783255
+                    data/roadNet-CA/roadNet-CA.mtx:              10          114.588          1.84564
+          data/netherlands_osm/netherlands_osm.mtx:              10            90.96          1.32209

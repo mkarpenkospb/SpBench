@@ -1,0 +1,23 @@
+Benchmarking: SuiteSparse-Multiply
+
+                                     Friendly name|      iterations|  expectation ms|           sd ms| 
+                                data/wing/wing.mtx:              10          7.96934          6.14917
+            data/luxembourg_osm/luxembourg_osm.mtx:              10          3.12323         0.151631
+                    data/amazon0312/amazon0312.mtx:              10          257.657          1.02632
+                  data/amazon-2008/amazon-2008.mtx:              10          369.521          2.66492
+                    data/web-Google/web-Google.mtx:              10          673.398         0.576052
+                    data/roadNet-PA/roadNet-PA.mtx:              10          66.6195          2.04582
+                    data/roadNet-TX/roadNet-TX.mtx:              10          80.7716           1.8005
+                  data/belgium_osm/belgium_osm.mtx:              10          56.9166         0.783255
+                    data/roadNet-CA/roadNet-CA.mtx:              10          114.588          1.84564
+          data/netherlands_osm/netherlands_osm.mtx:              10            90.96          1.32209
+                                data/wing/wing.mtx:               1                0                0
+            data/luxembourg_osm/luxembourg_osm.mtx:               1                0                0
+                    data/amazon0312/amazon0312.mtx:               1                0                0
+                  data/amazon-2008/amazon-2008.mtx:               1                0                0
+                    data/web-Google/web-Google.mtx:               1                0                0
+                    data/roadNet-PA/roadNet-PA.mtx:               1                0                0
+                    data/roadNet-TX/roadNet-TX.mtx:               1                0                0
+                  data/belgium_osm/belgium_osm.mtx:               1                0                0
+                    data/roadNet-CA/roadNet-CA.mtx:               1                0                0
+          data/netherlands_osm/netherlands_osm.mtx:               1                0                0

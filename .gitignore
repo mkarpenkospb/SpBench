@@ -42,3 +42,5 @@
 /dataset/
 /debug-build
 /release-build
+
+*headers/

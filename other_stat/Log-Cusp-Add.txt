@@ -1,0 +1,710 @@
+=-=-=-=-=-= RUN: Cusp-Add =-=-=-=-=-=
+
+>   Load A: "data/wing/wing.mtx" isUndirected: 1
+                 size: 62032 x 62032 nvals: 243088
+>   Load A2: "data/wing/wing.mtx" isUndirected: 1
+                 size: 62032 x 62032 nvals: 714200
+> Begin experiment: 0 name: data/wing/wing.mtx
+   Result matrix: size 62032 x 62032 nvals 917178
+[0] time: 1.59907 ms
+   Result matrix: size 62032 x 62032 nvals 917178
+[1] time: 1.47458 ms
+   Result matrix: size 62032 x 62032 nvals 917178
+[2] time: 1.43301 ms
+   Result matrix: size 62032 x 62032 nvals 917178
+[3] time: 1.40413 ms
+   Result matrix: size 62032 x 62032 nvals 917178
+[4] time: 1.35839 ms
+   Result matrix: size 62032 x 62032 nvals 917178
+[5] time: 1.36581 ms
+   Result matrix: size 62032 x 62032 nvals 917178
+[6] time: 1.45503 ms
+   Result matrix: size 62032 x 62032 nvals 917178
+[7] time: 1.40179 ms
+   Result matrix: size 62032 x 62032 nvals 917178
+[8] time: 1.4142 ms
+   Result matrix: size 62032 x 62032 nvals 917178
+[9] time: 1.36406 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 10
+>  total        = 14.2701 ms
+>  average      = 1.42701 ms
+>  average (-1) = 1.40789 ms
+>  sd           = 0.0718241 ms
+>  min          = 1.35839 ms
+>  max          = 1.59907 ms
+>  samples: 
+>   0: 1.59907 ms
+>   1: 1.47458 ms
+>   2: 1.43301 ms
+>   3: 1.40413 ms
+>   4: 1.35839 ms
+>   5: 1.36581 ms
+>   6: 1.45503 ms
+>   7: 1.40179 ms
+>   8: 1.4142 ms
+>   9: 1.36406 ms
+
+=-=-=-=-=-= FINISH: Cusp-Add =-=-=-=-=-=
+=-=-=-=-=-= RUN: Cusp-Add =-=-=-=-=-=
+
+>   Load A: "data/luxembourg_osm/luxembourg_osm.mtx" isUndirected: 1
+                 size: 114599 x 114599 nvals: 239332
+>   Load A2: "data/luxembourg_osm/luxembourg_osm.mtx" isUndirected: 1
+                 size: 114599 x 114599 nvals: 393261
+> Begin experiment: 0 name: data/luxembourg_osm/luxembourg_osm.mtx
+   Result matrix: size 114599 x 114599 nvals 632185
+[0] time: 1.21281 ms
+   Result matrix: size 114599 x 114599 nvals 632185
+[1] time: 1.00732 ms
+   Result matrix: size 114599 x 114599 nvals 632185
+[2] time: 1.1442 ms
+   Result matrix: size 114599 x 114599 nvals 632185
+[3] time: 1.00045 ms
+   Result matrix: size 114599 x 114599 nvals 632185
+[4] time: 1.00685 ms
+   Result matrix: size 114599 x 114599 nvals 632185
+[5] time: 0.997764 ms
+   Result matrix: size 114599 x 114599 nvals 632185
+[6] time: 1.05097 ms
+   Result matrix: size 114599 x 114599 nvals 632185
+[7] time: 0.997887 ms
+   Result matrix: size 114599 x 114599 nvals 632185
+[8] time: 1.08129 ms
+   Result matrix: size 114599 x 114599 nvals 632185
+[9] time: 1.02748 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 10
+>  total        = 10.527 ms
+>  average      = 1.0527 ms
+>  average (-1) = 1.03491 ms
+>  sd           = 0.0733185 ms
+>  min          = 0.997764 ms
+>  max          = 1.21281 ms
+>  samples: 
+>   0: 1.21281 ms
+>   1: 1.00732 ms
+>   2: 1.1442 ms
+>   3: 1.00045 ms
+>   4: 1.00685 ms
+>   5: 0.997764 ms
+>   6: 1.05097 ms
+>   7: 0.997887 ms
+>   8: 1.08129 ms
+>   9: 1.02748 ms
+
+=-=-=-=-=-= FINISH: Cusp-Add =-=-=-=-=-=
+=-=-=-=-=-= RUN: Cusp-Add =-=-=-=-=-=
+
+>   Load A: "data/amazon0312/amazon0312.mtx" isUndirected: 0
+                 size: 400727 x 400727 nvals: 3200440
+>   Load A2: "data/amazon0312/amazon0312.mtx" isUndirected: 0
+                 size: 400727 x 400727 nvals: 14390544
+> Begin experiment: 0 name: data/amazon0312/amazon0312.mtx
+   Result matrix: size 400727 x 400727 nvals 14968909
+[0] time: 17.6173 ms
+   Result matrix: size 400727 x 400727 nvals 14968909
+[1] time: 16.1887 ms
+   Result matrix: size 400727 x 400727 nvals 14968909
+[2] time: 16.2202 ms
+   Result matrix: size 400727 x 400727 nvals 14968909
+[3] time: 16.2008 ms
+   Result matrix: size 400727 x 400727 nvals 14968909
+[4] time: 16.2314 ms
+   Result matrix: size 400727 x 400727 nvals 14968909
+[5] time: 16.2366 ms
+   Result matrix: size 400727 x 400727 nvals 14968909
+[6] time: 16.2081 ms
+   Result matrix: size 400727 x 400727 nvals 14968909
+[7] time: 16.153 ms
+   Result matrix: size 400727 x 400727 nvals 14968909
+[8] time: 16.2332 ms
+   Result matrix: size 400727 x 400727 nvals 14968909
+[9] time: 16.1672 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 10
+>  total        = 163.456 ms
+>  average      = 16.3456 ms
+>  average (-1) = 16.2043 ms
+>  sd           = 0.447699 ms
+>  min          = 16.153 ms
+>  max          = 17.6173 ms
+>  samples: 
+>   0: 17.6173 ms
+>   1: 16.1887 ms
+>   2: 16.2202 ms
+>   3: 16.2008 ms
+>   4: 16.2314 ms
+>   5: 16.2366 ms
+>   6: 16.2081 ms
+>   7: 16.153 ms
+>   8: 16.2332 ms
+>   9: 16.1672 ms
+
+=-=-=-=-=-= FINISH: Cusp-Add =-=-=-=-=-=
+=-=-=-=-=-= RUN: Cusp-Add =-=-=-=-=-=
+
+>   Load A: "data/amazon-2008/amazon-2008.mtx" isUndirected: 0
+                 size: 735323 x 735323 nvals: 5158388
+>   Load A2: "data/amazon-2008/amazon-2008.mtx" isUndirected: 0
+                 size: 735323 x 735323 nvals: 25366745
+> Begin experiment: 0 name: data/amazon-2008/amazon-2008.mtx
+   Result matrix: size 735323 x 735323 nvals 26402678
+[0] time: 30.2248 ms
+   Result matrix: size 735323 x 735323 nvals 26402678
+[1] time: 29.8115 ms
+   Result matrix: size 735323 x 735323 nvals 26402678
+[2] time: 29.7542 ms
+   Result matrix: size 735323 x 735323 nvals 26402678
+[3] time: 30.0625 ms
+   Result matrix: size 735323 x 735323 nvals 26402678
+[4] time: 29.746 ms
+   Result matrix: size 735323 x 735323 nvals 26402678
+[5] time: 31.3472 ms
+   Result matrix: size 735323 x 735323 nvals 26402678
+[6] time: 28.711 ms
+   Result matrix: size 735323 x 735323 nvals 26402678
+[7] time: 28.9145 ms
+   Result matrix: size 735323 x 735323 nvals 26402678
+[8] time: 28.7322 ms
+   Result matrix: size 735323 x 735323 nvals 26402678
+[9] time: 28.7994 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 10
+>  total        = 296.103 ms
+>  average      = 29.6103 ms
+>  average (-1) = 29.5421 ms
+>  sd           = 0.843288 ms
+>  min          = 28.711 ms
+>  max          = 31.3472 ms
+>  samples: 
+>   0: 30.2248 ms
+>   1: 29.8115 ms
+>   2: 29.7542 ms
+>   3: 30.0625 ms
+>   4: 29.746 ms
+>   5: 31.3472 ms
+>   6: 28.711 ms
+>   7: 28.9145 ms
+>   8: 28.7322 ms
+>   9: 28.7994 ms
+
+=-=-=-=-=-= FINISH: Cusp-Add =-=-=-=-=-=
+=-=-=-=-=-= RUN: Cusp-Add =-=-=-=-=-=
+
+>   Load A: "data/web-Google/web-Google.mtx" isUndirected: 0
+                 size: 916428 x 916428 nvals: 5105039
+>   Load A2: "data/web-Google/web-Google.mtx" isUndirected: 0
+                 size: 916428 x 916428 nvals: 29710164
+> Begin experiment: 0 name: data/web-Google/web-Google.mtx
+   Result matrix: size 916428 x 916428 nvals 30811855
+[0] time: 32.0695 ms
+   Result matrix: size 916428 x 916428 nvals 30811855
+[1] time: 32.8095 ms
+   Result matrix: size 916428 x 916428 nvals 30811855
+[2] time: 31.6941 ms
+   Result matrix: size 916428 x 916428 nvals 30811855
+[3] time: 31.7656 ms
+   Result matrix: size 916428 x 916428 nvals 30811855
+[4] time: 31.9159 ms
+   Result matrix: size 916428 x 916428 nvals 30811855
+[5] time: 31.9101 ms
+   Result matrix: size 916428 x 916428 nvals 30811855
+[6] time: 31.7273 ms
+   Result matrix: size 916428 x 916428 nvals 30811855
+[7] time: 31.7898 ms
+   Result matrix: size 916428 x 916428 nvals 30811855
+[8] time: 31.7326 ms
+   Result matrix: size 916428 x 916428 nvals 30811855
+[9] time: 31.8541 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 10
+>  total        = 319.268 ms
+>  average      = 31.9268 ms
+>  average (-1) = 31.911 ms
+>  sd           = 0.330254 ms
+>  min          = 31.6941 ms
+>  max          = 32.8095 ms
+>  samples: 
+>   0: 32.0695 ms
+>   1: 32.8095 ms
+>   2: 31.6941 ms
+>   3: 31.7656 ms
+>   4: 31.9159 ms
+>   5: 31.9101 ms
+>   6: 31.7273 ms
+>   7: 31.7898 ms
+>   8: 31.7326 ms
+>   9: 31.8541 ms
+
+=-=-=-=-=-= FINISH: Cusp-Add =-=-=-=-=-=
+=-=-=-=-=-= RUN: Cusp-Add =-=-=-=-=-=
+
+>   Load A: "data/roadNet-PA/roadNet-PA.mtx" isUndirected: 1
+                 size: 1090920 x 1090920 nvals: 3083796
+>   Load A2: "data/roadNet-PA/roadNet-PA.mtx" isUndirected: 1
+                 size: 1090920 x 1090920 nvals: 7238920
+> Begin experiment: 0 name: data/roadNet-PA/roadNet-PA.mtx
+   Result matrix: size 1090920 x 1090920 nvals 9931528
+[0] time: 12.0602 ms
+   Result matrix: size 1090920 x 1090920 nvals 9931528
+[1] time: 11.2243 ms
+   Result matrix: size 1090920 x 1090920 nvals 9931528
+[2] time: 11.2992 ms
+   Result matrix: size 1090920 x 1090920 nvals 9931528
+[3] time: 11.2823 ms
+   Result matrix: size 1090920 x 1090920 nvals 9931528
+[4] time: 11.1439 ms
+   Result matrix: size 1090920 x 1090920 nvals 9931528
+[5] time: 11.3065 ms
+   Result matrix: size 1090920 x 1090920 nvals 9931528
+[6] time: 11.1527 ms
+   Result matrix: size 1090920 x 1090920 nvals 9931528
+[7] time: 11.1265 ms
+   Result matrix: size 1090920 x 1090920 nvals 9931528
+[8] time: 11.2584 ms
+   Result matrix: size 1090920 x 1090920 nvals 9931528
+[9] time: 11.2668 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 10
+>  total        = 113.121 ms
+>  average      = 11.3121 ms
+>  average (-1) = 11.229 ms
+>  sd           = 0.271121 ms
+>  min          = 11.1265 ms
+>  max          = 12.0602 ms
+>  samples: 
+>   0: 12.0602 ms
+>   1: 11.2243 ms
+>   2: 11.2992 ms
+>   3: 11.2823 ms
+>   4: 11.1439 ms
+>   5: 11.3065 ms
+>   6: 11.1527 ms
+>   7: 11.1265 ms
+>   8: 11.2584 ms
+>   9: 11.2668 ms
+
+=-=-=-=-=-= FINISH: Cusp-Add =-=-=-=-=-=
+=-=-=-=-=-= RUN: Cusp-Add =-=-=-=-=-=
+
+>   Load A: "data/roadNet-TX/roadNet-TX.mtx" isUndirected: 1
+                 size: 1393383 x 1393383 nvals: 3843320
+>   Load A2: "data/roadNet-TX/roadNet-TX.mtx" isUndirected: 1
+                 size: 1393383 x 1393383 nvals: 8903897
+> Begin experiment: 0 name: data/roadNet-TX/roadNet-TX.mtx
+   Result matrix: size 1393383 x 1393383 nvals 12264987
+[0] time: 15.8396 ms
+   Result matrix: size 1393383 x 1393383 nvals 12264987
+[1] time: 14.5715 ms
+   Result matrix: size 1393383 x 1393383 nvals 12264987
+[2] time: 14.5348 ms
+   Result matrix: size 1393383 x 1393383 nvals 12264987
+[3] time: 14.6008 ms
+   Result matrix: size 1393383 x 1393383 nvals 12264987
+[4] time: 14.63 ms
+   Result matrix: size 1393383 x 1393383 nvals 12264987
+[5] time: 14.5999 ms
+   Result matrix: size 1393383 x 1393383 nvals 12264987
+[6] time: 14.5738 ms
+   Result matrix: size 1393383 x 1393383 nvals 12264987
+[7] time: 14.6055 ms
+   Result matrix: size 1393383 x 1393383 nvals 12264987
+[8] time: 14.5652 ms
+   Result matrix: size 1393383 x 1393383 nvals 12264987
+[9] time: 14.54 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 10
+>  total        = 147.061 ms
+>  average      = 14.7061 ms
+>  average (-1) = 14.5802 ms
+>  sd           = 0.399362 ms
+>  min          = 14.5348 ms
+>  max          = 15.8396 ms
+>  samples: 
+>   0: 15.8396 ms
+>   1: 14.5715 ms
+>   2: 14.5348 ms
+>   3: 14.6008 ms
+>   4: 14.63 ms
+>   5: 14.5999 ms
+>   6: 14.5738 ms
+>   7: 14.6055 ms
+>   8: 14.5652 ms
+>   9: 14.54 ms
+
+=-=-=-=-=-= FINISH: Cusp-Add =-=-=-=-=-=
+=-=-=-=-=-= RUN: Cusp-Add =-=-=-=-=-=
+
+>   Load A: "data/belgium_osm/belgium_osm.mtx" isUndirected: 1
+                 size: 1441295 x 1441295 nvals: 3099940
+>   Load A2: "data/belgium_osm/belgium_osm.mtx" isUndirected: 1
+                 size: 1441295 x 1441295 nvals: 5323073
+> Begin experiment: 0 name: data/belgium_osm/belgium_osm.mtx
+   Result matrix: size 1441295 x 1441295 nvals 8408599
+[0] time: 11.1516 ms
+   Result matrix: size 1441295 x 1441295 nvals 8408599
+[1] time: 10.1023 ms
+   Result matrix: size 1441295 x 1441295 nvals 8408599
+[2] time: 10.1273 ms
+   Result matrix: size 1441295 x 1441295 nvals 8408599
+[3] time: 10.1693 ms
+   Result matrix: size 1441295 x 1441295 nvals 8408599
+[4] time: 10.2356 ms
+   Result matrix: size 1441295 x 1441295 nvals 8408599
+[5] time: 10.3071 ms
+   Result matrix: size 1441295 x 1441295 nvals 8408599
+[6] time: 10.303 ms
+   Result matrix: size 1441295 x 1441295 nvals 8408599
+[7] time: 10.1068 ms
+   Result matrix: size 1441295 x 1441295 nvals 8408599
+[8] time: 10.2659 ms
+   Result matrix: size 1441295 x 1441295 nvals 8408599
+[9] time: 10.256 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 10
+>  total        = 103.025 ms
+>  average      = 10.3025 ms
+>  average (-1) = 10.2082 ms
+>  sd           = 0.308355 ms
+>  min          = 10.1023 ms
+>  max          = 11.1516 ms
+>  samples: 
+>   0: 11.1516 ms
+>   1: 10.1023 ms
+>   2: 10.1273 ms
+>   3: 10.1693 ms
+>   4: 10.2356 ms
+>   5: 10.3071 ms
+>   6: 10.303 ms
+>   7: 10.1068 ms
+>   8: 10.2659 ms
+>   9: 10.256 ms
+
+=-=-=-=-=-= FINISH: Cusp-Add =-=-=-=-=-=
+=-=-=-=-=-= RUN: Cusp-Add =-=-=-=-=-=
+
+>   Load A: "data/roadNet-CA/roadNet-CA.mtx" isUndirected: 1
+                 size: 1971281 x 1971281 nvals: 5533214
+>   Load A2: "data/roadNet-CA/roadNet-CA.mtx" isUndirected: 1
+                 size: 1971281 x 1971281 nvals: 12908450
+> Begin experiment: 0 name: data/roadNet-CA/roadNet-CA.mtx
+   Result matrix: size 1971281 x 1971281 nvals 17743342
+[0] time: 20.4249 ms
+   Result matrix: size 1971281 x 1971281 nvals 17743342
+[1] time: 19.0211 ms
+   Result matrix: size 1971281 x 1971281 nvals 17743342
+[2] time: 19.0859 ms
+   Result matrix: size 1971281 x 1971281 nvals 17743342
+[3] time: 22.0874 ms
+   Result matrix: size 1971281 x 1971281 nvals 17743342
+[4] time: 19.1503 ms
+   Result matrix: size 1971281 x 1971281 nvals 17743342
+[5] time: 19.091 ms
+   Result matrix: size 1971281 x 1971281 nvals 17743342
+[6] time: 19.0706 ms
+   Result matrix: size 1971281 x 1971281 nvals 17743342
+[7] time: 18.9768 ms
+   Result matrix: size 1971281 x 1971281 nvals 17743342
+[8] time: 19.0959 ms
+   Result matrix: size 1971281 x 1971281 nvals 17743342
+[9] time: 19.1363 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 10
+>  total        = 195.14 ms
+>  average      = 19.514 ms
+>  average (-1) = 19.4128 ms
+>  sd           = 0.999563 ms
+>  min          = 18.9768 ms
+>  max          = 22.0874 ms
+>  samples: 
+>   0: 20.4249 ms
+>   1: 19.0211 ms
+>   2: 19.0859 ms
+>   3: 22.0874 ms
+>   4: 19.1503 ms
+>   5: 19.091 ms
+>   6: 19.0706 ms
+>   7: 18.9768 ms
+>   8: 19.0959 ms
+>   9: 19.1363 ms
+
+=-=-=-=-=-= FINISH: Cusp-Add =-=-=-=-=-=
+=-=-=-=-=-= RUN: Cusp-Add =-=-=-=-=-=
+
+>   Load A: "data/netherlands_osm/netherlands_osm.mtx" isUndirected: 1
+                 size: 2216688 x 2216688 nvals: 4882476
+>   Load A2: "data/netherlands_osm/netherlands_osm.mtx" isUndirected: 1
+                 size: 2216688 x 2216688 nvals: 8755758
+> Begin experiment: 0 name: data/netherlands_osm/netherlands_osm.mtx
+   Result matrix: size 2216688 x 2216688 nvals 13626132
+[0] time: 15.8376 ms
+   Result matrix: size 2216688 x 2216688 nvals 13626132
+[1] time: 14.7337 ms
+   Result matrix: size 2216688 x 2216688 nvals 13626132
+[2] time: 15.0272 ms
+   Result matrix: size 2216688 x 2216688 nvals 13626132
+[3] time: 14.7638 ms
+   Result matrix: size 2216688 x 2216688 nvals 13626132
+[4] time: 14.8024 ms
+   Result matrix: size 2216688 x 2216688 nvals 13626132
+[5] time: 14.7673 ms
+   Result matrix: size 2216688 x 2216688 nvals 13626132
+[6] time: 14.8041 ms
+   Result matrix: size 2216688 x 2216688 nvals 13626132
+[7] time: 15.0261 ms
+   Result matrix: size 2216688 x 2216688 nvals 13626132
+[8] time: 14.7381 ms
+   Result matrix: size 2216688 x 2216688 nvals 13626132
+[9] time: 15.0186 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 10
+>  total        = 149.519 ms
+>  average      = 14.9519 ms
+>  average (-1) = 14.8535 ms
+>  sd           = 0.334499 ms
+>  min          = 14.7337 ms
+>  max          = 15.8376 ms
+>  samples: 
+>   0: 15.8376 ms
+>   1: 14.7337 ms
+>   2: 15.0272 ms
+>   3: 14.7638 ms
+>   4: 14.8024 ms
+>   5: 14.7673 ms
+>   6: 14.8041 ms
+>   7: 15.0261 ms
+>   8: 14.7381 ms
+>   9: 15.0186 ms
+
+=-=-=-=-=-= FINISH: Cusp-Add =-=-=-=-=-=
+=-=-=-=-=-= RUN: Cusp-Add =-=-=-=-=-=
+
+>   Load A: "data/wing/wing.mtx" isUndirected: 1
+                 size: 62032 x 62032 nvals: 243088
+>   Load A2: "data/wing/wing.mtx" isUndirected: 1
+                 size: 62032 x 62032 nvals: 714200
+> Begin experiment: 0 name: data/wing/wing.mtx
+   Result matrix: size 62032 x 62032 nvals 917178
+[0] time: 1.69548 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 1
+>  total        = 1.69548 ms
+>  average      = 1.69548 ms
+>  average (-1) = 0 ms
+>  sd           = 0 ms
+>  min          = 1.69548 ms
+>  max          = 1.69548 ms
+>  samples: 
+>   0: 1.69548 ms
+
+=-=-=-=-=-= FINISH: Cusp-Add =-=-=-=-=-=
+=-=-=-=-=-= RUN: Cusp-Add =-=-=-=-=-=
+
+>   Load A: "data/luxembourg_osm/luxembourg_osm.mtx" isUndirected: 1
+                 size: 114599 x 114599 nvals: 239332
+>   Load A2: "data/luxembourg_osm/luxembourg_osm.mtx" isUndirected: 1
+                 size: 114599 x 114599 nvals: 393261
+> Begin experiment: 0 name: data/luxembourg_osm/luxembourg_osm.mtx
+   Result matrix: size 114599 x 114599 nvals 632185
+[0] time: 1.21544 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 1
+>  total        = 1.21544 ms
+>  average      = 1.21544 ms
+>  average (-1) = 0 ms
+>  sd           = 0 ms
+>  min          = 1.21544 ms
+>  max          = 1.21544 ms
+>  samples: 
+>   0: 1.21544 ms
+
+=-=-=-=-=-= FINISH: Cusp-Add =-=-=-=-=-=
+=-=-=-=-=-= RUN: Cusp-Add =-=-=-=-=-=
+
+>   Load A: "data/amazon0312/amazon0312.mtx" isUndirected: 0
+                 size: 400727 x 400727 nvals: 3200440
+>   Load A2: "data/amazon0312/amazon0312.mtx" isUndirected: 0
+                 size: 400727 x 400727 nvals: 14390544
+> Begin experiment: 0 name: data/amazon0312/amazon0312.mtx
+   Result matrix: size 400727 x 400727 nvals 14968909
+[0] time: 19.0946 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 1
+>  total        = 19.0946 ms
+>  average      = 19.0946 ms
+>  average (-1) = 0 ms
+>  sd           = 0 ms
+>  min          = 19.0946 ms
+>  max          = 19.0946 ms
+>  samples: 
+>   0: 19.0946 ms
+
+=-=-=-=-=-= FINISH: Cusp-Add =-=-=-=-=-=
+=-=-=-=-=-= RUN: Cusp-Add =-=-=-=-=-=
+
+>   Load A: "data/amazon-2008/amazon-2008.mtx" isUndirected: 0
+                 size: 735323 x 735323 nvals: 5158388
+>   Load A2: "data/amazon-2008/amazon-2008.mtx" isUndirected: 0
+                 size: 735323 x 735323 nvals: 25366745
+> Begin experiment: 0 name: data/amazon-2008/amazon-2008.mtx
+   Result matrix: size 735323 x 735323 nvals 26402678
+[0] time: 30.3933 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 1
+>  total        = 30.3933 ms
+>  average      = 30.3933 ms
+>  average (-1) = 0 ms
+>  sd           = 0 ms
+>  min          = 30.3933 ms
+>  max          = 30.3933 ms
+>  samples: 
+>   0: 30.3933 ms
+
+=-=-=-=-=-= FINISH: Cusp-Add =-=-=-=-=-=
+=-=-=-=-=-= RUN: Cusp-Add =-=-=-=-=-=
+
+>   Load A: "data/web-Google/web-Google.mtx" isUndirected: 0
+                 size: 916428 x 916428 nvals: 5105039
+>   Load A2: "data/web-Google/web-Google.mtx" isUndirected: 0
+                 size: 916428 x 916428 nvals: 29710164
+> Begin experiment: 0 name: data/web-Google/web-Google.mtx
+   Result matrix: size 916428 x 916428 nvals 30811855
+[0] time: 33.6912 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 1
+>  total        = 33.6912 ms
+>  average      = 33.6912 ms
+>  average (-1) = 0 ms
+>  sd           = 0 ms
+>  min          = 33.6912 ms
+>  max          = 33.6912 ms
+>  samples: 
+>   0: 33.6912 ms
+
+=-=-=-=-=-= FINISH: Cusp-Add =-=-=-=-=-=
+=-=-=-=-=-= RUN: Cusp-Add =-=-=-=-=-=
+
+>   Load A: "data/roadNet-PA/roadNet-PA.mtx" isUndirected: 1
+                 size: 1090920 x 1090920 nvals: 3083796
+>   Load A2: "data/roadNet-PA/roadNet-PA.mtx" isUndirected: 1
+                 size: 1090920 x 1090920 nvals: 7238920
+> Begin experiment: 0 name: data/roadNet-PA/roadNet-PA.mtx
+   Result matrix: size 1090920 x 1090920 nvals 9931528
+[0] time: 13.1349 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 1
+>  total        = 13.1349 ms
+>  average      = 13.1349 ms
+>  average (-1) = 0 ms
+>  sd           = 0 ms
+>  min          = 13.1349 ms
+>  max          = 13.1349 ms
+>  samples: 
+>   0: 13.1349 ms
+
+=-=-=-=-=-= FINISH: Cusp-Add =-=-=-=-=-=
+=-=-=-=-=-= RUN: Cusp-Add =-=-=-=-=-=
+
+>   Load A: "data/roadNet-TX/roadNet-TX.mtx" isUndirected: 1
+                 size: 1393383 x 1393383 nvals: 3843320
+>   Load A2: "data/roadNet-TX/roadNet-TX.mtx" isUndirected: 1
+                 size: 1393383 x 1393383 nvals: 8903897
+> Begin experiment: 0 name: data/roadNet-TX/roadNet-TX.mtx
+   Result matrix: size 1393383 x 1393383 nvals 12264987
+[0] time: 16.0093 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 1
+>  total        = 16.0093 ms
+>  average      = 16.0093 ms
+>  average (-1) = 0 ms
+>  sd           = 0 ms
+>  min          = 16.0093 ms
+>  max          = 16.0093 ms
+>  samples: 
+>   0: 16.0093 ms
+
+=-=-=-=-=-= FINISH: Cusp-Add =-=-=-=-=-=
+=-=-=-=-=-= RUN: Cusp-Add =-=-=-=-=-=
+
+>   Load A: "data/belgium_osm/belgium_osm.mtx" isUndirected: 1
+                 size: 1441295 x 1441295 nvals: 3099940
+>   Load A2: "data/belgium_osm/belgium_osm.mtx" isUndirected: 1
+                 size: 1441295 x 1441295 nvals: 5323073
+> Begin experiment: 0 name: data/belgium_osm/belgium_osm.mtx
+   Result matrix: size 1441295 x 1441295 nvals 8408599
+[0] time: 11.6216 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 1
+>  total        = 11.6216 ms
+>  average      = 11.6216 ms
+>  average (-1) = 0 ms
+>  sd           = 0 ms
+>  min          = 11.6216 ms
+>  max          = 11.6216 ms
+>  samples: 
+>   0: 11.6216 ms
+
+=-=-=-=-=-= FINISH: Cusp-Add =-=-=-=-=-=
+=-=-=-=-=-= RUN: Cusp-Add =-=-=-=-=-=
+
+>   Load A: "data/roadNet-CA/roadNet-CA.mtx" isUndirected: 1
+                 size: 1971281 x 1971281 nvals: 5533214
+>   Load A2: "data/roadNet-CA/roadNet-CA.mtx" isUndirected: 1
+                 size: 1971281 x 1971281 nvals: 12908450
+> Begin experiment: 0 name: data/roadNet-CA/roadNet-CA.mtx
+   Result matrix: size 1971281 x 1971281 nvals 17743342
+[0] time: 22.1173 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 1
+>  total        = 22.1173 ms
+>  average      = 22.1173 ms
+>  average (-1) = 0 ms
+>  sd           = 0 ms
+>  min          = 22.1173 ms
+>  max          = 22.1173 ms
+>  samples: 
+>   0: 22.1173 ms
+
+=-=-=-=-=-= FINISH: Cusp-Add =-=-=-=-=-=
+=-=-=-=-=-= RUN: Cusp-Add =-=-=-=-=-=
+
+>   Load A: "data/netherlands_osm/netherlands_osm.mtx" isUndirected: 1
+                 size: 2216688 x 2216688 nvals: 4882476
+>   Load A2: "data/netherlands_osm/netherlands_osm.mtx" isUndirected: 1
+                 size: 2216688 x 2216688 nvals: 8755758
+> Begin experiment: 0 name: data/netherlands_osm/netherlands_osm.mtx
+   Result matrix: size 2216688 x 2216688 nvals 13626132
+[0] time: 17.1623 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 1
+>  total        = 17.1623 ms
+>  average      = 17.1623 ms
+>  average (-1) = 0 ms
+>  sd           = 0 ms
+>  min          = 17.1623 ms
+>  max          = 17.1623 ms
+>  samples: 
+>   0: 17.1623 ms
+
+=-=-=-=-=-= FINISH: Cusp-Add =-=-=-=-=-=

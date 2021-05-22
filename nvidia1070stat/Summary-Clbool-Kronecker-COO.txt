@@ -1,0 +1,23 @@
+Benchmarking: Clbool-Kronecker-COO
+
+                                     Friendly name|      iterations|  expectation ms|           sd ms| 
+                            Matrix with nnz = 1000:              10          3.15274          80.2634
+                            Matrix with nnz = 2000:              10           14.562         0.723206
+                            Matrix with nnz = 3000:              10          52.2512          1.38642
+                            Matrix with nnz = 4000:              10          66.0562         0.684677
+                            Matrix with nnz = 5000:              10          128.762         0.532581
+                            Matrix with nnz = 6000:              10          246.185           1.0337
+                            Matrix with nnz = 7000:              10          278.837         0.473847
+                            Matrix with nnz = 8000:              10          319.791          1.59022
+                            Matrix with nnz = 9000:              10          562.475          1.10643
+                           Matrix with nnz = 10000:              10          615.954          1.65222
+                            Matrix with nnz = 1000:               1                0                0
+                            Matrix with nnz = 2000:               1                0                0
+                            Matrix with nnz = 3000:               1                0                0
+                            Matrix with nnz = 4000:               1                0                0
+                            Matrix with nnz = 5000:               1                0                0
+                            Matrix with nnz = 6000:               1                0                0
+                            Matrix with nnz = 7000:               1                0                0
+                            Matrix with nnz = 8000:               1                0                0
+                            Matrix with nnz = 9000:               1                0                0
+                           Matrix with nnz = 10000:               1                0                0
