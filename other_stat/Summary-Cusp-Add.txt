@@ -1,0 +1,23 @@
+Benchmarking: Cusp-Add
+
+                                     Friendly name|      iterations|  expectation ms|           sd ms| 
+                                data/wing/wing.mtx:              10          1.40789        0.0718241
+            data/luxembourg_osm/luxembourg_osm.mtx:              10          1.03491        0.0733185
+                    data/amazon0312/amazon0312.mtx:              10          16.2043         0.447699
+                  data/amazon-2008/amazon-2008.mtx:              10          29.5421         0.843288
+                    data/web-Google/web-Google.mtx:              10           31.911         0.330254
+                    data/roadNet-PA/roadNet-PA.mtx:              10           11.229         0.271121
+                    data/roadNet-TX/roadNet-TX.mtx:              10          14.5802         0.399362
+                  data/belgium_osm/belgium_osm.mtx:              10          10.2082         0.308355
+                    data/roadNet-CA/roadNet-CA.mtx:              10          19.4128         0.999563
+          data/netherlands_osm/netherlands_osm.mtx:              10          14.8535         0.334499
+                                data/wing/wing.mtx:               1                0                0
+            data/luxembourg_osm/luxembourg_osm.mtx:               1                0                0
+                    data/amazon0312/amazon0312.mtx:               1                0                0
+                  data/amazon-2008/amazon-2008.mtx:               1                0                0
+                    data/web-Google/web-Google.mtx:               1                0                0
+                    data/roadNet-PA/roadNet-PA.mtx:               1                0                0
+                    data/roadNet-TX/roadNet-TX.mtx:               1                0                0
+                  data/belgium_osm/belgium_osm.mtx:               1                0                0
+                    data/roadNet-CA/roadNet-CA.mtx:               1                0                0
+          data/netherlands_osm/netherlands_osm.mtx:               1                0                0

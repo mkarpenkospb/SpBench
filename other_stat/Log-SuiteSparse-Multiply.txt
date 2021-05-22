@@ -1,0 +1,670 @@
+=-=-=-=-=-= RUN: SuiteSparse-Multiply =-=-=-=-=-=
+
+>   Load matrix: "data/wing/wing.mtx" isUndirected: 1
+                 size: 62032 x 62032 nvals: 243088
+> Begin experiment: 0 name: data/wing/wing.mtx
+   Result matrix: size 62032 x 62032 nvals 714200
+[0] time: 27.4051 ms
+   Result matrix: size 62032 x 62032 nvals 714200
+[1] time: 8.32414 ms
+   Result matrix: size 62032 x 62032 nvals 714200
+[2] time: 8.19439 ms
+   Result matrix: size 62032 x 62032 nvals 714200
+[3] time: 7.89511 ms
+   Result matrix: size 62032 x 62032 nvals 714200
+[4] time: 8.0072 ms
+   Result matrix: size 62032 x 62032 nvals 714200
+[5] time: 7.96479 ms
+   Result matrix: size 62032 x 62032 nvals 714200
+[6] time: 8.07221 ms
+   Result matrix: size 62032 x 62032 nvals 714200
+[7] time: 7.80644 ms
+   Result matrix: size 62032 x 62032 nvals 714200
+[8] time: 7.72278 ms
+   Result matrix: size 62032 x 62032 nvals 714200
+[9] time: 7.73698 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 10
+>  total        = 99.1292 ms
+>  average      = 9.91292 ms
+>  average (-1) = 7.96934 ms
+>  sd           = 6.14917 ms
+>  min          = 7.72278 ms
+>  max          = 27.4051 ms
+>  samples: 
+>   0: 27.4051 ms
+>   1: 8.32414 ms
+>   2: 8.19439 ms
+>   3: 7.89511 ms
+>   4: 8.0072 ms
+>   5: 7.96479 ms
+>   6: 8.07221 ms
+>   7: 7.80644 ms
+>   8: 7.72278 ms
+>   9: 7.73698 ms
+
+=-=-=-=-=-= FINISH: SuiteSparse-Multiply =-=-=-=-=-=
+=-=-=-=-=-= RUN: SuiteSparse-Multiply =-=-=-=-=-=
+
+>   Load matrix: "data/luxembourg_osm/luxembourg_osm.mtx" isUndirected: 1
+                 size: 114599 x 114599 nvals: 239332
+> Begin experiment: 0 name: data/luxembourg_osm/luxembourg_osm.mtx
+   Result matrix: size 114599 x 114599 nvals 393261
+[0] time: 3.16936 ms
+   Result matrix: size 114599 x 114599 nvals 393261
+[1] time: 2.99028 ms
+   Result matrix: size 114599 x 114599 nvals 393261
+[2] time: 2.98288 ms
+   Result matrix: size 114599 x 114599 nvals 393261
+[3] time: 2.87538 ms
+   Result matrix: size 114599 x 114599 nvals 393261
+[4] time: 3.05997 ms
+   Result matrix: size 114599 x 114599 nvals 393261
+[5] time: 3.15589 ms
+   Result matrix: size 114599 x 114599 nvals 393261
+[6] time: 3.17721 ms
+   Result matrix: size 114599 x 114599 nvals 393261
+[7] time: 3.20847 ms
+   Result matrix: size 114599 x 114599 nvals 393261
+[8] time: 3.38369 ms
+   Result matrix: size 114599 x 114599 nvals 393261
+[9] time: 3.27528 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 10
+>  total        = 31.2784 ms
+>  average      = 3.12784 ms
+>  average (-1) = 3.12323 ms
+>  sd           = 0.151631 ms
+>  min          = 2.87538 ms
+>  max          = 3.38369 ms
+>  samples: 
+>   0: 3.16936 ms
+>   1: 2.99028 ms
+>   2: 2.98288 ms
+>   3: 2.87538 ms
+>   4: 3.05997 ms
+>   5: 3.15589 ms
+>   6: 3.17721 ms
+>   7: 3.20847 ms
+>   8: 3.38369 ms
+>   9: 3.27528 ms
+
+=-=-=-=-=-= FINISH: SuiteSparse-Multiply =-=-=-=-=-=
+=-=-=-=-=-= RUN: SuiteSparse-Multiply =-=-=-=-=-=
+
+>   Load matrix: "data/amazon0312/amazon0312.mtx" isUndirected: 0
+                 size: 400727 x 400727 nvals: 3200440
+> Begin experiment: 0 name: data/amazon0312/amazon0312.mtx
+   Result matrix: size 400727 x 400727 nvals 14390544
+[0] time: 257.26 ms
+   Result matrix: size 400727 x 400727 nvals 14390544
+[1] time: 258.805 ms
+   Result matrix: size 400727 x 400727 nvals 14390544
+[2] time: 258.581 ms
+   Result matrix: size 400727 x 400727 nvals 14390544
+[3] time: 257.887 ms
+   Result matrix: size 400727 x 400727 nvals 14390544
+[4] time: 256.513 ms
+   Result matrix: size 400727 x 400727 nvals 14390544
+[5] time: 255.86 ms
+   Result matrix: size 400727 x 400727 nvals 14390544
+[6] time: 256.486 ms
+   Result matrix: size 400727 x 400727 nvals 14390544
+[7] time: 258.166 ms
+   Result matrix: size 400727 x 400727 nvals 14390544
+[8] time: 258.535 ms
+   Result matrix: size 400727 x 400727 nvals 14390544
+[9] time: 258.079 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 10
+>  total        = 2576.17 ms
+>  average      = 257.617 ms
+>  average (-1) = 257.657 ms
+>  sd           = 1.02632 ms
+>  min          = 255.86 ms
+>  max          = 258.805 ms
+>  samples: 
+>   0: 257.26 ms
+>   1: 258.805 ms
+>   2: 258.581 ms
+>   3: 257.887 ms
+>   4: 256.513 ms
+>   5: 255.86 ms
+>   6: 256.486 ms
+>   7: 258.166 ms
+>   8: 258.535 ms
+>   9: 258.079 ms
+
+=-=-=-=-=-= FINISH: SuiteSparse-Multiply =-=-=-=-=-=
+=-=-=-=-=-= RUN: SuiteSparse-Multiply =-=-=-=-=-=
+
+>   Load matrix: "data/amazon-2008/amazon-2008.mtx" isUndirected: 0
+                 size: 735323 x 735323 nvals: 5158388
+> Begin experiment: 0 name: data/amazon-2008/amazon-2008.mtx
+   Result matrix: size 735323 x 735323 nvals 25366745
+[0] time: 370.059 ms
+   Result matrix: size 735323 x 735323 nvals 25366745
+[1] time: 371.386 ms
+   Result matrix: size 735323 x 735323 nvals 25366745
+[2] time: 368.951 ms
+   Result matrix: size 735323 x 735323 nvals 25366745
+[3] time: 372.953 ms
+   Result matrix: size 735323 x 735323 nvals 25366745
+[4] time: 366.248 ms
+   Result matrix: size 735323 x 735323 nvals 25366745
+[5] time: 364.751 ms
+   Result matrix: size 735323 x 735323 nvals 25366745
+[6] time: 370.464 ms
+   Result matrix: size 735323 x 735323 nvals 25366745
+[7] time: 372.689 ms
+   Result matrix: size 735323 x 735323 nvals 25366745
+[8] time: 367.826 ms
+   Result matrix: size 735323 x 735323 nvals 25366745
+[9] time: 370.419 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 10
+>  total        = 3695.75 ms
+>  average      = 369.575 ms
+>  average (-1) = 369.521 ms
+>  sd           = 2.66492 ms
+>  min          = 364.751 ms
+>  max          = 372.953 ms
+>  samples: 
+>   0: 370.059 ms
+>   1: 371.386 ms
+>   2: 368.951 ms
+>   3: 372.953 ms
+>   4: 366.248 ms
+>   5: 364.751 ms
+>   6: 370.464 ms
+>   7: 372.689 ms
+>   8: 367.826 ms
+>   9: 370.419 ms
+
+=-=-=-=-=-= FINISH: SuiteSparse-Multiply =-=-=-=-=-=
+=-=-=-=-=-= RUN: SuiteSparse-Multiply =-=-=-=-=-=
+
+>   Load matrix: "data/web-Google/web-Google.mtx" isUndirected: 0
+                 size: 916428 x 916428 nvals: 5105039
+> Begin experiment: 0 name: data/web-Google/web-Google.mtx
+   Result matrix: size 916428 x 916428 nvals 29710164
+[0] time: 673.425 ms
+   Result matrix: size 916428 x 916428 nvals 29710164
+[1] time: 674.497 ms
+   Result matrix: size 916428 x 916428 nvals 29710164
+[2] time: 672.851 ms
+   Result matrix: size 916428 x 916428 nvals 29710164
+[3] time: 673.459 ms
+   Result matrix: size 916428 x 916428 nvals 29710164
+[4] time: 673.868 ms
+   Result matrix: size 916428 x 916428 nvals 29710164
+[5] time: 672.811 ms
+   Result matrix: size 916428 x 916428 nvals 29710164
+[6] time: 672.75 ms
+   Result matrix: size 916428 x 916428 nvals 29710164
+[7] time: 673.925 ms
+   Result matrix: size 916428 x 916428 nvals 29710164
+[8] time: 673.475 ms
+   Result matrix: size 916428 x 916428 nvals 29710164
+[9] time: 672.942 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 10
+>  total        = 6734 ms
+>  average      = 673.4 ms
+>  average (-1) = 673.398 ms
+>  sd           = 0.576052 ms
+>  min          = 672.75 ms
+>  max          = 674.497 ms
+>  samples: 
+>   0: 673.425 ms
+>   1: 674.497 ms
+>   2: 672.851 ms
+>   3: 673.459 ms
+>   4: 673.868 ms
+>   5: 672.811 ms
+>   6: 672.75 ms
+>   7: 673.925 ms
+>   8: 673.475 ms
+>   9: 672.942 ms
+
+=-=-=-=-=-= FINISH: SuiteSparse-Multiply =-=-=-=-=-=
+=-=-=-=-=-= RUN: SuiteSparse-Multiply =-=-=-=-=-=
+
+>   Load matrix: "data/roadNet-PA/roadNet-PA.mtx" isUndirected: 1
+                 size: 1090920 x 1090920 nvals: 3083796
+> Begin experiment: 0 name: data/roadNet-PA/roadNet-PA.mtx
+   Result matrix: size 1090920 x 1090920 nvals 7238920
+[0] time: 64.8631 ms
+   Result matrix: size 1090920 x 1090920 nvals 7238920
+[1] time: 64.4298 ms
+   Result matrix: size 1090920 x 1090920 nvals 7238920
+[2] time: 64.4196 ms
+   Result matrix: size 1090920 x 1090920 nvals 7238920
+[3] time: 65.8129 ms
+   Result matrix: size 1090920 x 1090920 nvals 7238920
+[4] time: 66.6589 ms
+   Result matrix: size 1090920 x 1090920 nvals 7238920
+[5] time: 65.1723 ms
+   Result matrix: size 1090920 x 1090920 nvals 7238920
+[6] time: 71.1801 ms
+   Result matrix: size 1090920 x 1090920 nvals 7238920
+[7] time: 66.8612 ms
+   Result matrix: size 1090920 x 1090920 nvals 7238920
+[8] time: 67.3983 ms
+   Result matrix: size 1090920 x 1090920 nvals 7238920
+[9] time: 67.6429 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 10
+>  total        = 664.439 ms
+>  average      = 66.4439 ms
+>  average (-1) = 66.6195 ms
+>  sd           = 2.04582 ms
+>  min          = 64.4196 ms
+>  max          = 71.1801 ms
+>  samples: 
+>   0: 64.8631 ms
+>   1: 64.4298 ms
+>   2: 64.4196 ms
+>   3: 65.8129 ms
+>   4: 66.6589 ms
+>   5: 65.1723 ms
+>   6: 71.1801 ms
+>   7: 66.8612 ms
+>   8: 67.3983 ms
+>   9: 67.6429 ms
+
+=-=-=-=-=-= FINISH: SuiteSparse-Multiply =-=-=-=-=-=
+=-=-=-=-=-= RUN: SuiteSparse-Multiply =-=-=-=-=-=
+
+>   Load matrix: "data/roadNet-TX/roadNet-TX.mtx" isUndirected: 1
+                 size: 1393383 x 1393383 nvals: 3843320
+> Begin experiment: 0 name: data/roadNet-TX/roadNet-TX.mtx
+   Result matrix: size 1393383 x 1393383 nvals 8903897
+[0] time: 79.6498 ms
+   Result matrix: size 1393383 x 1393383 nvals 8903897
+[1] time: 80.3043 ms
+   Result matrix: size 1393383 x 1393383 nvals 8903897
+[2] time: 79.6928 ms
+   Result matrix: size 1393383 x 1393383 nvals 8903897
+[3] time: 78.0675 ms
+   Result matrix: size 1393383 x 1393383 nvals 8903897
+[4] time: 79.4793 ms
+   Result matrix: size 1393383 x 1393383 nvals 8903897
+[5] time: 83.343 ms
+   Result matrix: size 1393383 x 1393383 nvals 8903897
+[6] time: 78.9492 ms
+   Result matrix: size 1393383 x 1393383 nvals 8903897
+[7] time: 82.1315 ms
+   Result matrix: size 1393383 x 1393383 nvals 8903897
+[8] time: 82.5176 ms
+   Result matrix: size 1393383 x 1393383 nvals 8903897
+[9] time: 82.4592 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 10
+>  total        = 806.594 ms
+>  average      = 80.6594 ms
+>  average (-1) = 80.7716 ms
+>  sd           = 1.8005 ms
+>  min          = 78.0675 ms
+>  max          = 83.343 ms
+>  samples: 
+>   0: 79.6498 ms
+>   1: 80.3043 ms
+>   2: 79.6928 ms
+>   3: 78.0675 ms
+>   4: 79.4793 ms
+>   5: 83.343 ms
+>   6: 78.9492 ms
+>   7: 82.1315 ms
+>   8: 82.5176 ms
+>   9: 82.4592 ms
+
+=-=-=-=-=-= FINISH: SuiteSparse-Multiply =-=-=-=-=-=
+=-=-=-=-=-= RUN: SuiteSparse-Multiply =-=-=-=-=-=
+
+>   Load matrix: "data/belgium_osm/belgium_osm.mtx" isUndirected: 1
+                 size: 1441295 x 1441295 nvals: 3099940
+> Begin experiment: 0 name: data/belgium_osm/belgium_osm.mtx
+   Result matrix: size 1441295 x 1441295 nvals 5323073
+[0] time: 57.2777 ms
+   Result matrix: size 1441295 x 1441295 nvals 5323073
+[1] time: 57.9119 ms
+   Result matrix: size 1441295 x 1441295 nvals 5323073
+[2] time: 55.7232 ms
+   Result matrix: size 1441295 x 1441295 nvals 5323073
+[3] time: 57.2054 ms
+   Result matrix: size 1441295 x 1441295 nvals 5323073
+[4] time: 57.0885 ms
+   Result matrix: size 1441295 x 1441295 nvals 5323073
+[5] time: 55.581 ms
+   Result matrix: size 1441295 x 1441295 nvals 5323073
+[6] time: 57.4168 ms
+   Result matrix: size 1441295 x 1441295 nvals 5323073
+[7] time: 56.6864 ms
+   Result matrix: size 1441295 x 1441295 nvals 5323073
+[8] time: 56.835 ms
+   Result matrix: size 1441295 x 1441295 nvals 5323073
+[9] time: 57.8012 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 10
+>  total        = 569.527 ms
+>  average      = 56.9527 ms
+>  average (-1) = 56.9166 ms
+>  sd           = 0.783255 ms
+>  min          = 55.581 ms
+>  max          = 57.9119 ms
+>  samples: 
+>   0: 57.2777 ms
+>   1: 57.9119 ms
+>   2: 55.7232 ms
+>   3: 57.2054 ms
+>   4: 57.0885 ms
+>   5: 55.581 ms
+>   6: 57.4168 ms
+>   7: 56.6864 ms
+>   8: 56.835 ms
+>   9: 57.8012 ms
+
+=-=-=-=-=-= FINISH: SuiteSparse-Multiply =-=-=-=-=-=
+=-=-=-=-=-= RUN: SuiteSparse-Multiply =-=-=-=-=-=
+
+>   Load matrix: "data/roadNet-CA/roadNet-CA.mtx" isUndirected: 1
+                 size: 1971281 x 1971281 nvals: 5533214
+> Begin experiment: 0 name: data/roadNet-CA/roadNet-CA.mtx
+   Result matrix: size 1971281 x 1971281 nvals 12908450
+[0] time: 115.078 ms
+   Result matrix: size 1971281 x 1971281 nvals 12908450
+[1] time: 116.524 ms
+   Result matrix: size 1971281 x 1971281 nvals 12908450
+[2] time: 115.553 ms
+   Result matrix: size 1971281 x 1971281 nvals 12908450
+[3] time: 116.119 ms
+   Result matrix: size 1971281 x 1971281 nvals 12908450
+[4] time: 112.467 ms
+   Result matrix: size 1971281 x 1971281 nvals 12908450
+[5] time: 112.308 ms
+   Result matrix: size 1971281 x 1971281 nvals 12908450
+[6] time: 113.895 ms
+   Result matrix: size 1971281 x 1971281 nvals 12908450
+[7] time: 113.171 ms
+   Result matrix: size 1971281 x 1971281 nvals 12908450
+[8] time: 117.758 ms
+   Result matrix: size 1971281 x 1971281 nvals 12908450
+[9] time: 113.499 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 10
+>  total        = 1146.37 ms
+>  average      = 114.637 ms
+>  average (-1) = 114.588 ms
+>  sd           = 1.84564 ms
+>  min          = 112.308 ms
+>  max          = 117.758 ms
+>  samples: 
+>   0: 115.078 ms
+>   1: 116.524 ms
+>   2: 115.553 ms
+>   3: 116.119 ms
+>   4: 112.467 ms
+>   5: 112.308 ms
+>   6: 113.895 ms
+>   7: 113.171 ms
+>   8: 117.758 ms
+>   9: 113.499 ms
+
+=-=-=-=-=-= FINISH: SuiteSparse-Multiply =-=-=-=-=-=
+=-=-=-=-=-= RUN: SuiteSparse-Multiply =-=-=-=-=-=
+
+>   Load matrix: "data/netherlands_osm/netherlands_osm.mtx" isUndirected: 1
+                 size: 2216688 x 2216688 nvals: 4882476
+> Begin experiment: 0 name: data/netherlands_osm/netherlands_osm.mtx
+   Result matrix: size 2216688 x 2216688 nvals 8755758
+[0] time: 91.2771 ms
+   Result matrix: size 2216688 x 2216688 nvals 8755758
+[1] time: 91.049 ms
+   Result matrix: size 2216688 x 2216688 nvals 8755758
+[2] time: 90.6045 ms
+   Result matrix: size 2216688 x 2216688 nvals 8755758
+[3] time: 92.2714 ms
+   Result matrix: size 2216688 x 2216688 nvals 8755758
+[4] time: 91.5886 ms
+   Result matrix: size 2216688 x 2216688 nvals 8755758
+[5] time: 93.2702 ms
+   Result matrix: size 2216688 x 2216688 nvals 8755758
+[6] time: 91.5929 ms
+   Result matrix: size 2216688 x 2216688 nvals 8755758
+[7] time: 89.4671 ms
+   Result matrix: size 2216688 x 2216688 nvals 8755758
+[8] time: 89.922 ms
+   Result matrix: size 2216688 x 2216688 nvals 8755758
+[9] time: 88.8748 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 10
+>  total        = 909.918 ms
+>  average      = 90.9918 ms
+>  average (-1) = 90.96 ms
+>  sd           = 1.32209 ms
+>  min          = 88.8748 ms
+>  max          = 93.2702 ms
+>  samples: 
+>   0: 91.2771 ms
+>   1: 91.049 ms
+>   2: 90.6045 ms
+>   3: 92.2714 ms
+>   4: 91.5886 ms
+>   5: 93.2702 ms
+>   6: 91.5929 ms
+>   7: 89.4671 ms
+>   8: 89.922 ms
+>   9: 88.8748 ms
+
+=-=-=-=-=-= FINISH: SuiteSparse-Multiply =-=-=-=-=-=
+=-=-=-=-=-= RUN: SuiteSparse-Multiply =-=-=-=-=-=
+
+>   Load matrix: "data/wing/wing.mtx" isUndirected: 1
+                 size: 62032 x 62032 nvals: 243088
+> Begin experiment: 0 name: data/wing/wing.mtx
+   Result matrix: size 62032 x 62032 nvals 714200
+[0] time: 8.82353 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 1
+>  total        = 8.82353 ms
+>  average      = 8.82353 ms
+>  average (-1) = 0 ms
+>  sd           = 0 ms
+>  min          = 8.82353 ms
+>  max          = 8.82353 ms
+>  samples: 
+>   0: 8.82353 ms
+
+=-=-=-=-=-= FINISH: SuiteSparse-Multiply =-=-=-=-=-=
+=-=-=-=-=-= RUN: SuiteSparse-Multiply =-=-=-=-=-=
+
+>   Load matrix: "data/luxembourg_osm/luxembourg_osm.mtx" isUndirected: 1
+                 size: 114599 x 114599 nvals: 239332
+> Begin experiment: 0 name: data/luxembourg_osm/luxembourg_osm.mtx
+   Result matrix: size 114599 x 114599 nvals 393261
+[0] time: 3.2495 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 1
+>  total        = 3.2495 ms
+>  average      = 3.2495 ms
+>  average (-1) = 0 ms
+>  sd           = 0 ms
+>  min          = 3.2495 ms
+>  max          = 3.2495 ms
+>  samples: 
+>   0: 3.2495 ms
+
+=-=-=-=-=-= FINISH: SuiteSparse-Multiply =-=-=-=-=-=
+=-=-=-=-=-= RUN: SuiteSparse-Multiply =-=-=-=-=-=
+
+>   Load matrix: "data/amazon0312/amazon0312.mtx" isUndirected: 0
+                 size: 400727 x 400727 nvals: 3200440
+> Begin experiment: 0 name: data/amazon0312/amazon0312.mtx
+   Result matrix: size 400727 x 400727 nvals 14390544
+[0] time: 258.695 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 1
+>  total        = 258.695 ms
+>  average      = 258.695 ms
+>  average (-1) = 0 ms
+>  sd           = 0 ms
+>  min          = 258.695 ms
+>  max          = 258.695 ms
+>  samples: 
+>   0: 258.695 ms
+
+=-=-=-=-=-= FINISH: SuiteSparse-Multiply =-=-=-=-=-=
+=-=-=-=-=-= RUN: SuiteSparse-Multiply =-=-=-=-=-=
+
+>   Load matrix: "data/amazon-2008/amazon-2008.mtx" isUndirected: 0
+                 size: 735323 x 735323 nvals: 5158388
+> Begin experiment: 0 name: data/amazon-2008/amazon-2008.mtx
+   Result matrix: size 735323 x 735323 nvals 25366745
+[0] time: 375.56 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 1
+>  total        = 375.56 ms
+>  average      = 375.56 ms
+>  average (-1) = 0 ms
+>  sd           = 0 ms
+>  min          = 375.56 ms
+>  max          = 375.56 ms
+>  samples: 
+>   0: 375.56 ms
+
+=-=-=-=-=-= FINISH: SuiteSparse-Multiply =-=-=-=-=-=
+=-=-=-=-=-= RUN: SuiteSparse-Multiply =-=-=-=-=-=
+
+>   Load matrix: "data/web-Google/web-Google.mtx" isUndirected: 0
+                 size: 916428 x 916428 nvals: 5105039
+> Begin experiment: 0 name: data/web-Google/web-Google.mtx
+   Result matrix: size 916428 x 916428 nvals 29710164
+[0] time: 690.235 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 1
+>  total        = 690.235 ms
+>  average      = 690.235 ms
+>  average (-1) = 0 ms
+>  sd           = 0 ms
+>  min          = 690.235 ms
+>  max          = 690.235 ms
+>  samples: 
+>   0: 690.235 ms
+
+=-=-=-=-=-= FINISH: SuiteSparse-Multiply =-=-=-=-=-=
+=-=-=-=-=-= RUN: SuiteSparse-Multiply =-=-=-=-=-=
+
+>   Load matrix: "data/roadNet-PA/roadNet-PA.mtx" isUndirected: 1
+                 size: 1090920 x 1090920 nvals: 3083796
+> Begin experiment: 0 name: data/roadNet-PA/roadNet-PA.mtx
+   Result matrix: size 1090920 x 1090920 nvals 7238920
+[0] time: 65.8728 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 1
+>  total        = 65.8728 ms
+>  average      = 65.8728 ms
+>  average (-1) = 0 ms
+>  sd           = 0 ms
+>  min          = 65.8728 ms
+>  max          = 65.8728 ms
+>  samples: 
+>   0: 65.8728 ms
+
+=-=-=-=-=-= FINISH: SuiteSparse-Multiply =-=-=-=-=-=
+=-=-=-=-=-= RUN: SuiteSparse-Multiply =-=-=-=-=-=
+
+>   Load matrix: "data/roadNet-TX/roadNet-TX.mtx" isUndirected: 1
+                 size: 1393383 x 1393383 nvals: 3843320
+> Begin experiment: 0 name: data/roadNet-TX/roadNet-TX.mtx
+   Result matrix: size 1393383 x 1393383 nvals 8903897
+[0] time: 83.3116 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 1
+>  total        = 83.3116 ms
+>  average      = 83.3116 ms
+>  average (-1) = 0 ms
+>  sd           = 0 ms
+>  min          = 83.3116 ms
+>  max          = 83.3116 ms
+>  samples: 
+>   0: 83.3116 ms
+
+=-=-=-=-=-= FINISH: SuiteSparse-Multiply =-=-=-=-=-=
+=-=-=-=-=-= RUN: SuiteSparse-Multiply =-=-=-=-=-=
+
+>   Load matrix: "data/belgium_osm/belgium_osm.mtx" isUndirected: 1
+                 size: 1441295 x 1441295 nvals: 3099940
+> Begin experiment: 0 name: data/belgium_osm/belgium_osm.mtx
+   Result matrix: size 1441295 x 1441295 nvals 5323073
+[0] time: 57.5527 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 1
+>  total        = 57.5527 ms
+>  average      = 57.5527 ms
+>  average (-1) = 0 ms
+>  sd           = 0 ms
+>  min          = 57.5527 ms
+>  max          = 57.5527 ms
+>  samples: 
+>   0: 57.5527 ms
+
+=-=-=-=-=-= FINISH: SuiteSparse-Multiply =-=-=-=-=-=
+=-=-=-=-=-= RUN: SuiteSparse-Multiply =-=-=-=-=-=
+
+>   Load matrix: "data/roadNet-CA/roadNet-CA.mtx" isUndirected: 1
+                 size: 1971281 x 1971281 nvals: 5533214
+> Begin experiment: 0 name: data/roadNet-CA/roadNet-CA.mtx
+   Result matrix: size 1971281 x 1971281 nvals 12908450
+[0] time: 119.205 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 1
+>  total        = 119.205 ms
+>  average      = 119.205 ms
+>  average (-1) = 0 ms
+>  sd           = 0 ms
+>  min          = 119.205 ms
+>  max          = 119.205 ms
+>  samples: 
+>   0: 119.205 ms
+
+=-=-=-=-=-= FINISH: SuiteSparse-Multiply =-=-=-=-=-=
+=-=-=-=-=-= RUN: SuiteSparse-Multiply =-=-=-=-=-=
+
+>   Load matrix: "data/netherlands_osm/netherlands_osm.mtx" isUndirected: 1
+                 size: 2216688 x 2216688 nvals: 4882476
+> Begin experiment: 0 name: data/netherlands_osm/netherlands_osm.mtx
+   Result matrix: size 2216688 x 2216688 nvals 8755758
+[0] time: 100.003 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 1
+>  total        = 100.003 ms
+>  average      = 100.003 ms
+>  average (-1) = 0 ms
+>  sd           = 0 ms
+>  min          = 100.003 ms
+>  max          = 100.003 ms
+>  samples: 
+>   0: 100.003 ms
+
+=-=-=-=-=-= FINISH: SuiteSparse-Multiply =-=-=-=-=-=

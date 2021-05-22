@@ -1,0 +1,23 @@
+Benchmarking: Cubool-Add
+
+                                     Friendly name|      iterations|  expectation ms|           sd ms| 
+                                data/wing/wing.mtx:              10          1.12597        0.0357983
+            data/luxembourg_osm/luxembourg_osm.mtx:              10          1.77754        0.0234844
+                    data/amazon0312/amazon0312.mtx:              10          11.4523         0.944781
+                  data/amazon-2008/amazon-2008.mtx:              10          17.5635         0.703442
+                    data/web-Google/web-Google.mtx:              10          24.8658          2.48797
+                    data/roadNet-PA/roadNet-PA.mtx:              10          16.9936          2.23198
+                    data/roadNet-TX/roadNet-TX.mtx:              10          19.6518         0.290587
+                  data/belgium_osm/belgium_osm.mtx:              10          19.5194         0.201356
+                    data/roadNet-CA/roadNet-CA.mtx:              10          30.5492          1.71199
+          data/netherlands_osm/netherlands_osm.mtx:              10          30.1744         0.794574
+                                data/wing/wing.mtx:               1                0                0
+            data/luxembourg_osm/luxembourg_osm.mtx:               1                0                0
+                    data/amazon0312/amazon0312.mtx:               1                0                0
+                  data/amazon-2008/amazon-2008.mtx:               1                0                0
+                    data/web-Google/web-Google.mtx:               1                0                0
+                    data/roadNet-PA/roadNet-PA.mtx:               1                0                0
+                    data/roadNet-TX/roadNet-TX.mtx:               1                0                0
+                  data/belgium_osm/belgium_osm.mtx:               1                0                0
+                    data/roadNet-CA/roadNet-CA.mtx:               1                0                0
+          data/netherlands_osm/netherlands_osm.mtx:               1                0                0

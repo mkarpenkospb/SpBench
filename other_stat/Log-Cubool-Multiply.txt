@@ -1,0 +1,670 @@
+=-=-=-=-=-= RUN: Cubool-Multiply =-=-=-=-=-=
+
+>   Load matrix: "data/wing/wing.mtx" isUndirected: 1
+                 size: 62032 x 62032 nvals: 243088
+> Begin experiment: 0 name: data/wing/wing.mtx
+   Result matrix: size: 62032 x 62032 nvals: 714200
+[0] time: 1.75553 ms
+   Result matrix: size: 62032 x 62032 nvals: 714200
+[1] time: 1.7721 ms
+   Result matrix: size: 62032 x 62032 nvals: 714200
+[2] time: 1.93642 ms
+   Result matrix: size: 62032 x 62032 nvals: 714200
+[3] time: 1.75301 ms
+   Result matrix: size: 62032 x 62032 nvals: 714200
+[4] time: 1.73451 ms
+   Result matrix: size: 62032 x 62032 nvals: 714200
+[5] time: 1.72315 ms
+   Result matrix: size: 62032 x 62032 nvals: 714200
+[6] time: 1.73028 ms
+   Result matrix: size: 62032 x 62032 nvals: 714200
+[7] time: 1.74634 ms
+   Result matrix: size: 62032 x 62032 nvals: 714200
+[8] time: 3.02862 ms
+   Result matrix: size: 62032 x 62032 nvals: 714200
+[9] time: 1.72345 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 10
+>  total        = 18.9034 ms
+>  average      = 1.89034 ms
+>  average (-1) = 1.90532 ms
+>  sd           = 0.404868 ms
+>  min          = 1.72315 ms
+>  max          = 3.02862 ms
+>  samples: 
+>   0: 1.75553 ms
+>   1: 1.7721 ms
+>   2: 1.93642 ms
+>   3: 1.75301 ms
+>   4: 1.73451 ms
+>   5: 1.72315 ms
+>   6: 1.73028 ms
+>   7: 1.74634 ms
+>   8: 3.02862 ms
+>   9: 1.72345 ms
+
+=-=-=-=-=-= FINISH: Cubool-Multiply =-=-=-=-=-=
+=-=-=-=-=-= RUN: Cubool-Multiply =-=-=-=-=-=
+
+>   Load matrix: "data/luxembourg_osm/luxembourg_osm.mtx" isUndirected: 1
+                 size: 114599 x 114599 nvals: 239332
+> Begin experiment: 0 name: data/luxembourg_osm/luxembourg_osm.mtx
+   Result matrix: size: 114599 x 114599 nvals: 393261
+[0] time: 2.51276 ms
+   Result matrix: size: 114599 x 114599 nvals: 393261
+[1] time: 2.5145 ms
+   Result matrix: size: 114599 x 114599 nvals: 393261
+[2] time: 2.45196 ms
+   Result matrix: size: 114599 x 114599 nvals: 393261
+[3] time: 2.46142 ms
+   Result matrix: size: 114599 x 114599 nvals: 393261
+[4] time: 2.4475 ms
+   Result matrix: size: 114599 x 114599 nvals: 393261
+[5] time: 2.4473 ms
+   Result matrix: size: 114599 x 114599 nvals: 393261
+[6] time: 2.4482 ms
+   Result matrix: size: 114599 x 114599 nvals: 393261
+[7] time: 2.47778 ms
+   Result matrix: size: 114599 x 114599 nvals: 393261
+[8] time: 2.58567 ms
+   Result matrix: size: 114599 x 114599 nvals: 393261
+[9] time: 2.47045 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 10
+>  total        = 24.8175 ms
+>  average      = 2.48175 ms
+>  average (-1) = 2.47831 ms
+>  sd           = 0.0444264 ms
+>  min          = 2.4473 ms
+>  max          = 2.58567 ms
+>  samples: 
+>   0: 2.51276 ms
+>   1: 2.5145 ms
+>   2: 2.45196 ms
+>   3: 2.46142 ms
+>   4: 2.4475 ms
+>   5: 2.4473 ms
+>   6: 2.4482 ms
+>   7: 2.47778 ms
+>   8: 2.58567 ms
+>   9: 2.47045 ms
+
+=-=-=-=-=-= FINISH: Cubool-Multiply =-=-=-=-=-=
+=-=-=-=-=-= RUN: Cubool-Multiply =-=-=-=-=-=
+
+>   Load matrix: "data/amazon0312/amazon0312.mtx" isUndirected: 0
+                 size: 400727 x 400727 nvals: 3200440
+> Begin experiment: 0 name: data/amazon0312/amazon0312.mtx
+   Result matrix: size: 400727 x 400727 nvals: 14390544
+[0] time: 22.7482 ms
+   Result matrix: size: 400727 x 400727 nvals: 14390544
+[1] time: 24.2335 ms
+   Result matrix: size: 400727 x 400727 nvals: 14390544
+[2] time: 24.3484 ms
+   Result matrix: size: 400727 x 400727 nvals: 14390544
+[3] time: 24.2177 ms
+   Result matrix: size: 400727 x 400727 nvals: 14390544
+[4] time: 24.0743 ms
+   Result matrix: size: 400727 x 400727 nvals: 14390544
+[5] time: 22.528 ms
+   Result matrix: size: 400727 x 400727 nvals: 14390544
+[6] time: 22.4865 ms
+   Result matrix: size: 400727 x 400727 nvals: 14390544
+[7] time: 22.4885 ms
+   Result matrix: size: 400727 x 400727 nvals: 14390544
+[8] time: 22.5677 ms
+   Result matrix: size: 400727 x 400727 nvals: 14390544
+[9] time: 22.4101 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 10
+>  total        = 232.103 ms
+>  average      = 23.2103 ms
+>  average (-1) = 23.2616 ms
+>  sd           = 0.874379 ms
+>  min          = 22.4101 ms
+>  max          = 24.3484 ms
+>  samples: 
+>   0: 22.7482 ms
+>   1: 24.2335 ms
+>   2: 24.3484 ms
+>   3: 24.2177 ms
+>   4: 24.0743 ms
+>   5: 22.528 ms
+>   6: 22.4865 ms
+>   7: 22.4885 ms
+>   8: 22.5677 ms
+>   9: 22.4101 ms
+
+=-=-=-=-=-= FINISH: Cubool-Multiply =-=-=-=-=-=
+=-=-=-=-=-= RUN: Cubool-Multiply =-=-=-=-=-=
+
+>   Load matrix: "data/amazon-2008/amazon-2008.mtx" isUndirected: 0
+                 size: 735323 x 735323 nvals: 5158388
+> Begin experiment: 0 name: data/amazon-2008/amazon-2008.mtx
+   Result matrix: size: 735323 x 735323 nvals: 25366745
+[0] time: 30.7623 ms
+   Result matrix: size: 735323 x 735323 nvals: 25366745
+[1] time: 32.7428 ms
+   Result matrix: size: 735323 x 735323 nvals: 25366745
+[2] time: 32.7419 ms
+   Result matrix: size: 735323 x 735323 nvals: 25366745
+[3] time: 38.3655 ms
+   Result matrix: size: 735323 x 735323 nvals: 25366745
+[4] time: 32.9485 ms
+   Result matrix: size: 735323 x 735323 nvals: 25366745
+[5] time: 32.7734 ms
+   Result matrix: size: 735323 x 735323 nvals: 25366745
+[6] time: 32.7651 ms
+   Result matrix: size: 735323 x 735323 nvals: 25366745
+[7] time: 32.5524 ms
+   Result matrix: size: 735323 x 735323 nvals: 25366745
+[8] time: 32.4823 ms
+   Result matrix: size: 735323 x 735323 nvals: 25366745
+[9] time: 32.5782 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 10
+>  total        = 330.712 ms
+>  average      = 33.0712 ms
+>  average (-1) = 33.3278 ms
+>  sd           = 1.96169 ms
+>  min          = 30.7623 ms
+>  max          = 38.3655 ms
+>  samples: 
+>   0: 30.7623 ms
+>   1: 32.7428 ms
+>   2: 32.7419 ms
+>   3: 38.3655 ms
+>   4: 32.9485 ms
+>   5: 32.7734 ms
+>   6: 32.7651 ms
+>   7: 32.5524 ms
+>   8: 32.4823 ms
+>   9: 32.5782 ms
+
+=-=-=-=-=-= FINISH: Cubool-Multiply =-=-=-=-=-=
+=-=-=-=-=-= RUN: Cubool-Multiply =-=-=-=-=-=
+
+>   Load matrix: "data/web-Google/web-Google.mtx" isUndirected: 0
+                 size: 916428 x 916428 nvals: 5105039
+> Begin experiment: 0 name: data/web-Google/web-Google.mtx
+   Result matrix: size: 916428 x 916428 nvals: 29713983
+[0] time: 39.2661 ms
+   Result matrix: size: 916428 x 916428 nvals: 29713983
+[1] time: 41.7111 ms
+   Result matrix: size: 916428 x 916428 nvals: 29713983
+[2] time: 41.689 ms
+   Result matrix: size: 916428 x 916428 nvals: 29713983
+[3] time: 41.6459 ms
+   Result matrix: size: 916428 x 916428 nvals: 29713983
+[4] time: 41.7496 ms
+   Result matrix: size: 916428 x 916428 nvals: 29713983
+[5] time: 41.7425 ms
+   Result matrix: size: 916428 x 916428 nvals: 29713983
+[6] time: 41.8495 ms
+   Result matrix: size: 916428 x 916428 nvals: 29713983
+[7] time: 41.7069 ms
+   Result matrix: size: 916428 x 916428 nvals: 29713983
+[8] time: 41.7988 ms
+   Result matrix: size: 916428 x 916428 nvals: 29713983
+[9] time: 42.6522 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 10
+>  total        = 415.811 ms
+>  average      = 41.5811 ms
+>  average (-1) = 41.8384 ms
+>  sd           = 0.864659 ms
+>  min          = 39.2661 ms
+>  max          = 42.6522 ms
+>  samples: 
+>   0: 39.2661 ms
+>   1: 41.7111 ms
+>   2: 41.689 ms
+>   3: 41.6459 ms
+>   4: 41.7496 ms
+>   5: 41.7425 ms
+>   6: 41.8495 ms
+>   7: 41.7069 ms
+>   8: 41.7988 ms
+>   9: 42.6522 ms
+
+=-=-=-=-=-= FINISH: Cubool-Multiply =-=-=-=-=-=
+=-=-=-=-=-= RUN: Cubool-Multiply =-=-=-=-=-=
+
+>   Load matrix: "data/roadNet-PA/roadNet-PA.mtx" isUndirected: 1
+                 size: 1090920 x 1090920 nvals: 3083796
+> Begin experiment: 0 name: data/roadNet-PA/roadNet-PA.mtx
+   Result matrix: size: 1090920 x 1090920 nvals: 7238920
+[0] time: 17.6476 ms
+   Result matrix: size: 1090920 x 1090920 nvals: 7238920
+[1] time: 18.1456 ms
+   Result matrix: size: 1090920 x 1090920 nvals: 7238920
+[2] time: 18.1513 ms
+   Result matrix: size: 1090920 x 1090920 nvals: 7238920
+[3] time: 18.1741 ms
+   Result matrix: size: 1090920 x 1090920 nvals: 7238920
+[4] time: 18.1639 ms
+   Result matrix: size: 1090920 x 1090920 nvals: 7238920
+[5] time: 18.1792 ms
+   Result matrix: size: 1090920 x 1090920 nvals: 7238920
+[6] time: 18.224 ms
+   Result matrix: size: 1090920 x 1090920 nvals: 7238920
+[7] time: 18.1804 ms
+   Result matrix: size: 1090920 x 1090920 nvals: 7238920
+[8] time: 18.2188 ms
+   Result matrix: size: 1090920 x 1090920 nvals: 7238920
+[9] time: 18.2549 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 10
+>  total        = 181.34 ms
+>  average      = 18.134 ms
+>  average (-1) = 18.188 ms
+>  sd           = 0.174377 ms
+>  min          = 17.6476 ms
+>  max          = 18.2549 ms
+>  samples: 
+>   0: 17.6476 ms
+>   1: 18.1456 ms
+>   2: 18.1513 ms
+>   3: 18.1741 ms
+>   4: 18.1639 ms
+>   5: 18.1792 ms
+>   6: 18.224 ms
+>   7: 18.1804 ms
+>   8: 18.2188 ms
+>   9: 18.2549 ms
+
+=-=-=-=-=-= FINISH: Cubool-Multiply =-=-=-=-=-=
+=-=-=-=-=-= RUN: Cubool-Multiply =-=-=-=-=-=
+
+>   Load matrix: "data/roadNet-TX/roadNet-TX.mtx" isUndirected: 1
+                 size: 1393383 x 1393383 nvals: 3843320
+> Begin experiment: 0 name: data/roadNet-TX/roadNet-TX.mtx
+   Result matrix: size: 1393383 x 1393383 nvals: 8903897
+[0] time: 22.092 ms
+   Result matrix: size: 1393383 x 1393383 nvals: 8903897
+[1] time: 22.7586 ms
+   Result matrix: size: 1393383 x 1393383 nvals: 8903897
+[2] time: 22.6948 ms
+   Result matrix: size: 1393383 x 1393383 nvals: 8903897
+[3] time: 22.6652 ms
+   Result matrix: size: 1393383 x 1393383 nvals: 8903897
+[4] time: 22.7214 ms
+   Result matrix: size: 1393383 x 1393383 nvals: 8903897
+[5] time: 22.6719 ms
+   Result matrix: size: 1393383 x 1393383 nvals: 8903897
+[6] time: 22.6648 ms
+   Result matrix: size: 1393383 x 1393383 nvals: 8903897
+[7] time: 22.6446 ms
+   Result matrix: size: 1393383 x 1393383 nvals: 8903897
+[8] time: 22.7862 ms
+   Result matrix: size: 1393383 x 1393383 nvals: 8903897
+[9] time: 22.6808 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 10
+>  total        = 226.38 ms
+>  average      = 22.638 ms
+>  average (-1) = 22.6987 ms
+>  sd           = 0.19701 ms
+>  min          = 22.092 ms
+>  max          = 22.7862 ms
+>  samples: 
+>   0: 22.092 ms
+>   1: 22.7586 ms
+>   2: 22.6948 ms
+>   3: 22.6652 ms
+>   4: 22.7214 ms
+>   5: 22.6719 ms
+>   6: 22.6648 ms
+>   7: 22.6446 ms
+>   8: 22.7862 ms
+>   9: 22.6808 ms
+
+=-=-=-=-=-= FINISH: Cubool-Multiply =-=-=-=-=-=
+=-=-=-=-=-= RUN: Cubool-Multiply =-=-=-=-=-=
+
+>   Load matrix: "data/belgium_osm/belgium_osm.mtx" isUndirected: 1
+                 size: 1441295 x 1441295 nvals: 3099940
+> Begin experiment: 0 name: data/belgium_osm/belgium_osm.mtx
+   Result matrix: size: 1441295 x 1441295 nvals: 5323073
+[0] time: 22.8263 ms
+   Result matrix: size: 1441295 x 1441295 nvals: 5323073
+[1] time: 23.2318 ms
+   Result matrix: size: 1441295 x 1441295 nvals: 5323073
+[2] time: 23.2308 ms
+   Result matrix: size: 1441295 x 1441295 nvals: 5323073
+[3] time: 23.2087 ms
+   Result matrix: size: 1441295 x 1441295 nvals: 5323073
+[4] time: 23.1851 ms
+   Result matrix: size: 1441295 x 1441295 nvals: 5323073
+[5] time: 23.1613 ms
+   Result matrix: size: 1441295 x 1441295 nvals: 5323073
+[6] time: 23.2127 ms
+   Result matrix: size: 1441295 x 1441295 nvals: 5323073
+[7] time: 23.1893 ms
+   Result matrix: size: 1441295 x 1441295 nvals: 5323073
+[8] time: 23.3553 ms
+   Result matrix: size: 1441295 x 1441295 nvals: 5323073
+[9] time: 23.1757 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 10
+>  total        = 231.777 ms
+>  average      = 23.1777 ms
+>  average (-1) = 23.2167 ms
+>  sd           = 0.134753 ms
+>  min          = 22.8263 ms
+>  max          = 23.3553 ms
+>  samples: 
+>   0: 22.8263 ms
+>   1: 23.2318 ms
+>   2: 23.2308 ms
+>   3: 23.2087 ms
+>   4: 23.1851 ms
+>   5: 23.1613 ms
+>   6: 23.2127 ms
+>   7: 23.1893 ms
+>   8: 23.3553 ms
+>   9: 23.1757 ms
+
+=-=-=-=-=-= FINISH: Cubool-Multiply =-=-=-=-=-=
+=-=-=-=-=-= RUN: Cubool-Multiply =-=-=-=-=-=
+
+>   Load matrix: "data/roadNet-CA/roadNet-CA.mtx" isUndirected: 1
+                 size: 1971281 x 1971281 nvals: 5533214
+> Begin experiment: 0 name: data/roadNet-CA/roadNet-CA.mtx
+   Result matrix: size: 1971281 x 1971281 nvals: 12908450
+[0] time: 31.079 ms
+   Result matrix: size: 1971281 x 1971281 nvals: 12908450
+[1] time: 32.0799 ms
+   Result matrix: size: 1971281 x 1971281 nvals: 12908450
+[2] time: 32.0326 ms
+   Result matrix: size: 1971281 x 1971281 nvals: 12908450
+[3] time: 31.9987 ms
+   Result matrix: size: 1971281 x 1971281 nvals: 12908450
+[4] time: 32.0227 ms
+   Result matrix: size: 1971281 x 1971281 nvals: 12908450
+[5] time: 32.021 ms
+   Result matrix: size: 1971281 x 1971281 nvals: 12908450
+[6] time: 32.1158 ms
+   Result matrix: size: 1971281 x 1971281 nvals: 12908450
+[7] time: 32.1433 ms
+   Result matrix: size: 1971281 x 1971281 nvals: 12908450
+[8] time: 32.0556 ms
+   Result matrix: size: 1971281 x 1971281 nvals: 12908450
+[9] time: 32.0047 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 10
+>  total        = 319.553 ms
+>  average      = 31.9553 ms
+>  average (-1) = 32.0527 ms
+>  sd           = 0.311596 ms
+>  min          = 31.079 ms
+>  max          = 32.1433 ms
+>  samples: 
+>   0: 31.079 ms
+>   1: 32.0799 ms
+>   2: 32.0326 ms
+>   3: 31.9987 ms
+>   4: 32.0227 ms
+>   5: 32.021 ms
+>   6: 32.1158 ms
+>   7: 32.1433 ms
+>   8: 32.0556 ms
+>   9: 32.0047 ms
+
+=-=-=-=-=-= FINISH: Cubool-Multiply =-=-=-=-=-=
+=-=-=-=-=-= RUN: Cubool-Multiply =-=-=-=-=-=
+
+>   Load matrix: "data/netherlands_osm/netherlands_osm.mtx" isUndirected: 1
+                 size: 2216688 x 2216688 nvals: 4882476
+> Begin experiment: 0 name: data/netherlands_osm/netherlands_osm.mtx
+   Result matrix: size: 2216688 x 2216688 nvals: 8755758
+[0] time: 34.6172 ms
+   Result matrix: size: 2216688 x 2216688 nvals: 8755758
+[1] time: 35.71 ms
+   Result matrix: size: 2216688 x 2216688 nvals: 8755758
+[2] time: 35.7611 ms
+   Result matrix: size: 2216688 x 2216688 nvals: 8755758
+[3] time: 35.2782 ms
+   Result matrix: size: 2216688 x 2216688 nvals: 8755758
+[4] time: 35.243 ms
+   Result matrix: size: 2216688 x 2216688 nvals: 8755758
+[5] time: 35.2193 ms
+   Result matrix: size: 2216688 x 2216688 nvals: 8755758
+[6] time: 35.228 ms
+   Result matrix: size: 2216688 x 2216688 nvals: 8755758
+[7] time: 35.2146 ms
+   Result matrix: size: 2216688 x 2216688 nvals: 8755758
+[8] time: 35.3717 ms
+   Result matrix: size: 2216688 x 2216688 nvals: 8755758
+[9] time: 35.2173 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 10
+>  total        = 352.86 ms
+>  average      = 35.286 ms
+>  average (-1) = 35.3604 ms
+>  sd           = 0.312631 ms
+>  min          = 34.6172 ms
+>  max          = 35.7611 ms
+>  samples: 
+>   0: 34.6172 ms
+>   1: 35.71 ms
+>   2: 35.7611 ms
+>   3: 35.2782 ms
+>   4: 35.243 ms
+>   5: 35.2193 ms
+>   6: 35.228 ms
+>   7: 35.2146 ms
+>   8: 35.3717 ms
+>   9: 35.2173 ms
+
+=-=-=-=-=-= FINISH: Cubool-Multiply =-=-=-=-=-=
+=-=-=-=-=-= RUN: Cubool-Multiply =-=-=-=-=-=
+
+>   Load matrix: "data/wing/wing.mtx" isUndirected: 1
+                 size: 62032 x 62032 nvals: 243088
+> Begin experiment: 0 name: data/wing/wing.mtx
+   Result matrix: size: 62032 x 62032 nvals: 714200
+[0] time: 1.75183 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 1
+>  total        = 1.75183 ms
+>  average      = 1.75183 ms
+>  average (-1) = 0 ms
+>  sd           = 0 ms
+>  min          = 1.75183 ms
+>  max          = 1.75183 ms
+>  samples: 
+>   0: 1.75183 ms
+
+=-=-=-=-=-= FINISH: Cubool-Multiply =-=-=-=-=-=
+=-=-=-=-=-= RUN: Cubool-Multiply =-=-=-=-=-=
+
+>   Load matrix: "data/luxembourg_osm/luxembourg_osm.mtx" isUndirected: 1
+                 size: 114599 x 114599 nvals: 239332
+> Begin experiment: 0 name: data/luxembourg_osm/luxembourg_osm.mtx
+   Result matrix: size: 114599 x 114599 nvals: 393261
+[0] time: 2.53291 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 1
+>  total        = 2.53291 ms
+>  average      = 2.53291 ms
+>  average (-1) = 0 ms
+>  sd           = 0 ms
+>  min          = 2.53291 ms
+>  max          = 2.53291 ms
+>  samples: 
+>   0: 2.53291 ms
+
+=-=-=-=-=-= FINISH: Cubool-Multiply =-=-=-=-=-=
+=-=-=-=-=-= RUN: Cubool-Multiply =-=-=-=-=-=
+
+>   Load matrix: "data/amazon0312/amazon0312.mtx" isUndirected: 0
+                 size: 400727 x 400727 nvals: 3200440
+> Begin experiment: 0 name: data/amazon0312/amazon0312.mtx
+   Result matrix: size: 400727 x 400727 nvals: 14390544
+[0] time: 22.7943 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 1
+>  total        = 22.7943 ms
+>  average      = 22.7943 ms
+>  average (-1) = 0 ms
+>  sd           = 0 ms
+>  min          = 22.7943 ms
+>  max          = 22.7943 ms
+>  samples: 
+>   0: 22.7943 ms
+
+=-=-=-=-=-= FINISH: Cubool-Multiply =-=-=-=-=-=
+=-=-=-=-=-= RUN: Cubool-Multiply =-=-=-=-=-=
+
+>   Load matrix: "data/amazon-2008/amazon-2008.mtx" isUndirected: 0
+                 size: 735323 x 735323 nvals: 5158388
+> Begin experiment: 0 name: data/amazon-2008/amazon-2008.mtx
+   Result matrix: size: 735323 x 735323 nvals: 25366745
+[0] time: 35.8716 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 1
+>  total        = 35.8716 ms
+>  average      = 35.8716 ms
+>  average (-1) = 0 ms
+>  sd           = 0 ms
+>  min          = 35.8716 ms
+>  max          = 35.8716 ms
+>  samples: 
+>   0: 35.8716 ms
+
+=-=-=-=-=-= FINISH: Cubool-Multiply =-=-=-=-=-=
+=-=-=-=-=-= RUN: Cubool-Multiply =-=-=-=-=-=
+
+>   Load matrix: "data/web-Google/web-Google.mtx" isUndirected: 0
+                 size: 916428 x 916428 nvals: 5105039
+> Begin experiment: 0 name: data/web-Google/web-Google.mtx
+   Result matrix: size: 916428 x 916428 nvals: 29713983
+[0] time: 44.9223 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 1
+>  total        = 44.9223 ms
+>  average      = 44.9223 ms
+>  average (-1) = 0 ms
+>  sd           = 0 ms
+>  min          = 44.9223 ms
+>  max          = 44.9223 ms
+>  samples: 
+>   0: 44.9223 ms
+
+=-=-=-=-=-= FINISH: Cubool-Multiply =-=-=-=-=-=
+=-=-=-=-=-= RUN: Cubool-Multiply =-=-=-=-=-=
+
+>   Load matrix: "data/roadNet-PA/roadNet-PA.mtx" isUndirected: 1
+                 size: 1090920 x 1090920 nvals: 3083796
+> Begin experiment: 0 name: data/roadNet-PA/roadNet-PA.mtx
+   Result matrix: size: 1090920 x 1090920 nvals: 7238920
+[0] time: 21.2967 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 1
+>  total        = 21.2967 ms
+>  average      = 21.2967 ms
+>  average (-1) = 0 ms
+>  sd           = 0 ms
+>  min          = 21.2967 ms
+>  max          = 21.2967 ms
+>  samples: 
+>   0: 21.2967 ms
+
+=-=-=-=-=-= FINISH: Cubool-Multiply =-=-=-=-=-=
+=-=-=-=-=-= RUN: Cubool-Multiply =-=-=-=-=-=
+
+>   Load matrix: "data/roadNet-TX/roadNet-TX.mtx" isUndirected: 1
+                 size: 1393383 x 1393383 nvals: 3843320
+> Begin experiment: 0 name: data/roadNet-TX/roadNet-TX.mtx
+   Result matrix: size: 1393383 x 1393383 nvals: 8903897
+[0] time: 26.5744 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 1
+>  total        = 26.5744 ms
+>  average      = 26.5744 ms
+>  average (-1) = 0 ms
+>  sd           = 0 ms
+>  min          = 26.5744 ms
+>  max          = 26.5744 ms
+>  samples: 
+>   0: 26.5744 ms
+
+=-=-=-=-=-= FINISH: Cubool-Multiply =-=-=-=-=-=
+=-=-=-=-=-= RUN: Cubool-Multiply =-=-=-=-=-=
+
+>   Load matrix: "data/belgium_osm/belgium_osm.mtx" isUndirected: 1
+                 size: 1441295 x 1441295 nvals: 3099940
+> Begin experiment: 0 name: data/belgium_osm/belgium_osm.mtx
+   Result matrix: size: 1441295 x 1441295 nvals: 5323073
+[0] time: 27.3673 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 1
+>  total        = 27.3673 ms
+>  average      = 27.3673 ms
+>  average (-1) = 0 ms
+>  sd           = 0 ms
+>  min          = 27.3673 ms
+>  max          = 27.3673 ms
+>  samples: 
+>   0: 27.3673 ms
+
+=-=-=-=-=-= FINISH: Cubool-Multiply =-=-=-=-=-=
+=-=-=-=-=-= RUN: Cubool-Multiply =-=-=-=-=-=
+
+>   Load matrix: "data/roadNet-CA/roadNet-CA.mtx" isUndirected: 1
+                 size: 1971281 x 1971281 nvals: 5533214
+> Begin experiment: 0 name: data/roadNet-CA/roadNet-CA.mtx
+   Result matrix: size: 1971281 x 1971281 nvals: 12908450
+[0] time: 37.4021 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 1
+>  total        = 37.4021 ms
+>  average      = 37.4021 ms
+>  average (-1) = 0 ms
+>  sd           = 0 ms
+>  min          = 37.4021 ms
+>  max          = 37.4021 ms
+>  samples: 
+>   0: 37.4021 ms
+
+=-=-=-=-=-= FINISH: Cubool-Multiply =-=-=-=-=-=
+=-=-=-=-=-= RUN: Cubool-Multiply =-=-=-=-=-=
+
+>   Load matrix: "data/netherlands_osm/netherlands_osm.mtx" isUndirected: 1
+                 size: 2216688 x 2216688 nvals: 4882476
+> Begin experiment: 0 name: data/netherlands_osm/netherlands_osm.mtx
+   Result matrix: size: 2216688 x 2216688 nvals: 8755758
+[0] time: 41.222 ms
+> End experiment: 0
+> Stats: 
+>  iterations   = 1
+>  total        = 41.222 ms
+>  average      = 41.222 ms
+>  average (-1) = 0 ms
+>  sd           = 0 ms
+>  min          = 41.222 ms
+>  max          = 41.222 ms
+>  samples: 
+>   0: 41.222 ms
+
+=-=-=-=-=-= FINISH: Cubool-Multiply =-=-=-=-=-=
