@@ -198,12 +198,13 @@ namespace benchmark {
 
                 if (iterationsCount > 1) {
                     double sd = 0.0f;
-                    for (auto sample: perExperiment.samplesMs) {
-                        auto diff = (sample - perExperiment.averageTime);
+                    for (uint32_t i = 1; i < perExperiment.iterationsCount; ++i) {
+                        auto sample = perExperiment.samplesMs[i];
+                        auto diff = (sample - perExperiment.averageTimeDropFirst);
                         sd += diff * diff;
                     }
 
-                    sd = sd / (double) (iterationsCount - 1);
+                    sd = sd / (double) (iterationsCount - 2);
                     perExperiment.standardDeviationMs = std::sqrt(sd);
                 }
 

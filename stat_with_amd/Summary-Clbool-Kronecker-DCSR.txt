@@ -1,0 +1,32 @@
+Benchmarking: Clbool-Kronecker-DCSR
+
+                                     Friendly name|      iterations|  expectation ms|           sd ms| 
+                            Matrix with nnz = 1000:              10           2.8364         0.701376
+                            Matrix with nnz = 2000:              10          10.9214          1.55021
+                            Matrix with nnz = 3000:              10          22.6506         0.937696
+                            Matrix with nnz = 4000:              10          39.4592          1.12037
+                            Matrix with nnz = 5000:              10          58.8381         0.961046
+                            Matrix with nnz = 6000:              10          87.2687          2.74039
+                            Matrix with nnz = 7000:              10           112.25          50.5953
+                            Matrix with nnz = 8000:              10          141.542          1.35069
+                            Matrix with nnz = 9000:              10          176.119          1.65812
+                           Matrix with nnz = 10000:              10          220.649          6.72428
+                            Matrix with nnz = 1000:               1                0                0
+                            Matrix with nnz = 2000:               1                0                0
+                            Matrix with nnz = 3000:               1                0                0
+                            Matrix with nnz = 4000:               1                0                0
+                            Matrix with nnz = 5000:               1                0                0
+                            Matrix with nnz = 6000:               1                0                0
+                            Matrix with nnz = 7000:               1                0                0
+                            Matrix with nnz = 8000:               1                0                0
+                            Matrix with nnz = 9000:               1                0                0
+                            Matrix with nnz = 1000:               1                0                0
+                            Matrix with nnz = 2000:               1                0                0
+                            Matrix with nnz = 3000:               1                0                0
+                            Matrix with nnz = 4000:               1                0                0
+                            Matrix with nnz = 5000:               1                0                0
+                            Matrix with nnz = 6000:               1                0                0
+                            Matrix with nnz = 7000:               1                0                0
+                            Matrix with nnz = 8000:               1                0                0
+                            Matrix with nnz = 9000:               1                0                0
+                           Matrix with nnz = 10000:               1                0                0
