@@ -1,2 +1,1 @@
-clbool_mult_hash
-clbool_add
+clbool_mult

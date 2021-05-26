@@ -10,7 +10,7 @@
 #include "CL/opencl.hpp"
 
 #define FPGA
-#define DEBUG_ENABLE 1
+#define DEBUG_ENABLE 0
 #define DETAIL_DEBUG_ENABLE 0
 
 

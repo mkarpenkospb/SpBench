@@ -52,7 +52,7 @@ namespace benchmark {
     protected:
 
         void setupBenchmark() override {
-            controls = new clbool::Controls(clbool::create_controls(0, 0));
+            controls = new clbool::Controls(clbool::create_controls(1, 0));
         }
 
         void tearDownBenchmark() override {
@@ -97,23 +97,23 @@ namespace benchmark {
         }
 
         void execIteration(size_t experimentIdx, size_t iterationIdx) override {
-            clbool::matrix_multiplication(*controls, R, A, A);
+            clbool::dcsr::matrix_multiplication(*controls, R, A, A);
         }
 
         void tearDownIteration(size_t experimentIdx, size_t iterationIdx) override {
 #ifdef BENCH_DEBUG
-            log << "   Result matrix: size " << R.nRows() << " x " << R.nCols()
+            log << "   Result matrix: size " << R.nrows() << " x " << R.ncols()
                 << " nvals " << R.nnz() << std::endl;
 #endif
 
-            R = matrix_dcsr{};
+            R = clbool::matrix_dcsr{};
         }
 
     protected:
 
-        Controls* controls;
-        matrix_dcsr A;
-        matrix_dcsr R;
+        clbool::Controls* controls;
+        clbool::matrix_dcsr A;
+        clbool::matrix_dcsr R;
 
         ArgsProcessor argsProcessor;
         Matrix input;
