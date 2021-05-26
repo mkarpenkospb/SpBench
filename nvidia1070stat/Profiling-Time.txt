@@ -1,0 +1,60 @@
+clbool_mult_hash data/wing/wing.mtx                              1   1
+2021/05/16 20:17:40.537
+2021/05/16 20:17:40.860
+clbool_mult_hash data/luxembourg_osm/luxembourg_osm.mtx          1   1
+2021/05/16 20:17:40.863
+2021/05/16 20:17:41.196
+clbool_mult_hash data/amazon0312/amazon0312.mtx                  0   1
+2021/05/16 20:17:41.199
+2021/05/16 20:17:45.604
+clbool_mult_hash data/amazon-2008/amazon-2008.mtx                0   1
+2021/05/16 20:17:45.607
+2021/05/16 20:17:51.226
+clbool_mult_hash data/web-Google/web-Google.mtx                  0   1
+2021/05/16 20:17:51.228
+2021/05/16 20:17:59.056
+clbool_mult_hash data/roadNet-PA/roadNet-PA.mtx                  1   1
+2021/05/16 20:17:59.059
+2021/05/16 20:18:00.874
+clbool_mult_hash data/roadNet-TX/roadNet-TX.mtx                  1   1
+2021/05/16 20:18:00.876
+2021/05/16 20:18:03.042
+clbool_mult_hash data/belgium_osm/belgium_osm.mtx                1   1
+2021/05/16 20:18:03.043
+2021/05/16 20:18:04.810
+clbool_mult_hash data/roadNet-CA/roadNet-CA.mtx                  1   1
+2021/05/16 20:18:04.811
+2021/05/16 20:18:07.826
+clbool_mult_hash data/netherlands_osm/netherlands_osm.mtx        1   1
+2021/05/16 20:18:07.826
+2021/05/16 20:18:10.499
+clbool_mult data/wing/wing.mtx                              1   1
+2021/05/16 20:18:10.503
+2021/05/16 20:18:10.834
+clbool_mult data/luxembourg_osm/luxembourg_osm.mtx          1   1
+2021/05/16 20:18:10.835
+2021/05/16 20:18:11.128
+clbool_mult data/amazon0312/amazon0312.mtx                  0   1
+2021/05/16 20:18:11.131
+2021/05/16 20:18:15.506
+clbool_mult data/amazon-2008/amazon-2008.mtx                0   1
+2021/05/16 20:18:15.508
+2021/05/16 20:18:21.156
+clbool_mult data/web-Google/web-Google.mtx                  0   1
+2021/05/16 20:18:21.159
+2021/05/16 20:18:28.962
+clbool_mult data/roadNet-PA/roadNet-PA.mtx                  1   1
+2021/05/16 20:18:28.963
+2021/05/16 20:18:30.762
+clbool_mult data/roadNet-TX/roadNet-TX.mtx                  1   1
+2021/05/16 20:18:30.764
+2021/05/16 20:18:32.922
+clbool_mult data/belgium_osm/belgium_osm.mtx                1   1
+2021/05/16 20:18:32.922
+2021/05/16 20:18:34.700
+clbool_mult data/roadNet-CA/roadNet-CA.mtx                  1   1
+2021/05/16 20:18:34.702
+2021/05/16 20:18:37.802
+clbool_mult data/netherlands_osm/netherlands_osm.mtx        1   1
+2021/05/16 20:18:37.802
+2021/05/16 20:18:40.588

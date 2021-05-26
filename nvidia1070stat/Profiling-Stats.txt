@@ -1,0 +1,60 @@
+[0] clbool_mult_hash data/wing/wing.mtx
+min= 206 MiB max= 297 MiB used= 91 MiB
+
+[1] clbool_mult_hash data/luxembourg_osm/luxembourg_osm.mtx
+min= 206 MiB max= 295 MiB used= 89 MiB
+
+[2] clbool_mult_hash data/amazon0312/amazon0312.mtx
+min= 206 MiB max= 369 MiB used= 163 MiB
+
+[3] clbool_mult_hash data/amazon-2008/amazon-2008.mtx
+min= 206 MiB max= 435 MiB used= 229 MiB
+
+[4] clbool_mult_hash data/web-Google/web-Google.mtx
+min= 206 MiB max= 445 MiB used= 239 MiB
+
+[5] clbool_mult_hash data/roadNet-PA/roadNet-PA.mtx
+min= 206 MiB max= 361 MiB used= 155 MiB
+
+[6] clbool_mult_hash data/roadNet-TX/roadNet-TX.mtx
+min= 206 MiB max= 375 MiB used= 169 MiB
+
+[7] clbool_mult_hash data/belgium_osm/belgium_osm.mtx
+min= 206 MiB max= 365 MiB used= 159 MiB
+
+[8] clbool_mult_hash data/roadNet-CA/roadNet-CA.mtx
+min= 206 MiB max= 417 MiB used= 211 MiB
+
+[9] clbool_mult_hash data/netherlands_osm/netherlands_osm.mtx
+min= 206 MiB max= 413 MiB used= 207 MiB
+
+[10] clbool_mult data/wing/wing.mtx
+min= 206 MiB max= 301 MiB used= 95 MiB
+
+[11] clbool_mult data/luxembourg_osm/luxembourg_osm.mtx
+min= 206 MiB max= 297 MiB used= 91 MiB
+
+[12] clbool_mult data/amazon0312/amazon0312.mtx
+min= 206 MiB max= 479 MiB used= 273 MiB
+
+[13] clbool_mult data/amazon-2008/amazon-2008.mtx
+min= 206 MiB max= 607 MiB used= 401 MiB
+
+[14] clbool_mult data/web-Google/web-Google.mtx
+min= 206 MiB max= 579 MiB used= 373 MiB
+
+[15] clbool_mult data/roadNet-PA/roadNet-PA.mtx
+min= 206 MiB max= 405 MiB used= 199 MiB
+
+[16] clbool_mult data/roadNet-TX/roadNet-TX.mtx
+min= 206 MiB max= 423 MiB used= 217 MiB
+
+[17] clbool_mult data/belgium_osm/belgium_osm.mtx
+min= 206 MiB max= 387 MiB used= 181 MiB
+
+[18] clbool_mult data/roadNet-CA/roadNet-CA.mtx
+min= 206 MiB max= 477 MiB used= 271 MiB
+
+[19] clbool_mult data/netherlands_osm/netherlands_osm.mtx
+min= 206 MiB max= 467 MiB used= 261 MiB
+
