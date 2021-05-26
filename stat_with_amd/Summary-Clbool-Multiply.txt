@@ -1,0 +1,54 @@
+Benchmarking: Clbool-Multiply
+
+                                     Friendly name|      iterations|  expectation ms|           sd ms| 
+                                data/wing/wing.mtx:              10          3.77288         0.134277
+            data/luxembourg_osm/luxembourg_osm.mtx:              10          5.39642         0.436377
+                    data/amazon0312/amazon0312.mtx:              10          42.1375          1.71478
+                  data/amazon-2008/amazon-2008.mtx:              10          57.2701          3.91564
+                    data/web-Google/web-Google.mtx:              10          872.528          9.43837
+                    data/web-Google/web-Google.mtx:              10          892.051          6.52654
+                    data/web-Google/web-Google.mtx:              10          946.462          12.5898
+                    data/web-Google/web-Google.mtx:              10          931.185          7.61683
+                    data/web-Google/web-Google.mtx:              10          937.947          8.81137
+                    data/web-Google/web-Google.mtx:              10          968.477          2.07273
+                    data/web-Google/web-Google.mtx:               1                0                0
+                    data/web-Google/web-Google.mtx:               1                0                0
+                    data/web-Google/web-Google.mtx:               1                0                0
+                    data/web-Google/web-Google.mtx:               1                0                0
+                    data/web-Google/web-Google.mtx:               1                0                0
+                    data/web-Google/web-Google.mtx:               1                0                0
+                    data/web-Google/web-Google.mtx:               1                0                0
+                    data/web-Google/web-Google.mtx:               1                0                0
+                    data/web-Google/web-Google.mtx:               1                0                0
+                    data/web-Google/web-Google.mtx:               1                0                0
+                    data/web-Google/web-Google.mtx:               1                0                0
+                    data/web-Google/web-Google.mtx:               1                0                0
+                    data/web-Google/web-Google.mtx:               1                0                0
+                    data/web-Google/web-Google.mtx:               1                0                0
+                    data/web-Google/web-Google.mtx:               1                0                0
+                    data/web-Google/web-Google.mtx:               1                0                0
+                    data/web-Google/web-Google.mtx:               1                0                0
+                    data/web-Google/web-Google.mtx:               1                0                0
+                                data/wing/wing.mtx:              10          11.6116          2.49684
+            data/luxembourg_osm/luxembourg_osm.mtx:              10          14.2433          2.40111
+                                data/wing/wing.mtx:              10          9.34212          1.43217
+            data/luxembourg_osm/luxembourg_osm.mtx:              10          12.9822           1.9917
+                    data/amazon0312/amazon0312.mtx:              10           313.53          4.50781
+                  data/amazon-2008/amazon-2008.mtx:              10          472.046          2.48588
+                    data/web-Google/web-Google.mtx:              10          1010.45          4.49618
+                    data/roadNet-PA/roadNet-PA.mtx:              10          108.594          3.36895
+                    data/roadNet-TX/roadNet-TX.mtx:              10          133.343          1.57237
+                  data/belgium_osm/belgium_osm.mtx:              10          132.077          2.94633
+                    data/roadNet-CA/roadNet-CA.mtx:              10          195.562          6.14908
+          data/netherlands_osm/netherlands_osm.mtx:              10          202.132          6.63087
+
+                                data/wing/wing.mtx:              10           4.9263          3.52556
+            data/luxembourg_osm/luxembourg_osm.mtx:              10          5.23579         0.278071
+                    data/amazon0312/amazon0312.mtx:              10          38.6535          2.53554
+                  data/amazon-2008/amazon-2008.mtx:              10          55.9115          5.08208
+                    data/web-Google/web-Google.mtx:              10          94.0061          9.35317
+                    data/roadNet-PA/roadNet-PA.mtx:              10          38.7185          6.37382
+                    data/roadNet-TX/roadNet-TX.mtx:              10          44.0832          4.66505
+                  data/belgium_osm/belgium_osm.mtx:              10          37.4963          3.43471
+                    data/roadNet-CA/roadNet-CA.mtx:              10          51.9435          3.82634
+          data/netherlands_osm/netherlands_osm.mtx:              10             52.9          5.78827
