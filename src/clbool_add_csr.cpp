@@ -28,9 +28,11 @@
 
 // clBool goes here
 #include <core/controls.hpp>
+#include <core/cpu_matrices.hpp>
 #include <common/utils.hpp>
+#include <common/matrices_conversions.hpp>
 #include <common/env.hpp>
-#include <coo/coo.hpp>
+#include <csr/csr.hpp>
 
 #define BENCH_DEBUG
 
@@ -42,7 +44,7 @@ namespace benchmark {
             argsProcessor.parse(argc, argv);
             assert(argsProcessor.isParsed());
 
-            benchmarkName = "Clbool-Add";
+            benchmarkName = "Clbool-Add-CSR";
             experimentsCount = argsProcessor.getExperimentsCount();
         }
 
@@ -78,7 +80,9 @@ namespace benchmark {
                 size_t n = input.nrows;
                 assert(input.nrows == input.ncols);
 
-                A = std::move(clbool::matrix_coo(*controls, n, n, input.nvals, input.rows.data(), input.cols.data(), true));
+                A = clbool::csr_from_cpu(*controls,clbool::csr_cpu_from_coo_cpu(
+                        clbool::matrix_coo_cpu(input.rows, input.cols),
+                                                           input.nrows, input.ncols));
             }
 
             MatrixLoader2 loader2(file);
@@ -94,15 +98,17 @@ namespace benchmark {
                 size_t n = input.nrows;
                 assert(input.nrows == input.ncols);
 
-                A2 = std::move(clbool::matrix_coo(*controls, n, n, input.nvals,
-                                                  input.rows.data(), input.cols.data(), true));
+
+                A2 = clbool::csr_from_cpu(*controls,clbool::csr_cpu_from_coo_cpu(
+                        clbool::matrix_coo_cpu(input.rows, input.cols),
+                        input.nrows, input.ncols));
             }
         }
 
         void tearDownExperiment(size_t experimentIdx) override {
             input = Matrix{};
-            A = clbool::matrix_coo{};
-            A2 = clbool::matrix_coo{};
+            A = clbool::matrix_csr{};
+            A2 = clbool::matrix_csr{};
         }
 
         void setupIteration(size_t experimentIdx, size_t iterationIdx) override {
@@ -110,7 +116,7 @@ namespace benchmark {
         }
 
         void execIteration(size_t experimentIdx, size_t iterationIdx) override {
-            clbool::coo::matrix_addition(*controls, R, A, A2);
+            clbool::csr::matrix_addition(*controls, R, A, A2);
         }
 
         void tearDownIteration(size_t experimentIdx, size_t iterationIdx) override {
@@ -118,16 +124,15 @@ namespace benchmark {
             log << "   Result matrix: size " << R.nrows() << " x " << R.ncols()
                 << " nvals " << R.nnz() << std::endl;
 #endif
-
-            R = clbool::matrix_coo{};
+            R = clbool::matrix_csr{};
         }
 
     protected:
 
         clbool::Controls* controls;
-        clbool::matrix_coo A;
-        clbool::matrix_coo A2;
-        clbool::matrix_coo R;
+        clbool::matrix_csr A;
+        clbool::matrix_csr A2;
+        clbool::matrix_csr R;
 
         ArgsProcessor argsProcessor;
         Matrix input;

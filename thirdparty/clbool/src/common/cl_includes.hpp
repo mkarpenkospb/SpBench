@@ -1,19 +1,14 @@
 #pragma once
+#include <libutils/timer.h>
+
+
 #include <string>
 #include <iostream>
 #include <fstream>
-#include <libutils/timer.h>
 
-#define CL_HPP_ENABLE_EXCEPTIONS
-#define CL_HPP_MINIMUM_OPENCL_VERSION 110
-#define CL_HPP_TARGET_OPENCL_VERSION 110
 #include "CL/opencl.hpp"
-
-#define FPGA
+#include <core/error.hpp>
 #define DEBUG_ENABLE 0
-#define DETAIL_DEBUG_ENABLE 0
-
-
 
 
 #if (defined(WIN32) || defined(_WIN32) || defined(__WIN32) && !defined(__CYGWIN__))
@@ -55,16 +50,24 @@ Logg &&operator<<(Logg &&wrap, T const &whatever) {
     return ::std::move(wrap);
 }
 
+inline void handle_run(cl_int) {}
+inline void handle_run(const cl::Event& e) {
+    if constexpr (DEBUG_ENABLE) e.wait();
+}
+inline void handle_run(void) {}
 
-#define SET_TIMER timer t;
-#define START_TIMING do { t.restart(); } while(0);
+
+#define START_TIMING timer t; t.restart();
 #define END_TIMING(msg) do { t.elapsed(); if constexpr (DEBUG_ENABLE) Logg() << (msg) << t.last_elapsed(); } while(0);
 #define LOG if constexpr (DEBUG_ENABLE) Logg()
 
+#define TIME_RUN(msg, run) {                                             \
+        timer t;                                                         \
+        t.restart();                                                     \
+        handle_run(run);                                                 \
+        t.elapsed();                                                     \
+        if constexpr (DEBUG_ENABLE) Logg() << (msg) << " " << t.last_elapsed(); \
+        }
 
-// переменные
-
-#define AMD 0x0010
-#define NVIDIA 0x0020
 
 

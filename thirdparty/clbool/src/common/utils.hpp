@@ -1,5 +1,6 @@
 #pragma once
 
+#include <matrix_csr.hpp>
 #include "controls.hpp"
 #include "matrix_coo.hpp"
 #include "matrix_dcsr.hpp"
@@ -24,10 +25,6 @@ namespace clbool::utils {
 // https://stackoverflow.com/a/2681094
     uint32_t round_to_power2(uint32_t x);
 
-    uint32_t calculate_global_size(uint32_t work_group_size, uint32_t n);
-
-    std::string error_name(cl_int error);
-
     void printPlatformInfo(const cl::Platform &platform);
 
     void printDeviceInfo(const cl::Device &device);
@@ -39,8 +36,8 @@ namespace clbool::utils {
     bool compare_buffers(Controls &controls, const cl::Buffer &buffer_gpu, const cpu_buffer &buffer_cpu, uint32_t size,
                          std::string name = "");
 
-    void program_handler(const cl::Error &e, const cl::Program &program,
-                         const cl::Device &device, const std::string &name);
+    bool compare_matrices(Controls &controls, const matrix_csr &m_gpu, const matrix_csr_cpu &m_cpu);
 
-//    matrix_dcsr matrix_dcsr_from_cpu(Controls &controls, const coo_utils::matrix_dcsr_cpu &m, uint32_t size);
+    cl::Buffer create_buffer(Controls &controls, uint32_t size);
+    cl::Buffer create_buffer(Controls &controls, cpu_buffer &cpuBuffer, bool readonly = false);
 }

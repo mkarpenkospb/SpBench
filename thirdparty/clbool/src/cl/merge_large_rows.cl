@@ -112,8 +112,8 @@ merge_local(__local const uint *a, __local const uint *b, __local uint *c, uint 
     uint max_side = res_size - min_side;
 
     uint diag_length = diag_index < min_side ? diag_index + 2 :
-                       diag_index < max_side ? min_side + 1 :
-                       res_size - diag_index;
+                               diag_index < max_side ? min_side + 1 :
+                               res_size - diag_index;
 
     uint r = diag_length, l = 0, m = 0;
     uint below_idx_a = 0, below_idx_b = 0, above_idx_a = 0, above_idx_b = 0;
@@ -199,7 +199,7 @@ merge_pointer_global(__global const uint *a, __local const uint *b, __global uin
             }
 
             return a[above_idx_a] > b[below_idx_b] ? above_idx_a * sizeB_inc + above_idx_b :
-                   below_idx_a * sizeB_inc + below_idx_b;
+                                                        below_idx_a * sizeB_inc + below_idx_b;
         }
 
         if (below) {
