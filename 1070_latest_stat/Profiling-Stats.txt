@@ -1,0 +1,60 @@
+[0] clbool_add data/wing/wing.mtx
+min= 228 MiB max= 329 MiB used= 101 MiB
+
+[1] clbool_add data/luxembourg_osm/luxembourg_osm.mtx
+min= 228 MiB max= 329 MiB used= 101 MiB
+
+[2] clbool_add data/amazon0312/amazon0312.mtx
+min= 228 MiB max= 705 MiB used= 477 MiB
+
+[3] clbool_add data/amazon-2008/amazon-2008.mtx
+min= 228 MiB max= 989 MiB used= 761 MiB
+
+[4] clbool_add data/web-Google/web-Google.mtx
+min= 228 MiB max= 1085 MiB used= 857 MiB
+
+[5] clbool_add data/roadNet-PA/roadNet-PA.mtx
+min= 228 MiB max= 511 MiB used= 283 MiB
+
+[6] clbool_add data/roadNet-TX/roadNet-TX.mtx
+min= 228 MiB max= 609 MiB used= 381 MiB
+
+[7] clbool_add data/belgium_osm/belgium_osm.mtx
+min= 228 MiB max= 483 MiB used= 255 MiB
+
+[8] clbool_add data/roadNet-CA/roadNet-CA.mtx
+min= 228 MiB max= 737 MiB used= 509 MiB
+
+[9] clbool_add data/netherlands_osm/netherlands_osm.mtx
+min= 228 MiB max= 633 MiB used= 405 MiB
+
+[10] clbool_add_csr data/wing/wing.mtx
+min= 228 MiB max= 321 MiB used= 93 MiB
+
+[11] clbool_add_csr data/luxembourg_osm/luxembourg_osm.mtx
+min= 228 MiB max= 319 MiB used= 91 MiB
+
+[12] clbool_add_csr data/amazon0312/amazon0312.mtx
+min= 228 MiB max= 445 MiB used= 217 MiB
+
+[13] clbool_add_csr data/amazon-2008/amazon-2008.mtx
+min= 228 MiB max= 543 MiB used= 315 MiB
+
+[14] clbool_add_csr data/web-Google/web-Google.mtx
+min= 228 MiB max= 575 MiB used= 347 MiB
+
+[15] clbool_add_csr data/roadNet-PA/roadNet-PA.mtx
+min= 228 MiB max= 407 MiB used= 179 MiB
+
+[16] clbool_add_csr data/roadNet-TX/roadNet-TX.mtx
+min= 228 MiB max= 427 MiB used= 199 MiB
+
+[17] clbool_add_csr data/belgium_osm/belgium_osm.mtx
+min= 228 MiB max= 397 MiB used= 169 MiB
+
+[18] clbool_add_csr data/roadNet-CA/roadNet-CA.mtx
+min= 228 MiB max= 475 MiB used= 247 MiB
+
+[19] clbool_add_csr data/netherlands_osm/netherlands_osm.mtx
+min= 228 MiB max= 447 MiB used= 219 MiB
+
